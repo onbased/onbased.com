@@ -1,18 +1,21 @@
-	<!-- <section id="fh5co-home" data-section="home" style="background-image: url(/images/{{ .Site.Params.hero.background }}); background-repeat: no-repeat; background-position-y: top; background-size: cover; background-position: center;" data-stellar-background-ratio="0.5"> -->
-	<section id="fh5co-home" data-section="home">
-		<!-- <div id="particles-js" class="gradient"></div> -->
-		<div class="to-animate figure-1"></div>
-		<div class="to-animate figure-2"></div>
+<!-- <section id="fh5co-home" data-section="home" style="background-image: url(/images/{{ .Site.Params.hero.background }}); background-repeat: no-repeat; background-position-y: top; background-size: cover; background-position: center;" data-stellar-background-ratio="0.5"> -->
+<section id="fh5co-home" data-section="home">
+	<!-- <div id="particles-js" class="gradient"></div> -->
+	<div class="to-animate figure-1"></div>
+	<div class="to-animate figure-2"></div>
 
-		<div class="container">
-			<div class="text-wrap">
-				<div class="text-inner">
-					<h4 class="to-animate">{{ with .Site.Params.hero.welcome }}{{ . | markdownify }}{{ end }} </h4>
-					<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }} </h1>
-					<div class="col-md-12 to-animate" style="margin-top: 5rem;">
-						<a href="{{ .Site.Params.hero.callforactionLink }}" type="button" class="btn btn-cto">{{ .Site.Params.hero.callforactionCaption }}</a>
-					</div>
-					<!-- <div class="row justify-content-center">
+	<div class="container">
+		<div class="text-wrap">
+			<div class="text-inner">
+				<h4 class="to-animate">{{ with .Site.Params.hero.welcome }}{{ . | markdownify }}{{ end }} </h4>
+				<h1 class="to-animate">{{ with .Site.Params.hero.title1 }}{{ . | markdownify }}{{ end }} </h1>
+				<h1 class="to-animate">{{ with .Site.Params.hero.title2 }}{{ . | markdownify }}{{ end }} </h1>
+				<h1 class="to-animate">{{ with .Site.Params.hero.title3 }}{{ . | markdownify }}{{ end }} </h1>
+				<div class="col-md-12 to-animate" style="margin-top: 5rem;">
+					<a href="{{ .Site.Params.hero.callforactionLink }}" type="button"
+						class="btn btn-cto">{{ .Site.Params.hero.callforactionCaption }}</a>
+				</div>
+				<!-- <div class="row justify-content-center">
 						<div class="col-md-7 to-animate terminal text-left terminal-section" id="terminal-demo">
 							<pre><code class="prompt">$</code><code class="input">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}!</code></pre>
 							<pre><code class="prompt">$</code><code id="text" class="input"></code><code id="console" class="console-underscore cursor">|</code></pre>
@@ -26,24 +29,24 @@
 						<div class="clearfix visible-sm-block"></div>
 					</div> -->
 
-				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				{{ range .Site.Params.intro.item }}
-				<div class="fh5co-block to-animate" style="background-image: url(/images/{{ .img }});">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon {{ .icon }}"></i>
-						<h2>{{ .title }}</h2>
-						<p>{{ .description }}</p>
-						<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
-					</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			{{ range .Site.Params.intro.item }}
+			<div class="fh5co-block to-animate" style="background-image: url(/images/{{ .img }});">
+				<div class="overlay-darker"></div>
+				<div class="overlay"></div>
+				<div class="fh5co-text">
+					<i class="fh5co-intro-icon {{ .icon }}"></i>
+					<h2>{{ .title }}</h2>
+					<p>{{ .description }}</p>
+					<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
 				</div>
-				{{ end }}
 			</div>
+			{{ end }}
 		</div>
-		<!-- <div class="slant"></div> -->
-	</section>
+	</div>
+	<!-- <div class="slant"></div> -->
+</section>

@@ -8,10 +8,10 @@
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script>
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
-	})
-	$('.dropdown-toggle').dropdown()
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  $('.dropdown-toggle').dropdown()
 </script>
 <!-- Waypoints -->
 <script src="/js/jquery.waypoints.min.js"></script>
@@ -19,7 +19,7 @@
 <script src="/js/jquery.countTo.js"></script>
 <!-- Google Map -->
 {{ if .Site.Params.contact.map }}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUV9VObusZZgyoQLmU_7Z0vnyqJiuGt0I"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAdZpkjs1OKz1A91CERmPpaE5sqtPQ9Vk"></script>
 <script src="/js/google_map.js"></script> {{ end }}
 <!-- Main JavaScript -->
 <script src="/js/main.js"></script>
@@ -40,25 +40,26 @@
 </script> -->
 
 <!-- Cookies -->
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<link rel="stylesheet" type="text/css"
+  href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000"
-    },
-    "button": {
-      "background": "#CF5844"
-    }
-  },
-  "theme": "classic",
-  "position": "bottom-left",
-  "content": {
-	"dismiss" : {{ .Site.Params.cookieconsent.dismiss }},
-	"message": {{ .Site.Params.cookieconsent.text }},
-	"link": {{ .Site.Params.cookieconsent.link }},
+  window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#CF5844"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-left",
+      "content": {
+        "dismiss": {{ .Site.Params.cookieconsent.dismiss }},
+    "message": {{ .Site.Params.cookieconsent.text }},
+    "link": {{ .Site.Params.cookieconsent.link }},
     "href": "{{.Site.BaseURL}}/docs/privacy-policy.pdf"
   }
 })});

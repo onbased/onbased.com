@@ -39,7 +39,9 @@ copyright = "Everything is mine"
   contact = "Contact"
 # Hero section
 [languages.en.hero]
-  title = "We see your vision.</br>We are ready for our next journey.</br></br>And you?"
+  title1 = "We see your vision."
+  title2 = "We are ready for our next journey."
+  title3 = "And you?"
   subtitle = "We are ready for our next journey"
   keyword = [ "Write.", "Less.", "Code." ]
   callforactionTitle = "Achieving Balance and Stability"
