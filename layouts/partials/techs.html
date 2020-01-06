@@ -1,0 +1,22 @@
+	<section id="fh5co-techs" data-section="techs">
+		<div class="container pt-5">
+			
+			<div class="row equal mt-5">
+				<div class="col-md-12 mt-5 text-center section-heading mb-0 pb-0">
+					<h2>{{ .Site.Params.techs.title }}</h2>
+				</div>
+			</div>
+			<div class="row equal">
+				{{ range .Site.Params.techs.tech }}
+				<div class="col-md-2 col-sm-4 col-4 fh5co-tech text-center my-auto">
+					<div class="zoom my-4">
+						<a href="{{ .link }}">
+							<img src="/images/{{ .img }}" data-toggle="tooltip" data-html="true" title="{{ .description }}" alt="{{ .alt }}" />
+						</a>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+
+		</div>
+	</section>

@@ -1,0 +1,106 @@
+<header role="banner" id="fh5co-header" class="navbar-fixed-top">
+    <div class="container">
+        <!-- <div class="row"> -->
+        <nav class="navbar navbar-expand-lg navbar-default">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <i></i>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo"></div>{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ml-auto">
+
+                    {{ range .Site.Menus.prepend }}
+                    <li class="nav-item">
+                        <a class="nav-link external" href="{{ .URL }}">
+                            <span>{{ .Name | markdownify }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link" data-nav-section="home">
+                            <span class="blue-menu">{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+
+                    <!-- {{ if .Site.Params.prices.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="prices">
+                            <span>{{ with .Site.Params.navigation.prices }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }} -->
+                    {{ if .Site.Params.techs.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="techs">
+                            <span class="green-menu">{{ with .Site.Params.navigation.techs }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }} {{ if .Site.Params.work.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="work">
+                            <span class="green-menu">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }} {{ if .Site.Params.testimonials.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="testimonials">
+                            <span class="purple-menu">{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }} {{ if .Site.Params.services.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="services">
+                            <span class="purple-menu">{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }} {{ if .Site.Params.about.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="about">
+                            <span class="orange-menu">{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                    
+                    {{ if .Site.Params.contact.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="contact">
+                            <span class="red-menu">{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    {{ range .Site.Menus.postpend }}
+                    <li class="nav-item">
+                        <a class="nav-link external" href="{{ .URL }}">
+                            <span>{{ .Name | markdownify }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    <!-- <li class="dropdown nav-item" style="margin-top: 2px;">
+                        <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-globe"></i>
+                        </a>
+                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                {{ range .Translations }}
+                                <a href="{{ .Permalink }}" class="external dropdown-item">
+                                    <div class="row">
+                                        <img src="/images/blank.gif" class="flag flag-{{ .Lang }} ml-2" style="margin-top: 1px;" alt="{{ .Lang }}" />
+                                        <span class="magenta-menu ml-1">{{ i18n (lower (default .Lang .Site.Language.LanguageName)) . }}</span>
+                                    </div>
+                                </a>
+                            {{ end}}
+                        </div>
+                    </li> -->
+
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+    </div>
+</header>

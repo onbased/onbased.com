@@ -1,0 +1,80 @@
+<section id="fh5co-prices" data-section="prices" style="background-image: url(/images/{{ .Site.Params.prices.background }}); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div id="generic_price_table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">{{ with .Site.Params.prices.title }}{{ . | markdownify }}{{ end }}</h2>
+                    <div class="row">
+                        <div class="col-md-8 subtext">
+                            <h3>{{ with .Site.Params.prices.description }}{{ . | markdownify }}{{ end }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {{ $lang := .Site.LanguageCode }}
+                {{ $cta := .Site.Params.prices.cta }}
+                {{ range .Site.Params.prices.package }}
+                <div class="item col-md-4 to-animate">
+                
+                    <!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix {{ if .highlighted }}active{{ end }}">
+                        
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+                        
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+                            
+                                <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>{{ .title | markdownify }}</span>
+                                </div>
+                                <!--//HEAD END-->
+                                
+                            </div>
+                            <!--//HEAD CONTENT END-->
+                            
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    {{ if eq $lang "hu" }}
+                                    <span class="currency">{{ .price | markdownify }}</span>
+                                    <span class="sign">{{ .currency | markdownify }}</span>
+                                    {{ else }}
+                                    <span class="sign">{{ .currency | markdownify }}</span>
+                                    <span class="currency">{{ .price | markdownify }}</span>
+                                    {{ end }}
+                                </span>
+                            </div>
+
+                        </div>                            
+                        <!--//HEAD PRICE DETAIL END-->
+                        
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                            <ul>
+                                {{ range .features }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+                        
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                            {{ $cta | safeHTML }}
+                        </div>
+                        <!--//BUTTON END-->
+                        
+                    </div>
+                    <!--//PRICE CONTENT END-->
+                        
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

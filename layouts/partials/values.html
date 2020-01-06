@@ -1,0 +1,37 @@
+<section id="fh5co-values">
+
+    <div class="to-animate figure-14"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="text-center col-md-12 section-heading">
+                <h2 class="to-animate">{{ with .Site.Params.values.title }}{{ . | markdownify }}{{ end }}</h2>
+                <div class="row">
+                    <div class="col-md-12 subtext to-animate">
+                        <h3 class="text-center">{{ with .Site.Params.values.description }}{{ . | markdownify }}{{ end }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row equal mx-auto">
+            {{ range .Site.Params.values.item }}
+                <div class="item col-lg-4 col-md-9 my-2 mx-auto">
+                    <a href="#" style="height: 100%; width: 100%;" class="fh5co-block to-animate js-scroll-trigger">
+                        <!-- <div class="overlay-darker"></div>
+                        <div class="overlay"></div> -->
+                        <div class="fh5co-text card-body mx-3">
+                            {{ $save := . }}
+                            {{ range .image }}
+                            <img src="{{ . }}" class="fh5co-values-icon"></img>
+                            {{ end }}
+                            <p class="title mt-2">{{ .title }}</p>
+                            <!-- <p>{{ .description }}</p> -->
+                            <!-- <p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p> -->
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+        
+    </div>
+</section>

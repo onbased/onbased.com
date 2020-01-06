@@ -1,0 +1,191 @@
+   
+   .figure-1 {
+     position: absolute;
+     left: 0%;
+     top: 0%;
+     right: auto;
+     bottom: auto;
+     width: 610px;
+     height: 490px;
+     margin-top: -117px;
+     margin-left: -15%;
+     background-image: url("/images/backgrounds/green.png");
+     background-position: 50% 50%;
+     background-size: 601px;
+     background-repeat: no-repeat;
+   }
+   
+   .figure-2 {
+     position: absolute;
+     left: auto;
+     top: 0%;
+     right: 0%;
+     bottom: auto;
+     width: 386px;
+     height: 322px;
+     margin-top: -185px;
+     margin-right: -97px;
+     background-image: url("/images/backgrounds/blue.png");
+     background-position: 50% 50%;
+     background-size: 386px;
+     background-repeat: no-repeat;
+   }
+   
+   .figure-3 {
+     position: absolute;
+     left: 0%;
+     top: 0%;
+     right: auto;
+     bottom: auto;
+     width: 309px;
+     height: 490px;
+     margin-top: 220px;
+     margin-left: -182px;
+     background-image: url("/images/backgrounds/purple.png");
+     background-position: 50% 50%;
+     background-size: 303px;
+     background-repeat: no-repeat;
+   }
+   
+   .figure-4 {
+     position: absolute;
+     left: auto;
+     top: auto;
+     right: 0%;
+     bottom: 0%;
+     width: 309px;
+     height: 490px;
+     margin-right: -174px;
+     margin-bottom: 400px;
+     background-image: url("/images/backgrounds/orange.png");
+     background-position: 50% 50%;
+     background-size: 279px;
+     background-repeat: no-repeat;
+   }
+   
+   .figure-5 {
+     position: absolute;
+     left: -16px;
+     top: -13%;
+     width: 309px;
+     height: 490px;
+     margin-top: 220px;
+     margin-left: -165px;
+     background-image: url("/images/backgrounds/blue-2.png");
+     background-position: 50% 50%;
+     background-size: 282px;
+     background-repeat: no-repeat;
+   }
+   
+   .figure-6 {
+     position: absolute;
+     left: auto;
+     top: auto;
+     right: -9%;
+     bottom: 5%;
+     width: 309px;
+     height: 490px;
+     margin-top: 220px;
+     margin-right: -17px;
+     background-image: url("/images/backgrounds/orange-2.png");
+     background-position: 50% 50%;
+     background-size: 282px;
+     background-repeat: no-repeat;
+   }
+   
+   ._52-percent-width {
+     max-width: 390px;
+     padding-right: 20px;
+   }
+   
+   .figure-7 {
+     position: absolute;
+     left: auto;
+     top: auto;
+     right: 0%;
+     bottom: 0%;
+     width: 259px;
+     height: 360px;
+     margin-right: -161px;
+     margin-bottom: 14px;
+     background-image: url("/images/backgrounds/7.png");
+     background-position: 50% 50%;
+     background-size: 253px;
+     background-repeat: no-repeat;
+   }
+   
+   .figure-8 {
+     position: absolute;
+     left: -16px;
+     top: -14%;
+     width: 309px;
+     height: 490px;
+     margin-top: 220px;
+     margin-left: -148px;
+     background-image: url("/images/backgrounds/8.png");
+     background-position: 50% 50%;
+     background-size: 242px;
+     background-repeat: no-repeat;
+   }
+   
+   .hover-overlay {
+     position: absolute;
+     left: 0%;
+     top: 0%;
+     right: 0%;
+     bottom: 0%;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     background-color: hsla(0, 0%, 100%, 0.75);
+   }
+   
+   .figure-9 {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    width: 290px;
+    height: 280px;
+    background-image: url("/images/backgrounds/9.png");
+    background-position: 50% 50%;
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
+  
+  .figure-10 {
+    position: absolute;
+    left: auto;
+    top: -10%;
+    right: 0%;
+    bottom: auto;
+    width: 290px;
+    height: 280px;
+    background-image: url("/images/backgrounds/10.png");
+    background-position: 50% 50%;
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
+
+  .figure-14 {
+    position: absolute;
+    right: 0%;
+    top: 47%;
+    /* right: auto; */
+    bottom: auto;
+    width: 290px;
+    height: 280px;
+    background-image: url("/images/backgrounds/13.png");
+    background-position: 50% 50%;
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
