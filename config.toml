@@ -11,7 +11,7 @@ copyright = "Everything is mine"
 [params]
   custom_css = ["css/custom.css", "css/flags.css"]
   # Meta
-  author = "Black Salt"
+  author = "OnBased Group"
   description = "Software engineering and consulting at the highest level"
   email = "info@onbased.com"
 
@@ -338,7 +338,7 @@ copyright = "Everything is mine"
     #["icon-twitter", "https://twitter.com/onbasedIT"],
     #["icon-facebook", "https://facebook.com/onbasedit"],
     #["icon-linkedin", "https://facebook.com/onbasedit"],
-    ["icon-github", "https://facebook.com/onbased"],
+    ["icon-github", "https://github.com/onbased"],
     #["icon-instagram", "https://facebook.com/onbasedit"]
   ]
 
