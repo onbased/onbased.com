@@ -41,7 +41,7 @@ copyright = "Everything is mine"
 [languages.en.hero]
   title1 = "We see your vision."
   title2 = "We are ready for our next journey."
-  title3 = "And you?"
+  title3 = "Are you?"
   subtitle = "We are ready for our next journey"
   keyword = [ "Write.", "Less.", "Code." ]
   callforactionTitle = "Achieving Balance and Stability"
