@@ -257,7 +257,7 @@ copyright = "Everything is mine"
 
 [[languages.en.about.item1]]
   name = "Albert Papp"
-  position = "Co-founder & CEO & Customer Relationship"
+  position = "Founder"
   description = "Great things in business are never done by one person. They're done by a team of people."
   img = "team/albert_papp.jpg"
   alt = "Albert Papp"
@@ -270,7 +270,7 @@ copyright = "Everything is mine"
 
 [[languages.en.about.item1]]
   name = "Ákos Belákovics"
-  position = "Co-founder & Senior Full Stack Software Engineer"
+  position = "Founder"
   description = "I am passionate about building integrated software systems which are fit to the industrial standards."
   img = "team/akos_belakovics.jpg"
   alt = "Ákos Belákovics"
