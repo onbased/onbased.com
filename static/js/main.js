@@ -574,3 +574,55 @@
 
 
 }());
+
+// Document on load.
+;(function () {
+	
+	'use strict';
+	$(function(){
+
+	var container = document.querySelector("[data-parallax]");
+   var childNodes = container.children;
+   for(var n=0; n<childNodes.length; n++){
+      childNodes[n].setAttribute("data-index", n+1);
+   }
+   container.addEventListener("mousemove",
+   function(e){
+	 var elms = this.children;
+	 for(var c=0; c<elms.length; c++){
+		var motion = parseInt(elms[c].getAttribute("data-index"))/50;
+		var oX = elms[c].style.getPropertyValue('--x');
+		var oY = elms[c].style.getPropertyValue('--y');
+		// console.log(parseInt(oX));
+		// elms[c].style.setProperty('--x', -e.offsetX + "px");
+		// elms[c].style.setProperty('--y', -e.offsetY + "px");
+		
+		// var x = (elms[c].offsetWidth/8 + (-e.offsetX*motion));
+		// var y = (elms[c].offsetHeight/8 + (-e.offsetY*motion));
+		var x = (e.offsetX*motion);
+		var y = (e.offsetY*motion);
+		elms[c].style.backgroundPosition = x + "px " + y +"px";
+
+		// var motion = parseInt(elms[c].getAttribute("data-index"))/50;
+		// var oX = elms[c].style.getPropertyValue('--x');
+		// var oY = elms[c].style.getPropertyValue('--y');
+		// // elms[c].style.setProperty('--x', (parseInt(oX) + -e.offsetX) + "px");
+		// // elms[c].style.setProperty('--y', (parseInt(oY) + -e.offsetY) + "px");
+		
+		// var x = (parseInt(oX)+(e.clientX)*motion)+"px";
+		// var y = (parseInt(oY)+(e.clientY)*motion)+"px";
+		// console.log(parseInt(oX));
+		// console.log(y);
+		// elms[c].style.backgroundPosition = x + " " + y;
+	 }
+  });
+
+//   $(function(){
+		const el = document.querySelector("#module");
+		el.addEventListener("mousemove", (e) => {
+		el.style.setProperty('--x', -e.offsetX + "px");
+		el.style.setProperty('--y', -e.offsetY + "px");
+		});
+	});
+
+}());

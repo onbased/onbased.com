@@ -1,5 +1,5 @@
 # English is the default language
-defaultContentLanguage = "en"
+defaultContentLanguage = "hu"
 # Force to have /en/my-page and /fr/my-page routes, even for default language.
 defaultContentLanguageInSubdir= true
 # Page settings
@@ -41,13 +41,8 @@ copyright = "Everything is mine"
 [languages.en.hero]
   title1 = "We see your vision."
   title2 = "We are ready for our next journey."
-  title3 = "Are you?"
-  subtitle = "We are ready for our next journey"
-  keyword = [ "Write.", "Less.", "Code." ]
-  callforactionTitle = "Achieving Balance and Stability"
   callforactionLink = "mailto:customerservice@onbased.com"
   callforactionCaption = "Let's talk about your Project"
-  background = "backgrounds/header.png"
 
 # Intro section
 # Available icons: http://simplelineicons.com/
@@ -686,24 +681,22 @@ copyright = "Everything is mine"
 
 # Navigation
 [languages.hu.navigation]
-  brand = "onbased"
+  brand = ""
   home = "Kezdőlap"
-  techs = "Technológiák"
+  # techs = "Technológiák"
   prices = "App árak"
   services = "Szolgáltatások"
   about = "Rólunk"
   contact = "Kapcsolat"
+  cta = "Hívjon!"
   
 # Hero section
 [languages.hu.hero]
   cookie = "Ez a weboldal cookie-kat (sütiket) használ azért, hogy weboldalunk használata során a lehető legjobb élményt tudjuk biztosítani."
-  title = "Egy csipetnyi hiányzó szoftver&shy;fejlesztés"
-  subtitle = "Készen állunk a következő kihívásra"
-  keyword = [ "Írj.", "Kevesebb.", "Kódot." ]
-  callforactionTitle = "Egyensúly és stabilitás elérése"
-  callforactionLink = "mailto:customerservice@onbased.com"
-  callforactionCaption = "Fogad&shy;jon<br/>fel minket!"
-  background = "backgrounds/header.png"
+  title1 = "Mi látunk téged"
+  title2 = "Engedd hogy segítsünk"
+  callforactionLink = "mailto:marketing@onbased.com"
+  callforactionCaption = "Beszéljünk az Ön projektjéről"
 
 [languages.hu.intro]
   title = "A mi cégünk"
@@ -900,38 +893,6 @@ copyright = "Everything is mine"
     ["icon-facebook", "https://facebook.com/akos.belakovics"],
     ["icon-github", "https://github.com/defned"]
     #["icon-twitter", "https://twitter.com/AkosBelakovics"]
-  ]
-
-[[languages.hu.about.item1]]
-  name = "Gergely Jahn"
-  position = "Társalapító & Senior Full Stack Szoftverfejlesztő"
-  description = "Sok éves tapasztalattal rendelkező senior szoftvermérnök a mission critical alkamazások és reporting rendszerek területén."
-  img = "team/gergely_jahn.jpg"
-  alt = "Gergely Jahn"
-  social = [
-    ["icon-facebook", "https://facebook.com/dark.knight.750"]
-  ]      
-
-[[languages.hu.about.item]]
-  name = "Péter Jahn"
-  position = "Társalapító & Senior Full Stack Szoftverfejlesztő"
-  description = "Több mint 10 éve projektvezetéssel illetve adatkezelő rendszerek tervezésével, fejlesztésével foglalkozom."
-  img = "team/peter_jahn.jpg"
-  alt = "Péter Jahn"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/jahn-peter-balazs"],
-    ["icon-facebook", "https://facebook.com/jahn.peter.balazs"]
-  ]
-
-
-[[languages.hu.about.item]]
-  name = "János Roden"
-  position = "Senior Cloud Architect Konzultáns"
-  description = "Több mint 8 éves senior szoftverfejlesztési tapasztalattal, erős elemző készségekkel és széles körű számítógépes szakértelemmel rendelkezem."
-  img = "team/janos_roden.jpg"
-  alt = "János Roden"
-  social = [
-    ["icon-facebook", "https://facebook.com/janos.roden"]
   ]
 
 # Counters section

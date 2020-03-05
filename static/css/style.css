@@ -18,7 +18,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: #333;
-  background: #e8e9ee;
+  background: #ffffff;
   height: 100%;
   position: relative;
   overscroll-behavior: none;
@@ -437,7 +437,7 @@ h1, h2, h3 {
 #fh5co-header .navbar-brand div {
   background: url("/images/logo_long.svg") no-repeat;
   background-position: top 0px left;
-  width: 165px;
+  width: 163px;
   height: 25px;
   max-height: 25px;
   overflow: hidden;
@@ -750,10 +750,45 @@ section {
   border-bottom: 1px dashed white;
 }
 #fh5co-home .text-inner h1 {
-  font-size: 50px;
+  font-size: 40px;
   /* color: white; */
   margin: 0 0 20px 0;
 }
+#fh5co-home .hero-image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 12rem;
+  /* width: 100%;
+  background: url('/images/backgrounds/hero.png') no-repeat center;
+  background-size: contain; */
+}
+
+#fh5co-home .hero-image-layer {
+  background-position: left top;
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#fh5co-home .layer1 {
+  background-image: url('/images/backgrounds/hero_cloud.png');
+}
+#fh5co-home .layer2 {
+  background-image: url('/images/backgrounds/hero_dot.png');
+}
+#fh5co-home .layer3 {
+  background-image: url('/images/backgrounds/hero_table.png');
+}
+#fh5co-home .layer4 {
+  background-image: url('/images/backgrounds/hero_man.png');
+}
+#fh5co-home .layer5 {
+  background-image: url('/images/backgrounds/hero_lab.png');
+}
+
 #fh5co-home .text-inner h2 {
   font-size: 28px;
   line-height: 38px;

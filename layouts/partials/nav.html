@@ -74,6 +74,14 @@
                     </li>
                     {{ end }}
 
+                    {{ if (isset .Site.Params.navigation "cta") }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="contact">
+                            <span class="red-menu">{{ with .Site.Params.navigation.cta }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+
                     {{ range .Site.Menus.postpend }}
                     <li class="nav-item">
                         <a class="nav-link external" href="{{ .URL }}">
