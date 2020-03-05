@@ -5,6 +5,6 @@
   HUGO_VERSION = "0.55.4"
 
 [build]
-  command = "hugo --gc --minify --baseURL https://onbased.com --destination public --i18n-warnings --verbose"
+  command = "hugo --gc --minify --baseURL https://marketing.onbased.com --destination public --i18n-warnings --verbose"
   publish = "public/"
 
