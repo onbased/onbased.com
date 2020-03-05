@@ -7,3 +7,4 @@
 [build]
   command = "hugo --gc --minify --baseURL https://onbased.com --destination public --i18n-warnings --verbose"
   publish = "public/"
+
