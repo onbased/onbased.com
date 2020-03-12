@@ -3,7 +3,6 @@
 {{ $icon32_32 := resources.Get "../assets/img/fav/images/icons/icon-32x32.png" | fingerprint }}
 {{ $icon192_192 := resources.Get "../assets/img/fav/images/icons/icon-192x192.png" | fingerprint }}
 {{ $icon512_512 := resources.Get "../assets/img/fav/images/icons/icon-512x512.png" | fingerprint }}
-{{ $preview := resources.Get "../assets/img/preview.png" | fingerprint }}
 {{ $safariPinned := resources.Get "../assets/img/fav/safari-pinned-tab.svg" | minify | fingerprint }}
 {{ $logo := resources.Get "../assets/img/onbased-logo.svg" | minify | fingerprint }}
 {{ $hero := resources.Get "../assets/img/illu-man-desk.svg" | minify | fingerprint }}
@@ -22,9 +21,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>onbased | Email template coding service for agencies</title>
-    <meta name="description"
-        content="We code customized email templates for your agency. Discover responsive email templates that look good on mobile devices.">
+    <title>OnBased | Marketing | Mi látunk téged!</title>
+    <meta name="description" content="Engedd hogy segítsünk! Sokkal több mint egy marketing ügynökség.">
     <!-- Home Screen Icons -->
     <link rel="icon" sizes="192x192" href="{{ $icon192_192.Permalink }}">
     <link rel="apple-touch-icon-precomposed" href="{{ $icon512_512.Permalink }}"><!-- Fav Icon -->
@@ -37,9 +35,9 @@
     <meta name="theme-color" content="#ffffff"><!-- Facebook -->
     <meta property="og:site_name" content="OnBased | Marketing">
     <meta property="og:title" content="OnBased | Marketing">
-    <meta property="og:image" content="{{ $preview.Permalink }}">
-    <meta property="og:url" content="http://marketing.onbased.com">
-    <meta property="article:author" content="http://marketing.onbased.com">
+    <meta property="og:image" content="https://marketing.onbased.com/onbased_marketing.png">
+    <meta property="og:url" content="https://marketing.onbased.com">
+    <meta property="article:author" content="https://marketing.onbased.com">
     <!-- Main Style -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
