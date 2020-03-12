@@ -5,6 +5,6 @@
   HUGO_VERSION = "0.55.4"
 
 [build]
-  command = "hugo --gc --minify --baseURL https://marketing.onbased.com --destination public --i18n-warnings --verbose"
+  command = "pushd themes/onbased-marketing-theme; npm install; popd; hugo --gc --minify --baseURL https://marketing.onbased.com --destination public --i18n-warnings --verbose"
   publish = "public/"
 
