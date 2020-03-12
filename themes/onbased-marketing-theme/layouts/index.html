@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>onbased | Email template coding service for agencies</title>
+    <meta name="description"
+        content="We code customized email templates for your agency. Discover responsive email templates that look good on mobile devices.">
+    <!-- Home Screen Icons -->
+    <link rel="icon" sizes="192x192" href="./assets/img/android-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/img/ios-icon.png"><!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/fav/apple-touch-icon.c269e492.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/fav/favicon-32x32.a79dd0a4.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/fav/favicon-16x16.24ee424c.png">
+    <link rel="manifest" href="./assets/img/fav/site.b5b8de49.webmanifest">
+    <link rel="mask-icon" href="./assets/img/fav/safari-pinned-tab.5ae55787.svg" color="#0052e2">
+    <meta name="msapplication-TileColor" content="#0052e2">
+    <meta name="theme-color" content="#ffffff"><!-- Facebook -->
+    <meta property="og:site_name" content="onbased">
+    <meta property="og:title" content="onbased">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dxa66e5ic/image/upload/f_auto,q_auto/v1575810124/preview_2x.png">
+    <meta property="og:url" content="http://onbased.com">
+    <meta property="article:author" content="http://onbased.com">
+    <meta name="yandex-verification" content="3990b5d22e913a1d"><!-- Main Style -->
+    <link href="./assets/css/styles.3faf57ca.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script type="text/javascript" async="" src="//static.hotjar.com/c/hotjar-1605540.js?sv=5"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://client.crisp.chat/l.js" async=""></script>
+    <link href="https://client.relay.crisp.chat" rel="dns-prefetch" crossorigin="">
+    <link href="https://settings.crisp.chat" rel="preconnect" crossorigin="">
+    <link href="https://client.crisp.chat" rel="preconnect" crossorigin="">
+    <link href="https://image.crisp.chat" rel="preconnect" crossorigin="">
+    <script src="https://client.crisp.chat/static/javascripts/client.js?9d24e58" type="text/javascript"
+        async=""></script>
+    <link href="https://client.crisp.chat/static/stylesheets/client_default.css?9d24e58" type="text/css"
+        rel="stylesheet">
+    <script async="" src="https://script.hotjar.com/modules.6296a26b8de1ef71265b.js" charset="utf-8"></script>
+    <style type="text/css">
+        iframe#_hjRemoteVarsFrame {
+            display: none !important;
+            width: 1px !important;
+            height: 1px !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+    </style>
+
+    {{ partial "head.html" .}}
+
+</head>
+
+{{ $logo := resources.Get "../assets/img/onbased-logo.svg" | minify | fingerprint }}
+{{ $hero := resources.Get "../assets/img/illu-man-desk.svg" | minify | fingerprint }}
+{{ $iconContMail := resources.Get "../assets/img/icons/icon-mobile-mail.svg" | minify | fingerprint }}
+{{ $iconContComp := resources.Get "../assets/img/icons/icon-content-compatiability.svg" | minify | fingerprint }}
+{{ $iconContEdit := resources.Get "../assets/img/icons/icon-content-editable.svg" | minify | fingerprint }}
+{{ $iconContDelivery := resources.Get "../assets/img/icons/icon-content-fast-devlivery.svg" | minify | fingerprint }}
+{{ $iconMailHello := resources.Get "../assets/img/illu-mail-hello.svg" | minify | fingerprint }}
+{{ $iconHtml := resources.Get "../assets/img/icons/icon-html.svg" | minify | fingerprint }}
+{{ $iconShopify := resources.Get "../assets/img/icons/icon-shopify.svg" | minify | fingerprint }}
+
+<body>
+    <!-- Nav -->
+    <div class="container mx-auto">
+        <div class="flex flex-wrap items-center mt-8 px-8 md:px-12">
+            <div class="w-full lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left"><a class="text-base font-bold"
+                    href="."><img src="{{ $logo.Permalink }}" alt="" class="inline-block mr-2 w-40"></a></div>
+            <div class="w-full lg:w-1/2 text-center">
+                <nav class="flex w-full flex-wrap justify-center lg:justify-end"><a
+                        class="w-1/2 md:w-auto text-base font-normal text-white md:pl-6 md:pr-3 leading-none py-6 bg-black rounded-tl-lg md:rounded-l-lg"
+                        href="#steps">Rólunk</a> <a
+                        class="w-1/2 md:w-auto text-base font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black rounded-tr-lg md:rounded-tr-none"
+                        href="#pricing">Referenciáink</a> <a
+                        class="w-1/2 md:w-auto text-base font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black rounded-bl-lg md:rounded-bl-none"
+                        href="./email-templates">Áraink</a> <a
+                        class="w-1/2 md:w-auto text-base font-normal text-brand-200 md:pl-3 md:pr-6 leading-none py-6 bg-black rounded-br-lg md:rounded-r-lg"
+                        href="./#pricing">Megrendelem</a></nav>
+            </div>
+        </div>
+    </div><!-- Hero -->
+    <div class="container mx-auto mb-20 lg:mb-40">
+        <div class="flex flex-wrap items-center mb-4 px-8 md:px-12">
+            <div class="w-full lg:w-1/2">
+                <h1 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Mi látunk téged!<br />Engedd hogy
+                    segítsünk!</h1>
+                <p class="mb-6 text-2xl">Sokkal több mint egy marketing ügynökség</p><a href="./#pricing"
+                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-6 leading-none px-8 rounded-lg text-2xl block md:inline-block text-center mb-4">Megnézem
+                    az árakat</a>
+            </div>
+            <div class="w-full lg:w-1/2 order-first lg:order-last mb-16 lg:mb-0"><img src="{{ $hero.Permalink }}"
+                    alt=""></div>
+        </div>
+    </div><!-- features -->
+    <section class="container mx-auto mb-20 lg:mb-40">
+        <div class="flex flex-wrap mb-4 px-8 md:px-12">
+            <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
+                <h2 class="text-3xl lg:text-5xl font-bold mb-4 lg:mb-8 leading-tight">Szolgáltatásaink</h2><a
+                    href="./#pricing"
+                    class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Megnézem
+                    az árakat</a>
+            </header>
+            <div class="w-full lg:w-2/3">
+                <div class="flex md:-mx-4 flex-wrap mb-4 lg:px-0">
+                    <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContMail.Permalink }}"
+                            alt="" class="block mb-4">
+                        <h3 class="text-2xl mb-4">SEO optimalizálás</h3>
+                        <p>Emails are essential to every business. That’s why we make sure all your email designs are
+                            responsive and work on any screen.</p>
+                    </article>
+                    <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContComp.Permalink }}"
+                            alt="" class="block mb-4">
+                        <h3 class="text-2xl mb-4">Email alapú marketing kampány</h3>
+                        <p>No matter where your emails appear, they maintain the same high quality look. We test on all
+                            major email clients like Outlook, Gmail, IOS, Android, and more.</p>
+                    </article>
+                    <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContMail.Permalink }}"
+                            alt="" class="block mb-4">
+                        <h3 class="text-2xl mb-4">Termékfotózás, videózás</h3>
+                        <p>You’re in control. Easily manage the content of your emails, including text and images, with
+                            mailchimp integration.</p>
+                    </article>
+                    <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContMail.Permalink }}"
+                            alt="" class="block mb-4">
+                        <h3 class="text-2xl mb-4">Video alapú marketing kampány</h3>
+                        <p>You’re in control. Easily manage the content of your emails, including text and images, with
+                            mailchimp integration.</p>
+                    </article>
+                    <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContDelivery.Permalink }}"
+                            alt="" class="block mb-4">
+                        <h3 class="text-2xl mb-4">Hatékony és gyors megvalósítás</h3>
+                        <p>Get your handcrafted emails in as little as 2–3 days. Want to learn more? Chat with us today
+                            for a free review and estimated delivery time.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section><!-- steps -->
+    <!-- <section class="container mx-auto mb-20 lg:mb-40" id="steps" name="steps">
+        <header class="flex flex-wrap mb-4 lg:mb-16 px-8 md:px-12 justify-center">
+            <div class="w-full lg:w-2/3">
+                <h2 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight lg:text-center">Get your email
+                    templates <span class="lg:block">coded in a flash</span></h2>
+                <div class="lg:text-center">
+                    <p
+                        class="text-base leading-none font-text font-normal text-green-500 inline-block px-2 py-1 rounded-2xl mb-4">
+                        <span class="circle-pulse"></span> Quick delivery in 2–3 business days</p>
+                </div>
+            </div>
+        </header>
+        <div class="flex flex-wrap mb-4 px-8 md:px-12">
+            <article class="w-full lg:w-1/3 mb-4">
+                <hr class="step-line hidden lg:display-block"><span
+                    class="rounded-full h-8 w-8 flex items-center justify-center bg-brand-500 text-white mb-8 step">1</span>
+                <div class="mb-8 lg:mb-10 lg:pr-8">
+                    <h3 class="text-2xl mb-4">Placing an order</h3>
+                    <p>Just send your design files to our developer team in the file format of your choice: Photoshop,
+                        Sketch, Adobe XD, or even Figma.</p>
+                </div>
+            </article>
+            <article class="w-full lg:w-1/3 mb-4">
+                <hr class="step-line hidden lg:display-block"><span
+                    class="rounded-full h-8 w-8 flex items-center justify-center bg-brand-500 text-white mb-8 step">2</span>
+                <div class="mb-8 lg:mb-10 lg:pr-8">
+                    <h3 class="text-2xl mb-4">Coding &amp; testing</h3>
+                    <p>We convert your custom designs into fully functional emails and test their compatibility with
+                        major email clients and on mobile devices.</p>
+                </div>
+            </article>
+            <article class="w-full lg:w-1/3 mb-4">
+                <hr class="step-line hidden lg:display-block step-line-highlight"><span
+                    class="rounded-full h-8 w-8 flex items-center justify-center bg-green-500 text-white mb-8 step step-highlight">3</span>
+                <div class="mb-8 lg:mb-10 lg:pr-8">
+                    <h3 class="text-2xl mb-4">Fast delivery &amp; support</h3>
+                    <p>Ship your email templates to your customers’ inboxes within 2–3 days. Questions or changes? Our
+                        live chat support is happy to answer any questions and make tweaks to your templates.</p>
+                </div>
+            </article>
+        </div>
+        <div class="text-center"><a href="./#pricing"
+                class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Check
+                prices</a></div>
+    </section> -->
+    <!-- pricing -->
+    <section class="container mx-auto mb-20 lg:mb-40" id="pricing" name="pricing"><img
+            src="{{ $iconMailHello.Permalink }}" alt="" class="block mx-auto mb-6">
+        <header class="flex flex-wrap mb-4 lg:mb-16 px-8 md:px-12 justify-center">
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight lg:text-center">Áraink</h2>
+            </div>
+        </header>
+        <header class="flex flex-wrap mb-4 lg:mb-16 px-8 md:px-12 justify-center">
+            <div class="w-full lg:w-3/4">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Online marketing
+                    kampányok tervezése és lebonyolítása (Facebook, Instagram, Twitter, Google)</h2>
+            </div>
+        </header>
+        <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
+                <header class="px-8 pt-8 pb-8"><span
+                        class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
+                    <h3 class="text-2xl mb-4"><span class="text-8xl block">29.990 Ft -tól <span
+                                class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
+                                    src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
+                            </span></span>Alap csomag</h3>
+                    <p class="">Ideális induló vállalkozások számára</p>
+                </header>
+                <hr class="border-top-1 mb-8">
+                <div class="px-8 pb-8">
+                    <ul class="mb-8 height-min-pricing-list">
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Szaktanácsadás</span>
+                        </li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Reklámanyag
+                                elkészítése</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Egyedi
+                                célközönség kialakítása</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Hirdetési
+                                KPI-ok</span></li>
+                    </ul><a href="https://gum.co/QIwDq"
+                        class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center hover:shadow-md mb-4">Megrendelem</a><span
+                        class="text-center block font-body"><span class="font-medium">Delivery in 2–3
+                            days</span> let’s talk!</span>
+                </div>
+            </article>
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4 lg:-ml-px">
+                <header class="px-8 pt-8 pb-8"><span
+                        class="text-base leading-none font-text font-normal bg-red-50 text-red-500 inline-block px-2 py-1 rounded-2xl mb-4">★
+                        Legnépszerűbb</span>
+                    <h3 class="text-2xl mb-4"><span class="text-8xl block">59.990 Ft -tól <span
+                                class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
+                                    src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
+                                <img src="{{ $iconShopify.Permalink }}" alt="" class="inline-block mx-auto mr-1">
+                            </span></span>Bővített csomag</h3>
+                    <p class="">Ideális növekvő vállalkozások számára</p>
+                </header>
+                <hr class="border-top-1 mb-8">
+                <div class="px-8 pb-8">
+                    <ul class="mb-8 height-min-pricing-list">
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Minden,
+                                amit az alap csomag tartalmaz</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Egyedi
+                                célközönség iterativ fejlesztése</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Konverzió
+                                követés</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Átfogó
+                                jelentés a hirdetés lejártával</span></li>
+                    </ul><a href="https://gum.co/BQQK"
+                        class="bg-brand-500 hover:bg-brand-700 text-white font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center shadow-md mb-4">Megrendelem</a><span
+                        class="text-center block font-body"><span class="font-medium">Delivery in 1–3
+                            weeks</span> let’s talk!</span>
+                </div>
+            </article>
+        </div>
+        <header class="flex flex-wrap mb-4 mt-16 lg:mb-8 lg:mt-24 px-8 md:px-12 justify-center">
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Termék fotózás vagy
+                    videózás</h2>
+            </div>
+        </header>
+        <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
+                <header class="px-8 pt-8 pb-8"><span
+                        class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
+                    <h3 class="text-2xl mb-4"><span class="text-8xl block">89.990 Ft -tól <span
+                                class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
+                                    src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
+                            </span></span>Alap csomag</h3>
+                    <p class="">Ideális induló vállalkozások számára</p>
+                </header>
+                <hr class="border-top-1 mb-8">
+                <div class="px-8 pb-8">
+                    <ul class="mb-8 height-min-pricing-list-half">
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Stúdióban,
+                                vagy külső helyszínen</span>
+                        </li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Szakképzett
+                                fotós segítségével</span></li>
+                    </ul><a href="https://gum.co/QIwDq"
+                        class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center hover:shadow-md mb-4">Megrendelem</a><span
+                        class="text-center block font-body"><span class="font-medium">Delivery in 2–3
+                            days</span> let’s talk!</span>
+                </div>
+            </article>
+        </div>
+        <header class="flex flex-wrap mb-4 mt-16 lg:mb-8 lg:mt-24 px-8 md:px-12 justify-center">
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">SEO optimalizáslás
+                </h2>
+            </div>
+        </header>
+        <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
+                <header class="px-8 pt-8 pb-8"><span
+                        class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
+                    <h3 class="text-2xl mb-4"><span class="text-8xl block">49.990 Ft -tól <span
+                                class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
+                                    src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
+                            </span></span>Keresőmarketing és Keresőoptimalizálás szolgáltatásunk</h3>
+                    <p class="">Ideális induló vállalkozások számára</p>
+                </header>
+                <hr class="border-top-1 mb-8">
+                <div class="px-8 pb-8">
+                    <ul class="mb-8 height-min-pricing-list-half">
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Kulcsszavak
+                                meghatározása</span>
+                        </li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Weboldal
+                                átalakítása</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Tartalom
+                                bővítés</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Linképítés</span>
+                        </li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Weboldal
+                                elemzés</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Monitoring
+                                - Reportok</span></li>
+                    </ul><a href="https://gum.co/QIwDq"
+                        class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center hover:shadow-md mb-4">Megrendelem</a><span
+                        class="text-center block font-body"><span class="font-medium">Delivery in 2–3
+                            days</span> let’s talk!</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="container mx-auto mb-20 lg:mb-40">
+        <div class="flex flex-wrap mb-4 px-8 md:px-12">
+            <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
+                <h2 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Want to learn more?</h2><a
+                    href="mailto:support@onbased.com?subject=Question about custom email coding" target="_blank"
+                    class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Contact
+                    us</a>
+            </header>
+            <div class="w-full lg:w-2/3">
+                <div class="flex md:-mx-4 flex-wrap mb-4 lg:px-0 justify-center">
+                    <article class="w-full md:w-3/4 mb-8 lg:mb-10 md:px-4">
+                        <h3 class="text-2xl mb-4">Will my template be mobile friendly?</h3>
+                        <p>Yes! We will make sure your email looks just like the desktop and mobile layouts you
+                            provided, although some tweaks might be necessary to successfully deliver a responsive
+                            email.</p>
+                    </article>
+                    <article class="w-full md:w-3/4 mb-8 lg:mb-10 md:px-4">
+                        <h3 class="text-2xl mb-4">Can I validate the design before placing an order?</h3>
+                        <p>Of course. Just email us your design files, and we will inspect the design’s compatibility
+                            and get back to you as quickly as possible.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container mx-auto">
+        <div class="flex flex-wrap mb-8 px-8 md:px-12">
+            <div class="w-full">
+                <hr class="border-top-1 mb-8">
+                <div class="flex flex-wrap">
+                    <div class="w-full text-center mb-4">
+                        <p class="text-gray-500 text-sm">© Copyright 2019 - All rights
+                            reserved.<br>support@onbased.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="crisp-client">
+        <div class="crisp-1o7uamv">
+            <div class="crisp-1qz76wn">
+                <style type="text/css">
+                    .crisp-client .crisp-1rjpbb7 .crisp-12w1xmh,
+                    .crisp-client .crisp-1rjpbb7 .crisp-poqhnx:hover {
+                        color: #FFFFFF !important;
+                        -webkit-text-fill-color: #FFFFFF !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-1wiroug,
+                    .crisp-client .crisp-1rjpbb7 .crisp-ao27ue:hover {
+                        color: #004AB5 !important;
+                        -webkit-text-fill-color: #004AB5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-6mlwlm,
+                    .crisp-client .crisp-1rjpbb7 .crisp-q5z06s:hover {
+                        color: #0057D7 !important;
+                        -webkit-text-fill-color: #0057D7 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-wcida4,
+                    .crisp-client .crisp-1rjpbb7 .crisp-o6w0yc:hover {
+                        color: #1972F5 !important;
+                        -webkit-text-fill-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-pusm34 {
+                        background-color: #FFFFFF !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-bdhv0t {
+                        background-color: #004AB5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-9o0cq7 {
+                        background-color: #055EE1 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-ws3gf1,
+                    .crisp-client .crisp-1rjpbb7 .crisp-13h0akn:before,
+                    .crisp-client .crisp-1rjpbb7 .crisp-13h0akn:after {
+                        background-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-1gr5ak3 {
+                        background-color: #EFF5FE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-145mbcr,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1jrqqbm:hover {
+                        background-color: #F5F8FB !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-17f70m7 {
+                        background-image: linear-gradient(125deg, #1972F5 -10%, #004AB5 100%) !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-111u58f,
+                    .crisp-client .crisp-1rjpbb7 .crisp-y1nqlk:hover {
+                        border-color: #FFFFFF !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-14u434g {
+                        border-color: rgba(0, 74, 181, 0.175) !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-k6ym6q,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1hadq69:hover,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1kqjjm4:before,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1kqjjm4:after {
+                        border-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-1n0zdj7 {
+                        border-color: rgba(25, 114, 245, 0.15) !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-rdu43e {
+                        border-top-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-ogcg7k,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1mnx9b2:hover {
+                        border-color: #EFF5FE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-11uxe11:placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-11uxe11:-moz-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-11uxe11::-moz-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-11uxe11:-ms-input-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-11uxe11::-webkit-input-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp:placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp:-moz-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp::-moz-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp:-ms-input-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp::-webkit-input-placeholder {
+                        color: #6E9BDE !important;
+                        -webkit-text-fill-color: #6E9BDE !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-gjhthi,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1t1dtpc:hover,
+                    .crisp-client .crisp-1rjpbb7 .crisp-gjhthi:hover,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1t1dtpc:active,
+                    .crisp-client .crisp-1rjpbb7 .crisp-gjhthi:active,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1v3kwn:hover .crisp-oc2kqi,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1v3kwn .crisp-oc2kqi:active {
+                        background: #004AB5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-1dgibgx,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1r2x6vr:hover {
+                        background: #0057D7 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-1dgibgx:hover,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1r2x6vr:active {
+                        background: #004FC3 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-1dgibgx:active {
+                        background: #004AB5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-27o9vm:hover .crisp-1ekhg1c {
+                        background: #0057D7 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-27o9vm .crisp-1ekhg1c:active {
+                        background: #004FC3 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-ox3dbf,
+                    .crisp-client .crisp-1rjpbb7 .crisp-1fmeyoi[data-active="true"] {
+                        background: #1972F5 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-ox3dbf:hover {
+                        background: #055EE1 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-ox3dbf:active {
+                        background: #0057D7 !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j::-moz-selection,
+                    .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j *::-moz-selection {
+                        background-color: #E2EEFF !important;
+                    }
+
+                    .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j::selection,
+                    .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j *::selection {
+                        background-color: #E2EEFF !important;
+                    }
+                </style>
+            </div>
+            <div class="crisp-1nasccw">
+                <style type="text/css">
+                    .crisp-client .crisp-1rjpbb7 {
+                        z-index: 1000000;
+                    }
+                </style>
+            </div>
+        </div>
+        <div id="crisp-chatbox" lang="hu" dir="ltr" translate="no" data-blocked="false" data-lock-maximized="false"
+            data-last-operator-face="false" data-availability-tooltip="false" data-hide-vacation="false"
+            data-hide-on-away="false" data-hide-on-mobile="false" data-position-reverse="false" data-full-view="true"
+            data-small-view="true" data-large-view="false" data-availability="away" data-is-activity-ongoing="false"
+            data-was-availability-online="false" data-has-local-messages="false" class="crisp-1rjpbb7">
+            <div class="crisp-1rf4xdh crisp-k5ll1j"><a data-maximized="false" data-is-failure="false" href="#!"
+                    class="crisp-kquevr" data-cshid="b46b4a79-41f5-2af7-e42c-582313efab6c"><span
+                        class="crisp-1059tj2"><span data-id="general_entice" data-with-helpdesk="false"
+                            data-is-concealed="false" class="crisp-1xaupiq" style="display: block !important;"><span
+                                class="crisp-1sa0919"><span class="crisp-1s66m5e crisp-9dgo7z"><span
+                                        class="crisp-yzclt"><span class="crisp-5me80a"><span
+                                                class="crisp-bz13r8 crisp-i1yn7v"></span><span data-has-avatar="true"
+                                                class="crisp-1sd4dmd"><span class="crisp-191rfs5"><span
+                                                        class="crisp-pkd0me crisp-13qutdl">Kérdésed van? Chatelj
+                                                        velünk!</span><span data-id="online"
+                                                        class="crisp-h99wdo crisp-9dgo7z">Csapatunk online
+                                                        van.</span><span data-id="away"
+                                                        class="crisp-h99wdo crisp-9dgo7z">Csapatunk távol
+                                                        van.</span></span><span class="crisp-z83vpo"><span
+                                                        class="crisp-bjk43g crisp-4oo1n4"><span
+                                                            style="background-image: url('https://image.crisp.chat/process/thumbnail/?url=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2F54b32b25fbee4c00%2Fsherif-opt-wecompresscom_e6d1pd.jpg&amp;width=240&amp;height=240&amp;1575744824321') !important;"
+                                                            class="crisp-2tz7y crisp-1mh9nm6"></span></span></span></span></span></span><span
+                                        data-when="online" class="crisp-a1mko8"><span
+                                            class="crisp-vz5ota crisp-1jrqqbm"><span class="crisp-4snher"><span
+                                                    class="crisp-rvg3pe crisp-wcida4 crisp-13qutdl">Chat a
+                                                    onbased csapatával</span></span></span></span><span data-when="away"
+                                        class="crisp-a1mko8"><span class="crisp-vz5ota crisp-1jrqqbm"><span
+                                                class="crisp-4snher"><span
+                                                    class="crisp-rvg3pe crisp-wcida4 crisp-13qutdl">Chat a
+                                                    onbased
+                                                    csapatával</span></span></span></span></span></span></span></span><span
+                        class="crisp-x94m06 crisp-ws3gf1"><span data-id="chat_closed" class="crisp-16qgsyi"><span
+                                class="crisp-1t2kwsy"><span class="crisp-174tqf9 crisp-1e8tjtx"></span></span><span
+                                data-is-ongoing="false" class="crisp-101bp3x"></span></span></span></a></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- {{ define "main" }}
+<article class="text-center text-gray-700">
+    <h1 class="font-serif font-thin text-5xl text-gray-500">asdasd {{ .Title }}</h1>
+    {{ .Content }}
+</article>
+{{ end }} -->
