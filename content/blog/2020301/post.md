@@ -12,7 +12,7 @@ description: Miről maradok le, ha nem használom a Facebook adta lehetőségeke
 date: 2020-03-20
 ---
 
-Sokszor haljuk ezt a kérdést megrendelőinktől magunk is, vizsgáljuk tehát, hogyan is lehetett a Facebook egy egyetemi projektből ilyen sikeres.
+Sokszor haljuk ezt a kérdést megrendelőinktől magunk is, vizsgáljuk hát meg, hogyan is lehetett a Facebook egy egyetemi projektből ilyen sikeres.
 
 # Evolúciós háttér
 
@@ -36,7 +36,7 @@ Rengeteg energia valamint pszichológusokkal és egyéb viselkedés kutatókkal 
 
 A fent leírtak alapján akkor a Facebook egy manipulatív megvetendő dolog lenne? 
 
-Nos ezt döntse el mindenki maga. Az biztos, hogy mostanára egy több milliós felhasználói bázissal büszkélkedő kiforrott ipari gépezetté nőtte ki magát, ahol kőkeményen az adatainkkal, vásárlási és böngészési szokásainkkal fizetünk a Facebook mindennapos használatáért. (Érdemes ebben a témában átböngészni az alábbi [cikket](https://index.hu/aktak/a_cambridge_analytica_botrany/). 
+Nos ezt döntse el mindenki maga. Az biztos, hogy mostanára egy több milliós felhasználói bázissal büszkélkedő kiforrott ipari gépezetté nőtte ki magát, ahol kőkeményen az adatainkkal, vásárlási és böngészési szokásainkkal fizetünk a Facebook mindennapos használatáért. (Érdemes ebben a témában átböngészni az alábbi [cikket](https://index.hu/aktak/a_cambridge_analytica_botrany/).)
 
 
 
@@ -45,9 +45,9 @@ Természetesen lehet ezért és egyébb más dolgokért is nem szeretni, de komo
 
 ![Ügyfelek](https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80)
 
-2020-ra havi szinten az aktív Facebook felhasználók száma megközelítette a 2.5 miliárdot. Ami talán még ennél is megdöbbentőbb, hogy napi szinten több mint 1.6 milliárd embertársunk használja rendzseresen ezt a szolgáltatást, átlagosan napi 58.5 percet töltve ezen a plattformon.
+2020-ra havi szinten az aktív Facebook felhasználók száma megközelítette a 2.5 miliárdot. Ami talán még ennél is megdöbbentőbb, hogy napi szinten több mint 1.6 milliárd embertársunk használja rendszeresen ezt a szolgáltatást, átlagosan napi 58.5 percet töltve ezen a platformon.
 
-Nem meglepő ezek után, hogy az egyesült államokban a piaci szereplők 86%-a  rendszeresen ad fel Facebook hirdetéseket, hiszen ekkora "képernyő időt" ilyen kedvező áron nem kap máshol.  
+Nem meglepő ezek után, hogy az Egyesült Államokban a piaci szereplők 86%-a  rendszeresen ad fel Facebook hirdetéseket, hiszen ekkora "képernyő időt" ilyen kedvező áron nem kap máshol.  
 
 Ha Ön sem akar lemaradni javasoljuk olvassa el a következő cikkünket ahol megtudhatja, miben különbözik a Facebook hirdetés más organikus hirdetési módszerektől.
 
