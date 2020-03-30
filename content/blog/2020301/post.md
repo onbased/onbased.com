@@ -36,7 +36,7 @@ Rengeteg energia valamint pszichológusokkal és egyéb viselkedés kutatókkal 
 !["zucked"](https://images.unsplash.com/photo-1568378780196-a9a0444a9151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80)
 
 
-A fent leírtak alapján akkor a Facebook egy manipulatív megvetendő dolog lenne? 
+# A fent leírtak alapján akkor a Facebook egy manipulatív megvetendő dolog lenne? 
 
 Nos ezt döntse el mindenki maga. Az biztos, hogy mostanára egy több milliós felhasználói bázissal büszkélkedő kiforrott ipari gépezetté nőtte ki magát, ahol kőkeményen az adatainkkal, vásárlási és böngészési szokásainkkal fizetünk a Facebook mindennapos használatáért. (Érdemes ebben a témában átböngészni az alábbi [cikket](https://index.hu/aktak/a_cambridge_analytica_botrany/).)
 

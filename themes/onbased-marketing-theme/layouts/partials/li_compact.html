@@ -26,13 +26,12 @@
 {{ $summary = $item.Content }}
 {{ end }}
 
+
 <div class="card-simple" itemscope itemtype="http://schema.org/{{$microdata_type}}">
 
-    <div class="card-body">
-     <a href="{{ $item.RelPermalink }}" itemprop="url">
-      <img src="{{ $item.Permalink }}../featured.jpg" class="article-banner" width="500ww" itemprop="image" alt="">
-   </a>
-   
+   <a href="{{ $item.RelPermalink }}" itemprop="url">
+        <img src="{{ $item.Permalink }}../featured.jpg" class="article-banner" ALIGN=”top”  width="400ww" itemprop="image" alt="">
+  </a> 
     <h2 class="article-title mb-1 mt-0" itemprop="name">
       <a href="{{ $item.RelPermalink }}" itemprop="url">{{ $item.Title }}</a>
     </h2>
@@ -66,15 +65,12 @@
     {{ end }}
     {{ with $summary }}
     <div class="article-style" itemprop="articleBody">
-      {{ . }}
+      {{ $item.Description }}
     </div>
     {{ end }}
 
-
-    {{ if $show_buttons }}
-    <div class="btn-links">
-      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-    </div>
-    {{ end }}
+    <br/><br/><br/>
+   
+   
   </div>
 </div>
