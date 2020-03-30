@@ -12,7 +12,9 @@ description: Miről maradok le, ha nem használom a Facebook adta lehetőségeke
 date: 2020-03-20
 ---
 
-Sokszor haljuk ezt a kérdést megrendelőinktől magunk is, vizsgáljuk hát meg, hogyan is lehetett a Facebook egy egyetemi projektből ilyen sikeres.
+Sokszor halljuk ezt a kérdést megrendelőinktől magunk is: "Miért jó nekem ha a Facebookon hirdetek?".
+
+Mielőtt kitérnénk erre a kérdésre vizsgáljuk  meg, hogyan is lehetett a Facebook egy egyszerű egyetemi projektből ilyen sikeres.
 
 # Evolúciós háttér
 
