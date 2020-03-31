@@ -1,24 +1,17 @@
 {{ define "main" }}
+<main class="container mx-auto mb-10">
+  <div class="flex flex-wrap mb-4 px-8 md:px-12">
+    <!-- content -->
 
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
 
+    {{ partial "li_compact" . }}
 
-<div class="universal-wrapper">
+    {{ end }}
 
-  {{ with .Content }}
-  <div class="article-style" itemprop="articleBody">{{ . }}</div>
-  {{ end }}
+    {{ partial "pagination" . }}
 
-  {{ $paginator := .Paginate .Data.Pages }}
-  {{ range $paginator.Pages }}
-  
-    <div class="col-lg-4 col-md-6 mb-4">
-      {{ partial "li_compact" . }}
-    </div>
-   
-  {{ end }}
-
-  {{ partial "pagination" . }}
-
-</div>
-
+  </div>
+</main>
 {{ end }}
