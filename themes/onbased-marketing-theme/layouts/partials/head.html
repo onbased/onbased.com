@@ -13,6 +13,28 @@
 <meta name="author" content="{{ .Params.Author}}" />
 {{ end }}
 
+{{ $manifest := resources.Get "../assets/img/fav/site.webmanifest" | fingerprint }}
+{{ $icon16_16 := resources.Get "../assets/img/fav/images/icons/icon-16x16.png" | fingerprint }}
+{{ $icon32_32 := resources.Get "../assets/img/fav/images/icons/icon-32x32.png" | fingerprint }}
+{{ $icon144_144 := resources.Get "../assets/img/fav/images/icons/icon-144x144.png" | fingerprint }}
+{{ $icon192_192 := resources.Get "../assets/img/fav/images/icons/icon-192x192.png" | fingerprint }}
+{{ $icon512_512 := resources.Get "../assets/img/fav/images/icons/icon-512x512.png" | fingerprint }}
+{{ $safariPinned := resources.Get "../assets/img/fav/safari-pinned-tab.svg" | minify | fingerprint }}
+<link rel="icon" sizes="192x192" href="{{ $icon192_192.Permalink }}">
+<link rel="apple-touch-icon-precomposed" href="{{ $icon512_512.Permalink }}"><!-- Fav Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $icon144_144.Permalink }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ $icon32_32.Permalink }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ $icon16_16.Permalink }}">
+<link rel="manifest" href="{{ $manifest.Permalink }}">
+<link rel="mask-icon" href="{{ $safariPinned.Permalink }}" color="#0052e2">
+<meta name="msapplication-TileColor" content="#0052e2">
+<meta name="theme-color" content="#ffffff"><!-- Facebook -->
+<meta property="og:site_name" content="OnBased - Marketing">
+<meta property="og:title" content="{{ .Params.Title }}">
+<meta property="og:image" content="{{ .Permalink }}../featured.jpg">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="article:author" content="{{ .Params.Author }}">
+
 {{ if .Site.IsServer }}
 {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">

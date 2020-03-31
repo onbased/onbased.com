@@ -15,13 +15,12 @@ title:  10 ötlet, hogy hatékonyabb legyél a munkádban és a mindennapokban �
   saját produktivitásodat!
 description: Különösen a home office-ban nem gyakorlott versenyzőknek jöhet jól pár praktikus tanács!
 date: 2020-03-22
-thumbnail: /images/uploads/drink-864958_1280.jpg
 ---
 Észrevetted már magadon, hogy reggel is fáradt vagy, amikor kipihenten kellene ébredjél? Hogy egész nap úszol, jobbra-balra kapkodsz? Hogy megőrjít, amikor sokadik nekifutásra sem tökéletes, amin dolgozol? Hogy folyton megakasztanak a munkában? Hogy már megint bevállaltál valamit, ami miatt még sokat fog fájni a fejed? Hogy egyszerre több dologgal próbálsz foglalkozni és még büszke is vagy rá? Hogy inkább készítesz még egy kávét, de akkor is dolgozol, amikor legszívesebben pihennél egyet? Hogy nem is tudod, utoljára mikor sikerült sportolni egy jót és mindig találsz kifogást, hogy miért nem mozogtál már megint? 
 
 Ha a kérdések zöménél bólogattál, olvasd el listánkat és gondolkodj el rajta. Ha nem is érted a kérdéseket, akkor nincs dolgod ezzel a bejegyzéssel és egyben gratulálunk!
 
-!["girl working"](https://images.unsplash.com/photo-1562071707-7249ab429b2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+!["girl working"](https://images.unsplash.com/photo-1562071707-7249ab429b2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850&q=80)
 
 
 

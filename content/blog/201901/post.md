@@ -11,8 +11,6 @@ title: Nagy Black Friday kisokos
 date: 2019-11-26
 title: Mi az a Black Friday?
 description: A fekete péntek mítoszok és valóság. Te kihasználod a benne rejlő potenciált?
-
-thumbnail: /images/uploads/blackfriday.jpg
 ---
 ## Mi az a Black Friday?
 

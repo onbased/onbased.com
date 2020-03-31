@@ -20,7 +20,7 @@ Mielőtt kitérnénk erre a kérdésre vizsgáljuk  meg, hogyan is lehetett a Fa
 
 <br/>
 
-!["change"](https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80)
+!["change"](https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850&q=80)
 
 A technológiai forradalom sokkal gyorsabban játszódott le az utólsó 100-150 évben mint bármilyen más fejlődés az emberiség történelmében. A hosszú évszázadokon, évezredeken keresztül kialakult kommunikációs formák evolúciós mértékekben mérve szinte egy pillanat alatt semmisültek meg, és hatalmas cunamiként zúdultak ránk a különböző digitálist tartalmak. Ezzel a fejlődéssel mentálisan lépést tartani komoly kihívás. 
 
@@ -33,7 +33,7 @@ Ezek az évszázadokon keresztül jól működő fórumok a XX. század végére
 Rengeteg energia valamint pszichológusokkal és egyéb viselkedés kutatókkal támogatott tudatos fejlesztés és tesztelés eredménye az, amit ma Facebook ként ismerünk. Az alkalmazott színektől kezdve, a formákon át, minden tudatosan arra felhasználói élményre van kihegyezve, hogy lehetőleg minél több képernyő időt töltsenek el a modernkor emberei ebben a virtuális térben. 
 
 
-!["zucked"](https://images.unsplash.com/photo-1568378780196-a9a0444a9151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80)
+!["zucked"](https://images.unsplash.com/photo-1568378780196-a9a0444a9151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850&q=80)
 
 
 # A fent leírtak alapján akkor a Facebook egy manipulatív megvetendő dolog lenne? 
@@ -45,7 +45,7 @@ Nos ezt döntse el mindenki maga. Az biztos, hogy mostanára egy több milliós 
 Természetesen lehet ezért és egyébb más dolgokért is nem szeretni, de komoly hiba lenne ha mint marketing platformot ignorálnánk. Hiszen a legtöbb vállalkozás – és így a mi konkurenciánk is! – feltehetőleg ebben a pillanatban is gőzerővel használja ezt a platformot. Hogy mire?  Legfőképpen további ügyfél szerzésre!
 
 
-![Ügyfelek](https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80)
+![Ügyfelek](https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850&q=80)
 
 2020-ra havi szinten az aktív Facebook felhasználók száma megközelítette a 2.5 miliárdot. Ami talán még ennél is megdöbbentőbb, hogy napi szinten több mint 1.6 milliárd embertársunk használja rendszeresen ezt a szolgáltatást, átlagosan napi 58.5 percet töltve ezen a platformon.
 
@@ -53,4 +53,4 @@ Nem meglepő ezek után, hogy az Egyesült Államokban a piaci szereplők 86%-a 
 
 Ha Ön sem akar lemaradni javasoljuk olvassa el a következő cikkünket ahol megtudhatja, miben különbözik a Facebook hirdetés más organikus hirdetési módszerektől.
 
-![money](https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+![money](https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850&q=80)

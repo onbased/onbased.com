@@ -41,7 +41,7 @@ Az ország fontos érdeke lenne, hogy ezek a cégek átvészeljék az előttünk
 
 Ez utóbbi megvalósulása véleményünk szerint elkerülhetetlen lépés, és reményeink szerint a kormány gőzerővel dolgozik a lehetséges megoldásokon.
 
-!["covid"](https://images.unsplash.com/photo-1584461800203-e8b0a2fd55ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652)
+!["covid"](https://images.unsplash.com/photo-1584461800203-e8b0a2fd55ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850)
 
 Egy másik lényeges különbség 2008-hoz képest, hogy a korábbi világméretű válságok relatív lassan alakultak ki. Időt hagyva a cégeknek az átalakulásra, reagálásra. Ezzel ellentétben a jelenlegi krízis villámcsapás szerűen  jelentkezett, így erre még a legkomolyabb gazdasági elemzőkkel rendelkező óriásvállalatok sem tudtak megfelelően felkészülni. Mondhatni, mindenkit váratlanul ért... Az egyedüli reménysugár, hogy - ha a kínai példából indulunk ki - a válság várhatóan 2-3 hónapon belül jelentősen enyhülni fog. Feltételezve persze, hogy az egyes területek vissza fertőződését alacsony szinten tudjuk tartani.
 

@@ -10,7 +10,6 @@ author: Stifán Orsolya
 title: "Happy Halloween? \U0001F47B"
 description: Várod vagy inkább szívből utálod a Halloween-t?
 date: 2019-10-18
-thumbnail: /images/uploads/halloween.jpg
 ---
 
 Ahogy az ember ismerősei körében hallja, akad ilyen és olyan ember is: aki tartja a Halloweent és aki nem tartja, sőt. Esetleg vegyesen: tököt azért farag, amúgy nem vesz részt a bohóckodásban. Kutatást a Formatext végzett erre vonatkozóan, még 2017-ben 600 család megkérdezésével. A cég üzemelteti a Játéksziget bolthálózatot. Ugye nekik nem mindegy. És neked? A te vállalkozásod hirdet terméket, szolgáltatást avagy indít kampányt Halloween alkalmából?
@@ -36,7 +35,7 @@ No de nézzünk csak bele abba a kutatásba!
 > + 💀 A legnépszerűbb kelléknek továbbra is a töklámpás számít.
 > + 💀 A játékboltban kapható ijesztő dekorációt és a jelmezeket a válaszadók közel 60 százaléka sorolta a legnépszerűbb kellékek közé, az arcfestékeket és sminkkészleteket pedig közel 40 százalék.  
 
-!["cat Img"](https://images.unsplash.com/photo-1505904645664-def2335fb0d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1677&q=80)
+!["cat Img"](https://images.unsplash.com/photo-1505904645664-def2335fb0d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=850&q=80)
 
 
 
