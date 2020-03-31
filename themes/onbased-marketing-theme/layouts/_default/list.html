@@ -1,6 +1,7 @@
 {{ define "main" }}
 <main class="container mx-auto mb-10">
   <div class="flex flex-wrap mb-4 px-8 md:px-12">
+    {{- partial "hero.html" . -}}
     <!-- content -->
 
     {{ $paginator := .Paginate .Data.Pages }}
