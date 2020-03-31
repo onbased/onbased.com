@@ -31,7 +31,8 @@
   itemtype="http://schema.org/{{$microdata_type}}">
   <div
     class="h-64 lg:h-auto lg:w-64 flex-none bg-cover border-r border-t border-b border-l lg:border-l lg:border-t rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-    style="background-image: url('{{ $item.Permalink }}../featured.jpg')" title="{{ $item.Title }}">
+    style="background-image: url('{{ $item.Permalink }}../featured.jpg'); background-size: cover; background-position: center;"
+    title="{{ $item.Title }}">
   </div>
   <div
     class="p-6 border-r border-b border-l lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-w-sm w-full lg:max-w-full">
