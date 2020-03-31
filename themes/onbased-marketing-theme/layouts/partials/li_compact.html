@@ -26,14 +26,15 @@
 {{ $summary = $item.Content }}
 {{ end }}
 
-<a href="{{ $item.RelPermalink }}" itemprop="url" class="max-w-sm w-full lg:max-w-full lg:flex mt-4" itemscope
+<a href="{{ $item.RelPermalink }}" itemprop="url"
+  class="hover:shadow-xl ease-in-out max-w-sm w-full mx-auto lg:max-w-full lg:flex mt-6 block duration-500" itemscope
   itemtype="http://schema.org/{{$microdata_type}}">
   <div
-    class="h-48 lg:h-auto lg:w-48 flex-none bg-cover border-r border-t border-b border-l border-gray-400 lg:border-l lg:border-t lg:border-gray-400 rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+    class="h-64 lg:h-auto lg:w-64 flex-none bg-cover border-r border-t border-b border-l lg:border-l lg:border-t rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
     style="background-image: url('{{ $item.Permalink }}../featured.jpg')" title="{{ $item.Title }}">
   </div>
   <div
-    class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-w-sm w-full lg:max-w-full">
+    class="p-6 border-r border-b border-l lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-w-sm w-full lg:max-w-full">
     <div class="mb-8">
       <p class="text-sm text-gray-600 flex items-center">
         <!-- <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -41,18 +42,19 @@
         </svg>
         Members only -->
       </p>
-      <div class="text-gray-900 font-bold text-xl mb-2">{{ $item.Title }}</div>
+      <h3 class="text-3xl mb-4">{{ $item.Title }}</h3>
       {{ with $summary }}
-      <p class="text-gray-700 text-base">{{ $item.Description }}</p>
+      <!-- <p class="text-brand-500 font-bold text-xl mb-4">{{ $item.Description }}</p> -->
+      <p class="text-xl mb-4">{{ $item.Description }}</p>
       {{ end }}
     </div>
-    <div class="flex items-center">
+    <div class="w-full text-right">
       <!-- <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink"> -->
       <div class="text-sm">
         {{ if $item.Params.author }}
         <p class="text-gray-900 leading-none">{{  $item.Params.author }}</p>
         {{ end }}
-        <p class="text-gray-600">{{ (time $item.Date).Format "2020-03-01"  }}</p>
+        <p class="text-gray-600 mt-2">{{ (time $item.Date).Format "2006 Jan 2"  }}</p>
       </div>
     </div>
   </div>

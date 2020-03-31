@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
-    {{- partial "head.html" . -}}
-    <body class="flex flex-col min-h-screen">
-        {{- partial "header.html" . -}}
-        <main class="flex-1 sm:mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
-        {{- block "main" . }}{{- end }}
-        </main>
-        {{- partial "footer.html" . -}}
+{{- partial "head.html" . -}}
+
+<body class="flex flex-col min-h-screen">
+    {{- partial "header.html" . -}}
+    <!-- <main class="flex-1 sm:mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16"> -->
+    {{- partial "hero.html" . -}}
+    {{- block "main" . }}{{- end }}
+    <!-- </main> -->
+    {{- partial "footer.html" . -}}
 
     <script>
         //Javascript to toggle the nav-menu
@@ -22,5 +24,6 @@
         }
     </script>
 
-    </body>
+</body>
+
 </html>

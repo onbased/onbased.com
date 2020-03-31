@@ -1648,7 +1648,21 @@ h6 {
 }
 
 
-
+.aspect-ratio-none {
+  padding-bottom: 0;
+}
+.aspect-ratio-square {
+  padding-bottom: 100%;
+}
+.aspect-ratio-16\/9 {
+  padding-bottom: 56.25%;
+}
+.aspect-ratio-4\/3 {
+  padding-bottom: 75%;
+}
+.aspect-ratio-21\/9 {
+  padding-bottom: 42.86%;
+}
 
 
 p.text {
@@ -1687,9 +1701,9 @@ h1 {
   margin: 50px auto 0;
 }
 
-article {
+#pricing article {
   max-width: 30rem;
-  max-height: 50rem;
+  min-height: 50rem;
 }
 
 
@@ -1698,6 +1712,7 @@ article {
 
 
 
+/* 
 .card {
   float: left;
   padding: 0 1.7rem;
@@ -1774,8 +1789,11 @@ article {
 .card input[type='checkbox']:checked + .menu-content {
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
-}
+} */
 
+article img {
+  margin: auto;
+}
 .example-1 .wrapper {
   background: url(https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80) 20% 1%/cover no-repeat;
 }

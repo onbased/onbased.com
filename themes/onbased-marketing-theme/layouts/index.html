@@ -53,19 +53,19 @@
 <body>
     <!-- Nav -->
     <div class="container mx-auto">
-        <div class="flex flex-wrap items-center mt-8 px-8 md:px-12">
+        <div class="flex flex-wrap items-center mt-8 px-1 sm:px-8">
             <div class="w-full lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left"><a class="text-base font-bold"
                     href="."><img src="{{ $logo.Permalink }}" alt="" class="inline-block mr-2 w-40"></a></div>
             <div class="w-full lg:w-1/2 text-center">
                 <nav class="flex w-full flex-wrap justify-center lg:justify-end"><a
-                        class="w-1/3 md:w-auto sm:text-base text-xs font-normal text-white md:pl-6 md:pr-3 leading-none py-6 bg-black rounded-tl-lg md:rounded-l-lg rounded-bl-lg"
+                        class="w-1/4 md:w-auto sm:text-base text-xs font-normal text-white md:pl-6 md:pr-3 leading-none py-6 bg-black rounded-tl-lg md:rounded-l-lg rounded-bl-lg"
                         href="./#services">Szolgáltatásaink</a>
                     <!-- <a class="w-1/2 md:w-auto text-base font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black rounded-tr-lg md:rounded-tr-none"                        href="#pricing">Referenciáink</a> -->
-                    <a class="w-1/3 md:w-auto sm:text-base text-xs font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
+                    <a class="w-1/4 md:w-auto sm:text-base text-xs font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
                         href="./#pricing">Áraink</a>
-                    <a class="w-1/3 md:w-auto sm:text-base text-xs font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
-                        href="./blog">Blog</a>                        
-                    <a class="w-1/3 md:w-auto sm:text-base text-xs font-normal text-brand-200 md:pl-3 md:pr-6 leading-none py-6 bg-black rounded-br-lg md:rounded-r-lg rounded-tr-lg"
+                    <a class="w-1/4 md:w-auto sm:text-base text-xs font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
+                        href="./blog">Blog</a>
+                    <a class="w-1/4 md:w-auto sm:text-base text-xs font-normal text-brand-200 md:pl-3 md:pr-6 leading-none py-6 bg-black rounded-br-lg md:rounded-r-lg rounded-tr-lg"
                         href="./#contact">Kérdésem van</a></nav>
             </div>
         </div>
@@ -73,10 +73,11 @@
     <div class="container mx-auto mb-20 lg:mb-40">
         <div class="flex flex-wrap items-center mb-4 px-8 md:px-12">
             <div class="w-full lg:w-1/2">
-                <h1 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Mi látunk téged!<br />Engedd hogy
+                <h1 class="text-3xl lg:text-4xl xl:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Mi látunk
+                    téged!<br />Engedd hogy
                     segítsünk!</h1>
                 <p class="mb-6 text-2xl">Sokkal több mint egy marketing ügynökség</p><a href="./#pricing"
-                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-6 leading-none px-8 rounded-lg text-2xl block md:inline-block text-center mb-4">Megnézem
+                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-4 px-6 xl:py-6 xl:px-8 leading-none rounded-lg text-xl xl:text-2xl block md:inline-block text-center mb-4">Megnézem
                     az árakat</a>
             </div>
             <div class="w-full lg:w-1/2 order-first lg:order-last mb-16 lg:mb-0"><img src="{{ $hero.Permalink }}"
@@ -86,9 +87,9 @@
     <section class="container mx-auto mb-20 lg:mb-40" id="services" name="services">
         <div class="flex flex-wrap mb-4 px-8 md:px-12">
             <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
-                <h2 class="text-3xl lg:text-5xl font-bold mb-4 lg:mb-8 leading-tight">Szolgáltatásaink</h2><a
-                    href="./#pricing"
-                    class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Megnézem
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-8 leading-tight">Szolgáltatásaink</h2>
+                <a href="./#pricing"
+                    class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-4 px-6 xl:py-6 xl:px-8 leading-none text-xl xl:text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Megnézem
                     az árakat</a>
             </header>
             <div class="w-full lg:w-2/3">
@@ -370,20 +371,7 @@
             </div> -->
         </div>
     </section>
-    <footer class="container mx-auto">
-        <div class="flex flex-wrap mb-8 px-8 md:px-12">
-            <div class="w-full">
-                <hr class="border-top-1 mb-8">
-                <div class="flex flex-wrap">
-                    <div class="w-full text-center mb-4">
-                        <p class="text-gray-500 text-sm">OnBased Group Kft. © Copyright 2020 - Minden jog
-                            fentartva.<br>support@onbased.com
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {{ partial "footer.html" }}
 </body>
 
 </html>

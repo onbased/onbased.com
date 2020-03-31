@@ -1,0 +1,19 @@
+<!-- <div class="container mx-auto"> -->
+<!-- <div class="flex flex-wrap items-center pt-16 mb-12 px-8 md:px-12">
+        <div class="w-full text-center">
+            <h1 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-4 leading-tight">Blog</h1>
+            <p class="text-2xl mb-0">Marketing, érthetően.</p>
+        </div>
+    </div> -->
+{{ $bloghero := resources.Get "../assets/img/illu-lamp-blog-hero.svg" | minify | fingerprint }}
+<div class="container mx-auto">
+    <div class="flex flex-wrap items-center text-center lg:text-left mb-4 px-8 md:px-12">
+        <div class="w-full lg:w-1/2">
+            <h1 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Blog</h1>
+            <p class="text-2xl mb-0">Marketing, érthetően.</p>
+        </div>
+        <div class="w-full lg:w-1/2 order-first lg:order-last mb-16 lg:mb-0"><img src="{{ $bloghero.Permalink }}"
+                alt=""></div>
+    </div>
+</div>
+<!-- </div> -->
