@@ -1,7 +1,7 @@
 {{ $manifest := resources.Get "../assets/img/fav/site.webmanifest" | fingerprint }}
 {{ $icon16_16 := resources.Get "../assets/img/fav/images/icons/icon-16x16.png" | fingerprint }}
 {{ $icon32_32 := resources.Get "../assets/img/fav/images/icons/icon-32x32.png" | fingerprint }}
-{{ $icon144_144 := resources.Get "../assets/img/fav/images/icons/icon-144x144.png" | fingerprint }}
+<!-- {{ $icon144_144 := resources.Get "../assets/img/fav/images/icons/icon-144x144.png" | fingerprint }} -->
 {{ $icon192_192 := resources.Get "../assets/img/fav/images/icons/icon-192x192.png" | fingerprint }}
 {{ $icon512_512 := resources.Get "../assets/img/fav/images/icons/icon-512x512.png" | fingerprint }}
 {{ $safariPinned := resources.Get "../assets/img/fav/safari-pinned-tab.svg" | minify | fingerprint }}
@@ -27,7 +27,7 @@
     <!-- Home Screen Icons -->
     <link rel="icon" sizes="192x192" href="{{ $icon192_192.Permalink }}">
     <link rel="apple-touch-icon-precomposed" href="{{ $icon512_512.Permalink }}"><!-- Fav Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ $icon144_144.Permalink }}">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="{{ $icon144_144.Permalink }}"> -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $icon32_32.Permalink }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $icon16_16.Permalink }}">
     <link rel="manifest" href="{{ $manifest.Permalink }}">
@@ -203,7 +203,7 @@
             </div>
         </header>
         <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
-            <article class="w-full lg:w-3/5 xl:w-1/3 border mb-4">
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
                     <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block">29.990 Ft -tól
@@ -235,7 +235,7 @@
                             kapcsolatba</span> velünk!</span>
                 </div>
             </article>
-            <article class="w-full lg:w-3/5 xl:w-1/3 border mb-4 lg:-ml-px">
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4 lg:-ml-px">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal bg-red-50 text-red-500 inline-block px-2 py-1 rounded-2xl mb-4">★
                         Legnépszerűbb</span>
@@ -277,7 +277,7 @@
             </div>
         </header>
         <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
-            <article class="w-full lg:w-3/5 xl:w-1/3 border mb-4">
+            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
                     <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block">89.990 Ft -tól
