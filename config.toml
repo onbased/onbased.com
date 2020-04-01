@@ -1,5 +1,5 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "OnBased Marketing"
-theme = "onbased-marketing-theme"
+title = "OnBased IT"
+theme = "onbased-it-theme"
 googleAnalytics = "UA-161432911-2"
