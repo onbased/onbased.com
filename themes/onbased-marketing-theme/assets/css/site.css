@@ -1674,9 +1674,12 @@ body {
   font-family: "HelveticaNowTextW05";
 }
 
-article p, article h1, article h2, article h3, article h4, article ul, article li {
+article p, article h1, article h2, article h3, article h4 {
     padding: 1rem;
 }
+/* article p, article h1, article h2, article h3, article h4, article ul, article li {
+    padding: 1rem;
+} */
 article a {
     text-decoration: none;
     color: blue;
@@ -1701,10 +1704,10 @@ h1 {
   margin: 50px auto 0;
 }
 
-#pricing article {
+/* #pricing article {
   max-width: 30rem;
   min-height: 50rem;
-}
+} */
 
 
 
