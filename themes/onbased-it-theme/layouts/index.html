@@ -6,7 +6,7 @@
 {{ $icon512_512 := resources.Get "../assets/img/fav/images/icons/icon-512x512.png" | fingerprint }}
 {{ $safariPinned := resources.Get "../assets/img/fav/safari-pinned-tab.svg" | minify | fingerprint }}
 {{ $logo := resources.Get "../assets/img/onbased-logo.svg" | minify | fingerprint }}
-{{ $hero := resources.Get "../assets/img/illu-man-desk.svg" | minify | fingerprint }}
+{{ $hero := resources.Get "../assets/img/illu-man-desk-it.svg" | minify | fingerprint }}
 {{ $iconContMail := resources.Get "../assets/img/icons/icon-mobile-mail.svg" | minify | fingerprint }}
 {{ $iconContComp := resources.Get "../assets/img/icons/icon-content-compatiability.svg" | minify | fingerprint }}
 {{ $iconContEdit := resources.Get "../assets/img/icons/icon-content-editable.svg" | minify | fingerprint }}
@@ -23,7 +23,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>OnBased - IT | Software solutions you can rely on!</title>
-    <meta name="description" content="Flutter, dart, python, mobile and desktop software development, software solutions you can rely on.">
+    <meta name="description"
+        content="Flutter, dart, python, mobile and desktop software development, software solutions you can rely on.">
     <!-- Home Screen Icons -->
     <link rel="icon" sizes="192x192" href="{{ $icon192_192.Permalink }}">
     <link rel="apple-touch-icon-precomposed" href="{{ $icon512_512.Permalink }}"><!-- Fav Icon -->
@@ -38,7 +39,7 @@
     <meta property="og:title" content="OnBased - IT | Software solutions you can rely on!">
     <meta property="og:image" content="https://it.onbased.com/onbased_marketing.png">
     <meta property="og:url" content="https://it.onbased.com">
-    <meta property="article:author" content="https://it.onbased.com/blog">
+    <meta property="article:author" content="OnBased Group">
     <!-- Main Style -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,17 +56,18 @@
     <div class="container mx-auto">
         <div class="flex flex-wrap items-center mt-8 px-1 sm:px-8">
             <div class="w-full lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left"><a class="text-base font-bold"
-                    href="https:/onbased.com"><img src="{{ $logo.Permalink }}" alt="" class="inline-block mr-2 w-40"></a></div>
+                    href="https:/onbased.com"><img src="{{ $logo.Permalink }}" alt=""
+                        class="inline-block mr-2 w-40"></a></div>
             <div class="w-full lg:w-1/2 text-center">
                 <nav class="flex w-full flex-wrap justify-center lg:justify-end"><a
-                        class="w-1/3 md:w-auto sm:text-base text-sm font-normal text-white md:pl-6 md:pr-3 leading-none py-6 bg-black rounded-tl-lg md:rounded-l-lg rounded-bl-lg"
+                        class="w-1/3 md:w-auto sm:text-base text-sm font-normal text-white md:pl-8 md:pr-3 leading-none py-6 bg-black rounded-tl-lg md:rounded-l-lg rounded-bl-lg"
                         href="/#services">Services</a>
                     <!-- <a class="w-1/2 md:w-auto text-base font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black rounded-tr-lg md:rounded-tr-none"                        href="#pricing">Referenciáink</a> -->
-                    <a class="w-1/6 md:w-auto sm:text-base text-sm font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
+                    <a class="w-1/3 md:w-auto sm:text-base text-sm font-normal text-white md:px-6 leading-none py-6 bg-black"
                         href="/#pricing">Price</a>
-                    <a class="w-1/6 md:w-auto sm:text-base text-sm font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
-                        href="/blog">Blog</a>
-                    <a class="w-1/3 md:w-auto sm:text-base text-sm font-normal text-brand-200 md:pl-3 md:pr-6 leading-none py-6 bg-black rounded-br-lg md:rounded-r-lg rounded-tr-lg"
+                    <!-- <a class="w-1/6 md:w-auto sm:text-base text-sm font-normal text-white md:pl-3 md:pr-3 leading-none py-6 bg-black"
+                        href="/blog">Blog</a> -->
+                    <a class="w-1/3 md:w-auto sm:text-base text-sm font-normal text-brand-200 md:pl-3 md:pr-8 leading-none py-6 bg-black rounded-br-lg md:rounded-r-lg rounded-tr-lg"
                         href="/#contact">Contact</a></nav>
             </div>
         </div>
@@ -73,17 +75,20 @@
     <div class="container mx-auto mb-20 lg:mb-40">
         <div class="flex flex-wrap items-center mb-4 px-8 md:px-12">
             <div class="w-full lg:w-1/2">
-                <h1 class="text-3xl lg:text-4xl xl:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Software solutions you can rely on!</h1>
+                <h1 class="text-3xl lg:text-4xl xl:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Software solutions you
+                    can rely on!</h1>
                 <p class="mb-6 text-2xl">
-                Our software company has been founded in 2004. Since then we...<br/><br/>
-                - Love technology<br/>
-                - Understand data and business<br/>
-                - Think outside-the-box<br/>
-                - See problems as learning oppurtunity <br/>
-                - Can speak techie and non-techie<br/>
-                
+                    Our software company has been founded in 2004. Since then we...
+                    <!-- <br /><br />
+                    - Love technology<br />
+                    - Understand data and business<br />
+                    - Think outside-the-box<br />
+                    - See problems as learning oppurtunity <br />
+                    - Can speak techie and non-techie<br /> -->
+
                 </p><a href="./#pricing"
-                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-4 px-6 xl:py-6 xl:px-8 leading-none rounded-lg text-xl xl:text-2xl block md:inline-block text-center mb-4">Try now!</a>
+                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-4 px-6 xl:py-6 xl:px-8 leading-none rounded-lg text-xl xl:text-2xl block md:inline-block text-center mb-4">Try
+                    now!</a>
             </div>
             <div class="w-full lg:w-1/2 order-first lg:order-last mb-16 lg:mb-0"><img src="{{ $hero.Permalink }}"
                     alt=""></div>
@@ -94,37 +99,38 @@
             <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
                 <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-8 leading-tight">Services</h2>
                 <a href="./#pricing"
-                    class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-4 px-6 xl:py-6 xl:px-8 leading-none text-xl xl:text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Check our rates</a>
+                    class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-4 px-6 xl:py-6 xl:px-8 leading-none text-xl xl:text-2xl border border-brand-500 hover:border-transparent rounded-lg hidden lg:inline-block text-center hover:shadow-md">Check
+                    our rates</a>
             </header>
             <div class="w-full lg:w-2/3">
                 <div class="flex md:-mx-4 flex-wrap mb-4 lg:px-0">
                     <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContMail.Permalink }}"
                             alt="" class="block mb-4">
-                        <h3 class="text-2xl mb-4">Backend development</h3>
+                        <h3 class="text-2xl mb-4 text-center">Backend development</h3>
                         <!-- <p>Emails are essential to every business. That’s why we make sure all your email designs are
                             responsive and work on any screen.</p> -->
                     </article>
                     <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContComp.Permalink }}"
                             alt="" class="block mb-4">
-                        <h3 class="text-2xl mb-4">Web and Mobile applications</h3>
+                        <h3 class="text-2xl mb-4 text-center">Web and Mobile applications</h3>
                         <!-- <p>No matter where your emails appear, they maintain the same high quality look. We test on all
                             major email clients like Outlook, Gmail, IOS, Android, and more.</p> -->
                     </article>
                     <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContMail.Permalink }}"
                             alt="" class="block mb-4">
-                        <h3 class="text-2xl mb-4">IT Consulting</h3>
+                        <h3 class="text-2xl mb-4 text-center">IT Consulting</h3>
                         <!-- <p>You’re in control. Easily manage the content of your emails, including text and images, with
                             mailchimp integration.</p> -->
                     </article>
                     <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContMail.Permalink }}"
                             alt="" class="block mb-4">
-                        <h3 class="text-2xl mb-4">Project management</h3>
+                        <h3 class="text-2xl mb-4 text-center">Project management</h3>
                         <!-- <p>You’re in control. Easily manage the content of your emails, including text and images, with
                             mailchimp integration.</p> -->
                     </article>
                     <article class="w-full md:w-1/2 mb-8 lg:mb-10 md:px-4"><img src="{{ $iconContDelivery.Permalink }}"
                             alt="" class="block mb-4">
-                        <h3 class="text-2xl mb-4">Quality Assurance</h3>
+                        <h3 class="text-2xl mb-4 text-center">Quality Assurance</h3>
                         <!-- <p>Get your handcrafted emails in as little as 2–3 days. Want to learn more? Chat with us today
                             for a free review and estimated delivery time.</p> -->
                     </article>
@@ -143,14 +149,15 @@
         </header>
         <header class="flex flex-wrap mb-4 lg:mb-16 px-8 md:px-12 justify-center">
             <div class="w-full lg:w-3/4">
-                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Software engineering, IT Consulting, Full stack development</h2>
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Software
+                    engineering, IT Consulting, Full stack development</h2>
             </div>
         </header>
         <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
-            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
+            <article class="w-full lg:w-1/3 border mb-4">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
-                    <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block"> 250- € / day
+                    <h3 class="text-2xl mb-4">from<span class="md:text-8xl text-4xl block">250€ / day
                             <!-- <span
                                 class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
                                     src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
@@ -162,21 +169,23 @@
                 <div class="px-8 pb-8">
                     <ul class="mb-8 height-min-pricing-list">
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Junior Dev Ops Engineer</span></li>
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Junior
+                                Dev Ops Engineer</span></li>
 
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Full stack junior developer</span></li>
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Full
+                                stack junior developer</span></li>
 
-                    </ul><a href="mailto:marketing@onbased.com?subject=Megrendelés - Online marketing - Alap csomag"
+                    </ul><a href="mailto:jobs@onbased.com?subject=Order - IT - Basic"
                         class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center hover:shadow-md mb-4">Order</a>
                     <span class="text-center block font-body"><span class="font-medium">Contact us!</span></span>
                 </div>
             </article>
-            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4 lg:-ml-px">
+            <article class="w-full lg:w-1/3 border mb-4 lg:-ml-px">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal bg-red-50 text-red-500 inline-block px-2 py-1 rounded-2xl mb-4">★
                         best selling plan</span>
-                    <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block">350- € / day
+                    <h3 class="text-2xl mb-4">from<span class="md:text-8xl text-4xl block">350€ / day
                             <!-- <span
                                 class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
                                     src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
@@ -188,53 +197,49 @@
                 <hr class="border-top-1 mb-8">
                 <div class="px-8 pb-8">
                     <ul class="mb-8 height-min-pricing-list">
-                       
+
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Full stack developer</span></li>
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Full
+                                stack developer</span></li>
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Dev Ops Engineer</span></li>
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Dev
+                                Ops Engineer</span></li>
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Project manager</span></li>
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Project
+                                manager</span></li>
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">QA Engineer</span></li>
-                    </ul><a href="mailto:marketing@onbased.com?subject=Megrendelés - Online marketing - Bővített csomag"
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">QA
+                                Engineer</span></li>
+                    </ul><a href="mailto:jobs@onbased.com?subject=Order - IT - Extended"
                         class="bg-brand-500 hover:bg-brand-700 text-white font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center shadow-md mb-4">Order</a>
                     <span class="text-center block font-body"><span class="font-medium">Contact us!</span></span>
                 </div>
             </article>
-        </div>
-        <!--   <header class="flex flex-wrap mb-4 mt-16 lg:mb-8 lg:mt-24 px-8 md:px-12 justify-center">
-            <div class="w-full lg:w-1/2">
-             <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Termék fotózás vagy
-                    videózás</h2>  
-            </div>
-        </header> -->
-        <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
-            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
+            <article class="w-full lg:w-1/3 border mb-4 lg:-ml-px">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
-                    <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block">550 € / day
-                            <!-- <span
-                                class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4"><img
-                                    src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
-                            </span> -->
+                    <h3 class="text-2xl mb-4">from<span class="md:text-8xl text-4xl block">550€ / day
                         </span>Exlusive plan</h3>
-                    <p class=""></p>
+                    <p class="">Best for enterprises</p>
                 </header>
                 <hr class="border-top-1 mb-8">
                 <div class="px-8 pb-8">
-                    <ul class="mb-8 height-min-pricing-list-half">
+                    <ul class="mb-8 height-min-pricing-list">
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Senior full stack developer</span>
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Senior
+                                full stack developer</span>
                         </li>
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Senior product manager</span></li>
-           <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Senior QA Engineer</span></li>
-          <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Senior Dev Ops Engineer</span></li>
-              
-                    </ul><a href="mailto:marketing@onbased.com?subject=Megrendelés - Termékfotózás, videózás"
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Senior
+                                product manager</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Senior
+                                QA Engineer</span></li>
+                        <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">Senior
+                                Dev Ops Engineer</span></li>
+
+                    </ul><a href="mailto:jobs@onbased.com?subject=Order - IT - Exclusive"
                         class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center hover:shadow-md mb-4">Order</a>
                     <span class="text-center block font-body"><span class="font-medium">Contact us!</span></span>
                 </div>
@@ -242,36 +247,34 @@
         </div>
         <header class="flex flex-wrap mb-4 mt-16 lg:mb-8 lg:mt-24 px-8 md:px-12 justify-center">
             <div class="w-full lg:w-1/2">
-                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Do you plan something special?
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4 lg:mb-2 leading-tight lg:text-center">Do you plan
+                    something special?
                 </h2>
             </div>
         </header>
         <div class="flex flex-wrap mb-4 px-8 md:px-12 justify-center">
-            <article class="w-full lg:w-3/5 xl:w-1/2 border mb-4">
+            <article class="w-full lg:w-1/3 border mb-4">
                 <header class="px-8 pt-8 pb-8"><span
                         class="text-base leading-none font-text font-normal text-red-500 inline-block py-1 rounded-2xl mb-4">&nbsp;</span>
-                    <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block"> 
-                            <!-- <span
-                                class="text-base leading-none font-text font-normal bg-gray-200 inline-block px-2 py-1 rounded-2xl mb-4">
-                                <img
-                                    src="{{ $iconHtml.Permalink }}" alt="" class="inline-block mx-auto mr-1">
-                            </span> -->
+                    <h3 class="text-2xl mb-4"><span class="md:text-8xl text-4xl block">
                         </span> Custom software development or IT solution</h3>
                     <p class="">We are open for challanges :)</p>
                 </header>
                 <hr class="border-top-1 mb-8">
                 <div class="px-8 pb-8">
-                    <ul class="mb-8 height-min-pricing-list-half">
+                    <ul class="mb-8">
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Tell us what you need</span>
+                                class="text-base leading-none font-text font-normal bg-brand-50 text-brand-500 px-2 py-1 rounded-2xl">Tell
+                                us what you need</span>
                         </li>
                         <li class="flex items-center"><span class="text-3xl text-brand-500 pr-2">✓</span> <span
-                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">We answer with an offer and deadline</span></li>
+                                class="text-base leading-none font-text font-normal text-brand-500 px-2 py-1 rounded-2xl">We
+                                answer with an offer and deadline</span></li>
                     </ul><a
-                        href="mailto:marketing@onbased.com?subject=Megrendelés - Keresőmarketing és Keresőoptimalizálás"
+                        href="mailto:jobs@onbased.com?subject=Order - IT - Custom software development or IT solution"
                         class="bg-transparent hover:bg-brand-500 text-brand-500 font-normal hover:text-white py-6 leading-none px-8 text-2xl border border-brand-500 hover:border-transparent rounded-lg block text-center hover:shadow-md mb-4">Order</a>
                     <span class="text-center block font-body"><span class="font-medium">Contact us!</span>
-                        </span>
+                    </span>
                 </div>
             </article>
         </div>
@@ -280,8 +283,9 @@
         <div class="flex flex-wrap mb-4 px-8 md:px-12">
             <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
                 <h2 class="text-3xl lg:text-6xl font-bold mb-4 lg:mb-8 leading-tight">More questions?</h2><a
-                    href="mailto:support@onbased.com?subject=Kérdés marketinggel kapcsolatban" target="_blank"
-                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-6 leading-none px-8 rounded-lg text-2xl block md:inline-block text-center mb-4">Ask us</a>
+                    href="mailto:info@onbased.com?subject=Question regarding IT solution" target="_blank"
+                    class="shadow-lg bg-brand-500 hover:bg-brand-700 text-white font-normal py-6 leading-none px-8 rounded-lg text-2xl block md:inline-block text-center mb-4">Ask
+                    us</a>
             </header>
             <!-- <div class="w-full lg:w-2/3">
                 <div class="flex md:-mx-4 flex-wrap mb-4 lg:px-0 justify-center">
