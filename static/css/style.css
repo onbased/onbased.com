@@ -747,7 +747,7 @@ section {
 #fh5co-home .text-inner a:hover, #fh5co-home .text-inner a:active, #fh5co-home .text-inner a:focus {
   text-decoration: none;
   /* color: white; */
-  border-bottom: 1px dashed white;
+  /* border-bottom: 1px dashed white; */
 }
 #fh5co-home .text-inner h1 {
   font-size: 50px;
@@ -838,33 +838,12 @@ section {
   background-repeat: no-repeat;
 }
 
-
-.btn-cto {
-  /* font-family: Raleway-SemiBold; */
+.btn {
   font-size: 13px;
   font-weight: bold;
-  text-transform: none !important;
-  letter-spacing: default !important;
-  color: #000;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin: 5px;
-  background-color: transparent;
-  border: 2px solid #000;
-  border-radius: 40px;
-  background: transparent;
-  transition: all 0.3s ease 0s;
-}
-
-.btn-cto:hover, .btn-default:active {
-  color: #FFF;
-  background-color: #000 !important;
-  border: 2px solid #000 !important;
+  padding: 1rem 2rem 1rem 2rem;
   border-radius: 40px;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-intro .fh5co-block {
     width: 100%;

@@ -1,6 +1,4 @@
-<!-- <section id="fh5co-home" data-section="home" style="background-image: url(/images/{{ .Site.Params.hero.background }}); background-repeat: no-repeat; background-position-y: top; background-size: cover; background-position: center;" data-stellar-background-ratio="0.5"> -->
 <section id="fh5co-home" data-section="home">
-	<!-- <div id="particles-js" class="gradient"></div> -->
 	<div class="to-animate figure-1"></div>
 	<div class="to-animate figure-2"></div>
 
@@ -13,22 +11,8 @@
 				<h1 class="to-animate">{{ with .Site.Params.hero.title3 }}{{ . | markdownify }}{{ end }} </h1>
 				<div class="col-md-12 to-animate" style="margin-top: 5rem;">
 					<a href="{{ .Site.Params.hero.callforactionLink }}" type="button"
-						class="btn btn-cto">{{ .Site.Params.hero.callforactionCaption }}</a>
+						class="btn btn-outline-dark">{{ .Site.Params.hero.callforactionCaption }}</a>
 				</div>
-				<!-- <div class="row justify-content-center">
-						<div class="col-md-7 to-animate terminal text-left terminal-section" id="terminal-demo">
-							<pre><code class="prompt">$</code><code class="input">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}!</code></pre>
-							<pre><code class="prompt">$</code><code id="text" class="input"></code><code id="console" class="console-underscore cursor">|</code></pre>
-							<pre><code class="output"></code></pre>
-							<pre><code style="display:none" class="spinner"></code></pre>
-						</div>
-						<div class="col-7 col-sm-7 col-md-3 align-self-center text-center to-animate">
-								<h2 class="mt-3">{{ .Site.Params.hero.callforactionTitle | markdownify }}</h2>
-								<a href="{{ .Site.Params.hero.callforactionLink }}" class="btn btn-primary btn-lg js-scroll-trigger mt-4" style="padding-top: 0.75rem; padding-bottom: 0.75rem;">{{ .Site.Params.hero.callforactionCaption | markdownify }}</a>
-						</div>
-						<div class="clearfix visible-sm-block"></div>
-					</div> -->
-
 			</div>
 		</div>
 	</div>

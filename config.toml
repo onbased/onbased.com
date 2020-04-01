@@ -56,19 +56,19 @@ copyright = "Everything is mine"
   description = "Since 2008 we have been engaged in software design and development, and the experience gained from this has served as a successful basis for the development of a new service, mobile application development. We know that mobile devices are playing an increasingly important role, as well as application development for these devices."
 
 [[languages.en.intro.item]]
-  title = "Web & Mobile development"
-  url = "Service_Web"
-  image = [ "/images/badges/web_development.png" ]
+  title = "Software Engineering"
+  url = "https://it.onbased.com"
+  image = [ "/images/badges/development.png" ]
+
+#[[languages.en.intro.item]]
+#  title = "Consulting"
+#  url = "Service_Consulting"
+#  image = [ "/images/badges/consulting.png" ]
 
 [[languages.en.intro.item]]
-  title = "Consulting"
-  url = "Service_Consulting"
-  image = [ "/images/badges/consulting.png" ]
-
-[[languages.en.intro.item]]
-  title = "Backend"
-  url = "Service_Backend"
-  image = [ "/images/badges/backend.png" ]
+  title = "Marketing"
+  url = "https://marketing.onbased.com"
+  image = [ "/images/badges/marketing.png" ]
 
 [languages.en.mission]
   title = "Our Mission"

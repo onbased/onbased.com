@@ -5,10 +5,10 @@
 
     <div class="container">
 
-        <div class="row equal mx-auto">
+        <div class="row equal my-5 mx-auto">
             {{ range .Site.Params.intro.item }}
-                <div class="item col-lg-4 col-md-9 my-2 mx-auto">
-                    <a href="#{{ .url }}" style="height: 100%; width: 100%;" class="fh5co-block to-animate js-scroll-trigger">
+                <div class="item col-lg-6 col-md-12 my-2 mx-auto">
+                    <a href="{{ .url }}" style="height: 100%; width: 100%;" class="fh5co-block to-animate js-scroll-trigger">
                         <div class="fh5co-text card-body mx-3">
                             {{ $save := . }}
                             {{ range .image }}
