@@ -9,13 +9,6 @@
     <!-- </main> -->
     {{- partial "footer.html" . -}}
 
-{{ if in (.Site.BaseURL | string) "marketing.onbased.com" }}
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN2L557"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-{{ end }}
-
     <script>
         //Javascript to toggle the nav-menu
         document.getElementById('nav-open').onclick = function () {
