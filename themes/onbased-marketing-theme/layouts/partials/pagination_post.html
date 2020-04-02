@@ -2,15 +2,15 @@
 <nav class="container mt-6 mb-6 mx-auto px-4">
   <div class="pagination flex flex-wrap">
     <div class="w-1/2 ml-auto text-left">
-      {{ if .PrevInSection }}<button
+      {{ if .PrevInSection }}<a
         class="page-link transition ease-in-out duration-500 bg-transparent hover:bg-grey-500 text-grey-500 font-normal py-4 px-4 xl:py-4 xl:px-6 leading-none text-base xl:text-xl border border-grey-500 rounded-lg lg:inline-block text-center hover:shadow-md"
-        href="{{ .PrevInSection.Permalink }}">&laquo; <span class="self-center text-xs md:text-sm">{{ .PrevInSection.Title | safeHTML | truncate 40 }}</span></button>
+        href="{{ .PrevInSection.Permalink }}">&laquo; <span class="self-center text-xs md:text-sm">{{ .PrevInSection.Title | safeHTML | truncate 40 }}</span></a>
       {{ end }}
     </div>
     <div class="w-1/2 mr-auto text-right">
       {{ if .NextInSection }}
-      <button class="page-link transition ease-in-out duration-500 bg-transparent hover:bg-grey-500 text-grey-500 font-normal py-4 px-4 xl:py-4 xl:px-6 leading-none text-base xl:text-xl border border-grey-500 rounded-lg lg:inline-block text-center hover:shadow-md"
-        href="{{ .NextInSection.Permalink }}"><span class="text-xs md:text-sm">{{ .NextInSection.Title | safeHTML | truncate 40 }}</span> &raquo;</button>
+      <a class="page-link transition ease-in-out duration-500 bg-transparent hover:bg-grey-500 text-grey-500 font-normal py-4 px-4 xl:py-4 xl:px-6 leading-none text-base xl:text-xl border border-grey-500 rounded-lg lg:inline-block text-center hover:shadow-md"
+        href="{{ .NextInSection.Permalink }}"><span class="text-xs md:text-sm">{{ .NextInSection.Title | safeHTML | truncate 40 }}</span> &raquo;</a>
       {{ end }}
     </div>
   </div>
