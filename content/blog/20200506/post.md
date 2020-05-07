@@ -20,13 +20,13 @@ A kísérletünk idejére egyik partnerünk rendelkezésünkre bocsájtotta a we
 
 ## Egy tipikus Facebook hirdetés élettörténete
  
-A legegyszerűbb ha megbízunk egy erre szakosodott marketing ügynökséget (pedálul az OnBased Group Kft.-t :) ), a hirdetésünk elkészítésével, de természetesen magunk is kézbe vehetjük a dolgokat. Gondoljuk át a kreatív elkészítése előtt, milyen kampányt szeretnénk indítani, ütközik-e esetleg a Facebook hirdetési szabályzatával a tervezett reklám, mi lesz a célközönségünk, hogyan szeretnénk megszólítani őket, mekkora költségkeretet célszerű beállítani és így tovább. Ha minden paramétert átgondoltunk és beállítottunk, elkészíttethetjük a hirdetésünk kreatív anyagát és már csak a Facebook "áldását" kell megvárni hogy ráengedhessük a kampányunkat a világra.
+A legegyszerűbb ha megbízunk egy erre szakosodott marketing ügynökséget (pedálul az OnBased Group Kft.-t :) ), a hirdetésünk elkészítésével, de természetesen magunk is kézbe vehetjük a dolgokat. Gondoljuk át a kreatív elkészítése előtt, milyen kampányt szeretnénk indítani, ütközik-e esetleg a Facebook hirdetési szabályzatával a tervezett reklám, mi lesz a célközönségünk, hogyan szeretnénk megszólítani őket, mekkora költségkeretet célszerű beállítani és így tovább. Ha minden paramétert átgondoltunk és beállítottunk, elkészíthetjük a hirdetésünk kreatív anyagát és már csak a Facebook "áldását" kell megvárni, hogy ráengedhessük a kampányunkat a világra.
 
-Tapasztalatunk szerint a legtöbb ügyfél, ha maga adja fel a hirdetését nem szokott A/B tesztet beállítani, holott a Facebook marketing gépezet erre lehetőséget kínál a célközönségünk vagy akár a kreatív tartalmunk tekintetében is. Ez gyakorlatilag azt jelenti, hogy két verzió tudunk a hirdetésünkből párhuzamosan futtatni, ezzel megadva magunknak a lehetőséget, hogy a jobban teljesítővel dolgozzunk később tovább.
+Tapasztalatunk szerint a legtöbb ügyfél, ha maga adja fel a hirdetését nem szokott A/B tesztet beállítani, holott a Facebook marketing gépezete erre lehetőséget kínál a célközönségünk, vagy akár a kreatív tartalmunk tekintetében is. Ez gyakorlatilag azt jelenti, hogy két verzió tudunk a hirdetésünkből párhuzamosan futtatni, ezzel megadva magunknak a lehetőséget, hogy a jobban teljesítővel dolgozzunk később tovább.
 
 Tipikus hiba még, hogy a Facebook Pixel szolgáltatás bekapcsolását is el szokták mulasztani egyesek. Ezzel komoly információs hátrányba kerülve a kampány végén. Nézzük meg mire is jó (többek között) a Facebook Pixel.
 
-Egy forgalom típusú kampány végén a következő információk állnak tipikusan a rendelkezésünkre Facebook Pixel nélkül:
+Egy forgalom típusú kampány végén a következő információk állnak a rendelkezésünkre Facebook Pixel nélkül:
 
 
 !["Facebook Pixel disabled"](../pixeloff.png)
@@ -37,7 +37,7 @@ Felmerülhet a kérdés, hogy vajon jó-e ez nekünk?
 
 !["questionmark"](../question.jpg)
 
-Persze annak lehet örülni, hogy 5600 forintért 122 embert (potenciális vevőt!) csalogattunk a honlapunkra, magyarul 46 forintot kellett fizetnünk egy lehetséges vásárlóért, de a bennünk lakozó közgazdásznak ez vélhetően kevés... Honnan tudom meg, hogy megérte-e ez a 5600 forint??? 
+Persze annak lehet örülni, hogy 5600 forintért 122 embert (potenciális vevőt!) csalogattunk a honlapunkra, magyarul 46 forintot kellett fizetnünk egy lehetséges vásárlóért, de a bennünk lakozó közgazdásznak ez vélhetően kevés... Honnan tudom meg, hogy megérte-e ez a 5600 forint???
 
 Két hírünk van, egy jó és egy rossz... A jó hír, hogy erre való a Facebook Pixel, hogy ezt ki tudjuk deríteni, a rossz hírünk pedig az, hogy ezért sajnos tennünk kell valamit, és nem utólag, hanem még a hirdetés elindítása előtt! 
 
