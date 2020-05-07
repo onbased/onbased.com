@@ -10,17 +10,17 @@ seo:
     Facebook hirdetés elkészítése
 author: Papp Albert
 title:  Facebook hirdetés mire érdemes figyelnünk?
-description: Szinte mindenki fel tud adni egy hirdetést a Facebookon, így felmerülhet a kérdés, hogy miért foglalkozunk akkor mi most ezzel a témával? Az internet hemzseg a különböző segédanyagoktól, de a tapasztalatunk az, hogy az ördög itt is a részletekben rejli. Ennek megfelelően szeretnénk megmutatni, hogy megítélésünk szerint melyek azok a minimális beállítások, amivel érdemes nekilátani egy Facebook hirdetésnek.
+description: Szinte mindenki fel tud adni egy hirdetést a Facebookon, így felmerülhet a kérdés, hogy miért foglalkozunk akkor mi most ezzel a témával? Az internet hemzseg a különböző segédanyagoktól, de a tapasztalatunk az, hogy az ördög itt is a részletekben rejli. Ennek megfelelően szeretnénk megmutatni, hogy megítélésünk szerint melyek azok a minimális beállítások, amivel érdemes nekilátni egy Facebook hirdetésnek.
 date: 2020-05-07
 thumbnail: 
 ---
 
-A kísérletünk idejére egyik partnerünk rendelkezésünkre bocsájtotta a webshopját. Az hogy milyen termékeket próbálunk értékesíteni a webshopunkban most a cikk szempontjából lényegtelen, az itt bemutatott technikák szinte minden bolt esetében alkalmazhatóak. 
+A kísérletünk idejére egyik partnerünk rendelkezésünkre bocsájtotta a webshopját. Az, hogy milyen termékeket próbálunk értékesíteni a webshopunkban, most a cikk szempontjából lényegtelen, az itt bemutatott technikák szinte minden bolt esetében alkalmazhatóak. 
 
 
 ## Egy tipikus Facebook hirdetés élettörténete
  
-A legegyszerűbb ha megbízunk egy erre szakosodott marketing ügynökséget (pedálul az OnBased Group Kft.-t :) ), a hirdetésünk elkészítésével, de természetesen magunk is kézbe vehetjük a dolgokat. Gondoljuk át a kreatív elkészítés előtt, milyen kampányt szeretnénk indítani, ütközik-e esetleg a Facebook hirdetési szabályzatával a tervezett reklám, mi lesz a célközönségünk, hogyan szeretnénk megszólítani őket, mekkora költségkeretet célszerű beállítani és így tovább. Ha minden paramétert átgondoltunk és beállítottunk, elkészíttethetjük a hirdetésünk kreatív anyagát és már csak a Facebook "áldását" kell megvárni hogy ráengedhessük a kampányunkat a világra.
+A legegyszerűbb ha megbízunk egy erre szakosodott marketing ügynökséget (pedálul az OnBased Group Kft.-t :) ), a hirdetésünk elkészítésével, de természetesen magunk is kézbe vehetjük a dolgokat. Gondoljuk át a kreatív elkészítése előtt, milyen kampányt szeretnénk indítani, ütközik-e esetleg a Facebook hirdetési szabályzatával a tervezett reklám, mi lesz a célközönségünk, hogyan szeretnénk megszólítani őket, mekkora költségkeretet célszerű beállítani és így tovább. Ha minden paramétert átgondoltunk és beállítottunk, elkészíttethetjük a hirdetésünk kreatív anyagát és már csak a Facebook "áldását" kell megvárni hogy ráengedhessük a kampányunkat a világra.
 
 Tapasztalatunk szerint a legtöbb ügyfél, ha maga adja fel a hirdetését nem szokott A/B tesztet beállítani, holott a Facebook marketing gépezet erre lehetőséget kínál a célközönségünk vagy akár a kreatív tartalmunk tekintetében is. Ez gyakorlatilag azt jelenti, hogy két verzió tudunk a hirdetésünkből párhuzamosan futtatni, ezzel megadva magunknak a lehetőséget, hogy a jobban teljesítővel dolgozzunk később tovább.
 
