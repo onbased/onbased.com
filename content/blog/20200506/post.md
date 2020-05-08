@@ -10,7 +10,7 @@ seo:
     Facebook hirdetés elkészítése
 author: Papp Albert
 title:  Facebook hirdetés mire érdemes figyelnünk?
-description: Szinte mindenki fel tud adni egy hirdetést a Facebookon, így felmerülhet a kérdés, hogy miért foglalkozunk akkor mi most ezzel a témával? Az internet hemzseg a különböző segédanyagoktól, de a tapasztalatunk az, hogy az ördög itt is a részletekben rejli. Ennek megfelelően szeretnénk megmutatni, hogy megítélésünk szerint melyek azok a minimális beállítások, amivel érdemes nekilátni egy Facebook hirdetésnek.
+description: Szinte mindenki fel tud adni egy hirdetést a Facebookon, így felmerülhet a kérdés, hogy miért foglalkozunk akkor mi most ezzel a témával? Az internet hemzseg a különböző segédanyagoktól, de a tapasztalatunk az, hogy az ördög itt is a részletekben rejlik. Ennek megfelelően szeretnénk megmutatni, hogy megítélésünk szerint melyek azok a minimális beállítások, amivel érdemes nekilátni egy Facebook hirdetésnek.
 date: 2020-05-07
 thumbnail: 
 ---
