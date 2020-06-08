@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "OnBased Marketing"
 theme = "onbased-marketing-theme"
 googleAnalytics = "UA-161432911-2"
+
+[params]
+    addThis = "ra-5ede4e3a20ffb4cd"
