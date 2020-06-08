@@ -1,8 +1,8 @@
 [context.production.environment]
-  HUGO_VERSION = "0.55.4"
+  HUGO_VERSION = "0.65.3"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.55.4"
+  HUGO_VERSION = "0.65.3"
 
 [build]
   command = "pushd themes/onbased-marketing-theme; npm install -g autoprefixer; npm install -g postcss-cli; npm install; popd; hugo --gc --minify --baseURL https://marketing.onbased.com --destination public --i18n-warnings --verbose"
