@@ -23,7 +23,7 @@ A következőkben bemutatjuk milyen eszközöket tartunk létfontosságúnak az 
 
 **TECHNIKAI SEO ESZKÖZÖK** 
 
-1. Elengedhetetlen hogy beállítsuk a [Google Analytics](http://www.google.com/analytics/)-et az optimalizálandó honlapunkon. Ezen eszköz nélkül csak nagyon körülményesen tudnánk honlapunk SEO adatait, forgalmát vagy megtérülési mutatóit megmérni. Célszerű a [**Ahrefs**](https://ahrefs.com/) szolgáltatás használata is, hogy kideríthessük milyen helyezést ért el site-unk a kulcsszavak vagy akár a link építés terén. Jó ha napi kaőcsolatba kerülünk még a következő szolgáltatásokkal is: [OpensiteExplorer](https://moz.com/researchtools/ose/), [MajesticSEO](https://majestic.com/) vagy a [Semrush](https://www.semrush.com/).
+1. Elengedhetetlen hogy beállítsuk a [Google Analytics](http://www.google.com/analytics/)-et az optimalizálandó honlapunkon. Ezen eszköz nélkül csak nagyon körülményesen tudnánk honlapunk SEO adatait, forgalmát vagy megtérülési mutatóit megmérni. Célszerű a [**Ahrefs**](https://ahrefs.com/) szolgáltatás használata is, hogy kideríthessük milyen helyezést ért el site-unk a kulcsszavak vagy akár a link építés terén. Jó ha napi kapcsolatba kerülünk még a következő szolgáltatásokkal is: [OpensiteExplorer](https://moz.com/researchtools/ose/), [MajesticSEO](https://majestic.com/) vagy a [Semrush](https://www.semrush.com/).
 
 2. WordPress-et használsz? Mindenképpen próbáld ki a [**Yoast SEO  Plugin-t**](https://wordpress.org/plugins/wordpress-seo/). Rendkívüli módon meg fogja könnyíteni az életedet, és lehetővé teszi hogy alapból egy csomó már kipróbált SEO módszert alkalmazz egy helyen.
 
