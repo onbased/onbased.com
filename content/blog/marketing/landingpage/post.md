@@ -44,26 +44,26 @@ Az AIDA egy négy részből álló modell; egy mozaikszó, mely angol szavak kez
 
 Tulajdonképpen azt foglalja össze, hogy hogyan is kellene egy hirdetési folyamatnak kinéznie. Az alábbiakból tevődik össze:
 
-### Attention – a figyelem felkeltése – az első lépés. 
+### ***A*** ttention – a figyelem felkeltése – az első lépés. 
 
 Fel kell keltenünk a látogató figyelmét. Ezt megtehetjük egy facbook hirdetéssel, poszttal vagy valamilyen képi elemmel, szöveggel is.
 
 
-### Interest – az érdeklődés felkeltése – a második lépés. 
+### ***I*** nterest – az érdeklődés felkeltése – a második lépés. 
 
 Ha a látogató figyelme már a miénk – pontosabban az oldalé – akkor meg kell ragadni az érdeklődésüket is. Alább egy klasszikus érdeklődés felkeltésére alkalmas rész található:
 
 !["Grab interest"](../interest.png)
 
 
-### Desire – a vágy felkeltése. 
+### ***D*** esire – a vágy felkeltése. 
 
 Az érdeklődő ember vágyát könnyebb felkelteni. Itt kell meggyőznünk arról, hogy a landoló oldal tartalmára, azaz maga a kampányra, vagy promócióra a látogatónak szüksége van.
 
 Ez szinte minden esetben az előnyök kihangsúlyozását jelenti s pl. a termék árának jól látható megjelenítése, azt is hozzátéve, hogy az mennyivel olcsóbb/szebb/jobb.
 
 
-### Action – a cél elérése, a cselekvés – 
+### ***A*** ction – a cél elérése, a cselekvés – 
 
 A vágy sikeres felkeltésével már csak egy dolgunk maradt: elérni, hogy a látogató a lehető legkevesebb erőfeszítéssel elégíthesse ki a most felkeltett vágyát. Ugyanis ha nem kínáljuk neki tálcán a lehetőséget, hogy ezt megtegye, máris elvesztettük.
 Éppen ezért az oldalakon az egyik legszembetűnőbb elemnek pontosan az aktiválásra szolgáló részeknek kell lenniük.  (Gondoljunk bele, hogy miért a kosárba gomb tűnik ki mindig egy termékoldalon).
