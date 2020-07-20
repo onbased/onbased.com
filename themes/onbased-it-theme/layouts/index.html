@@ -16,6 +16,7 @@
 {{ $iconShopify := resources.Get "../assets/img/icons/icon-shopify.svg" | minify | fingerprint }}
 {{ $aboutpic := resources.Get "../assets/img/Whiteboardman.svg" | minify | fingerprint }}
 {{ $girl := resources.Get "../assets/img/chartgirl.svg" | minify | fingerprint }}
+{{ $ambiental1 := resources.Get "../assets/img/ambiental/3FindingsiPhone6.5_.png" | minify | fingerprint }}
 
 {{ $lh := resources.Get "../assets/img/lhgroup.png" | fingerprint }}
 {{ $id1 := resources.Get "../assets/img/id1.png" | fingerprint }}
@@ -139,6 +140,23 @@
             </div>
         </div>
     </section><!-- steps -->
+
+    <section class="container mx-auto mb-20 lg:mb-40" id="4w" name="4w">
+        <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div class="border-b border-l border-t border-gray-400 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+                <img src="{{ $ambiental1.Permalink }}"
+                    alt="">
+            </div>
+            <div class="border-r border-b border-t border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div class="mb-8">
+                <div class="text-gray-900 font-bold text-xl mb-2">Ambiental</div>
+                <p class="text-gray-700 text-base">Create beautiful pdf reports in the blink of an eye!</p>
+              </div>
+              <div class="flex items-center">
+              </div>
+            </div>
+          </div>
+    </section>
 
     <section class="container mx-auto mb-20 lg:mb-40 " id="4w" name="4w">
         <div class="flex flex-wrap mb-4 px-8 md:px-12">
