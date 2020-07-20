@@ -16,7 +16,9 @@
 {{ $iconShopify := resources.Get "../assets/img/icons/icon-shopify.svg" | minify | fingerprint }}
 {{ $aboutpic := resources.Get "../assets/img/Whiteboardman.svg" | minify | fingerprint }}
 {{ $girl := resources.Get "../assets/img/chartgirl.svg" | minify | fingerprint }}
-{{ $ambiental1 := resources.Get "../assets/img/ambiental/3FindingsiPhone6.5_.png" | minify | fingerprint }}
+{{ $ambiental1 := resources.Get "../assets/img/ambiental/mobile-1.png" | minify | fingerprint }}
+{{ $ambiental2 := resources.Get "../assets/img/ambiental/mobile-2.png" | minify | fingerprint }}
+{{ $ambiental3 := resources.Get "../assets/img/ambiental/mobile-3.png" | minify | fingerprint }}
 
 {{ $lh := resources.Get "../assets/img/lhgroup.png" | fingerprint }}
 {{ $id1 := resources.Get "../assets/img/id1.png" | fingerprint }}
@@ -48,6 +50,7 @@
     <meta property="og:image" content="https://it.onbased.com/onbased_marketing.png">
     <meta property="og:url" content="https://it.onbased.com">
     <meta property="article:author" content="OnBased Group">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.5.0/dist/alpine.js" defer></script>
     <!-- Main Style -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,7 +86,8 @@
     <div class="container mx-auto mb-20 lg:mb-40">
         <div class="flex flex-wrap items-center mb-4 px-8 md:px-12">
             <div class="w-full lg:w-1/2">
-                <h1 class="text-3xl lg:text-4xl xl:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Quality is the best business plan!</h1>
+                <h1 class="text-3xl lg:text-4xl xl:text-6xl font-bold mb-4 lg:mb-8 leading-tight">Quality is the best
+                    business plan!</h1>
                 <p class="mb-6 text-2xl">
                     Software solutions you can rely on.
                     <!-- <br /><br />
@@ -106,8 +110,7 @@
         <div class="flex flex-wrap mb-4 px-8 md:px-12">
             <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
                 <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-8 leading-tight">About us...</h2>
-                <img src="{{ $aboutpic.Permalink }}"
-                    alt="">
+                <img src="{{ $aboutpic.Permalink }}" alt="">
             </header>
             <div class="w-full lg:w-2/3">
                 <div class="flex md:-mx-4 flex-wrap mb-4 lg:px-0">
@@ -117,7 +120,8 @@
                             responsive and work on any screen.</p> -->
                     </article>
                     <article class="w-full mb-8 lg:mb-4 md:px-4">
-                        <p class="text-2xl mb-4 text-left">We are focused on backend and mobile application development.</p>
+                        <p class="text-2xl mb-4 text-left">We are focused on backend and mobile application development.
+                        </p>
                         <!-- <p>No matter where your emails appear, they maintain the same high quality look. We test on all
                             major email clients like Outlook, Gmail, IOS, Android, and more.</p> -->
                     </article>
@@ -128,64 +132,105 @@
                     </article>
                     <article class="flex flex-wrap w-full mb-8 lg:mb-10 md:px-4">
 
-                       <img src="{{ $id1.Permalink }}"
-                            alt="" class="block mb-4"/>
-                        <img src="{{ $lh.Permalink }}"
-                            alt="" class="block mb-4"/>
-                        <img src="{{ $dfs.Permalink }}"
-                            alt="" class="block mb-4"/>
+                        <img src="{{ $id1.Permalink }}" alt="" class="block mb-4" />
+                        <img src="{{ $lh.Permalink }}" alt="" class="block mb-4" />
+                        <img src="{{ $dfs.Permalink }}" alt="" class="block mb-4" />
 
                     </article>
                 </div>
             </div>
         </div>
-    </section><!-- steps -->
+    </section><!-- references -->
 
-    <section class="container mx-auto mb-20 lg:mb-40" id="4w" name="4w">
-        <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div class="border-b border-l border-t border-gray-400 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-                <img src="{{ $ambiental1.Permalink }}"
-                    alt="">
+    <section class="container mx-auto mb-20 lg:mb-40" id="breferences" name="breferences">
+        <div class="flex mb-4 p-6">
+            <div class="w-1/3 border-r border-t border-b border-l lg:border-l lg:border-t rounded-t lg:rounded-t-none lg:rounded-l">
+                <div style="height: 50vh;" class="gallery flex-grow relative mx-auto " x-data="gallery()"
+                    x-init="init()">
+                    <div class="gallery__item sm:rounded-lg overflow-hidden">
+                        <img src="{{ $ambiental1.Permalink }}" alt="Image"
+                            class="gallery__image object-contain object-center" title="Lorem ipsum">
+                    </div>
+                    <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
+                        <img src="{{ $ambiental2.Permalink }}" alt="Image"
+                            class="gallery__image object-contain object-center" title="Lorem ipsum">
+                    </div>
+                    <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
+                        <img src="{{ $ambiental3.Permalink }}" alt="Image"
+                            class="gallery__image object-contain object-center" title="Lorem ipsum">
+                    </div>
+
+                    <a class="gallery__nav gallery__nav--right text-white bg-blue-900 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"
+                        x-on:click="next()">
+                        <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                            <path
+                                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="gallery__nav gallery__nav--left text-white bg-blue-900 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"
+                        x-on:click="previous()">
+                        <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                            <path
+                                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <div class="border-r border-b border-t border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div class="mb-8">
-                <div class="text-gray-900 font-bold text-xl mb-2">Ambiental</div>
-                <p class="text-gray-700 text-base">Create beautiful pdf reports in the blink of an eye!</p>
-              </div>
-              <div class="flex items-center">
-              </div>
+            <div class="w-2/3 border-r border-b border-l lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r">
+                <div
+                    class="p-6 flex flex-col justify-between leading-normal max-w-sm w-full lg:max-w-full">
+                    <div class="mb-8">
+                        <p class="text-sm text-gray-600 flex items-center">
+                        </p>
+                        <h3 class="text-3xl mb-4">Ambiental</h3>
+
+                        <p class="text-xl mb-4">Create beautiful pdf reports in the blink of an eye!</p>
+
+                    </div>
+                    <!-- <div class="w-full text-right">
+                        <div class="text-sm">
+                            <p class="text-gray-900 leading-none">asdasd</p>
+                            <p class="text-gray-600 mt-2">2006 Jan 2</p>
+                        </div>
+                    </div> -->
+                </div>
             </div>
-          </div>
-    </section>
+        </div>
+    </section><!-- what can we do for you? -->
 
     <section class="container mx-auto mb-20 lg:mb-40 " id="4w" name="4w">
         <div class="flex flex-wrap mb-4 px-8 md:px-12">
             <div class="w-full lg:w-2/3">
-             <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-8 leading-tight">What can we do for you?</h2>
-             
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-8 leading-tight">What can we do for
+                    you?</h2>
+
                 <div class="flex md:-mx-4 flex-wrap mb-4 lg:px-0">
                     <article class="w-full mb-8 lg:mb-4 md:px-4">
-                        <p class="text-2xl mb-4 text-left">We have over 15 years of IT experience in multi-cultural environment</p>
+                        <p class="text-2xl mb-4 text-left">We have over 15 years of IT experience in multi-cultural
+                            environment</p>
                         <!-- <p>Emails are essential to every business. That’s why we make sure all your email designs are
                             responsive and work on any screen.</p> -->
                     </article>
                     <article class="w-full mb-8 lg:mb-4 md:px-4">
-                        <p class="text-2xl mb-4 text-left">We manage and develop our projects with high quality and great punctuality</p>
+                        <p class="text-2xl mb-4 text-left">We manage and develop our projects with high quality and
+                            great punctuality</p>
                         <!-- <p>No matter where your emails appear, they maintain the same high quality look. We test on all
                             major email clients like Outlook, Gmail, IOS, Android, and more.</p> -->
                     </article>
                     <article class="w-full mb-8 lg:mb-4 md:px-4">
-                        <p class="text-2xl mb-4 text-left">We believe that satisfied customers are the key to success</p>
+                        <p class="text-2xl mb-4 text-left">We believe that satisfied customers are the key to success
+                        </p>
                         <!-- <p>You’re in control. Easily manage the content of your emails, including text and images, with
                             mailchimp integration.</p> -->
                     </article>
-                    
+
                 </div>
             </div>
 
             <header class="w-full lg:w-1/3 lg:pr-4 mb-8">
-                  <img src="{{ $girl.Permalink }}"
-                    alt="">
+                <img src="{{ $girl.Permalink }}" alt="">
             </header>
         </div>
     </section><!-- steps -->

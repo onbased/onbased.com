@@ -12,3 +12,6 @@
         </div>
     </div>
 </footer>
+
+{{ $galleryjs := resources.Get "js/gallery.js" | minify | fingerprint }}
+<script src="{{ $galleryjs.Permalink }}"></script>
