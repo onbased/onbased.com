@@ -16,9 +16,16 @@
 {{ $iconShopify := resources.Get "../assets/img/icons/icon-shopify.svg" | minify | fingerprint }}
 {{ $aboutpic := resources.Get "../assets/img/Whiteboardman.svg" | minify | fingerprint }}
 {{ $girl := resources.Get "../assets/img/chartgirl.svg" | minify | fingerprint }}
-{{ $ambiental1 := resources.Get "../assets/img/ambiental/mobile-1.png" | minify | fingerprint }}
-{{ $ambiental2 := resources.Get "../assets/img/ambiental/mobile-2.png" | minify | fingerprint }}
-{{ $ambiental3 := resources.Get "../assets/img/ambiental/mobile-3.png" | minify | fingerprint }}
+{{ $ambiental1 := resources.Get "../assets/img/ambiental/mobile-1.png" | fingerprint }}
+{{ $ambiental2 := resources.Get "../assets/img/ambiental/mobile-2.png" | fingerprint }}
+{{ $ambiental3 := resources.Get "../assets/img/ambiental/mobile-3.png" | fingerprint }}
+{{ $ambientalLogo := resources.Get "../assets/img/ambiental/logo.svg" | minify | fingerprint }}
+{{ $tt1 := resources.Get "../assets/img/turultrail/mobile-1.jpg" | fingerprint }}
+{{ $tt2 := resources.Get "../assets/img/turultrail/mobile-2.jpg" | fingerprint }}
+{{ $tt3 := resources.Get "../assets/img/turultrail/mobile-3.jpg" | fingerprint }}
+{{ $tt4 := resources.Get "../assets/img/turultrail/mobile-4.jpg" | fingerprint }}
+{{ $tt5 := resources.Get "../assets/img/turultrail/mobile-5.jpg" | fingerprint }}
+{{ $ttLogo := resources.Get "../assets/img/turultrail/logo.png" | fingerprint }}
 
 {{ $lh := resources.Get "../assets/img/lhgroup.png" | fingerprint }}
 {{ $id1 := resources.Get "../assets/img/id1.png" | fingerprint }}
@@ -62,7 +69,42 @@
 
 </head>
 
-<body>
+<body :class="{ 'overflow-hidden': isDialogOpen }" x-data="{ 
+        isDialogOpen: false,
+        title: '',
+        activeSlide: 1,
+        slides: [],
+        references: [
+            {
+                logo: '{{ $ambientalLogo.Permalink }}' ,
+                description: 'Create beautiful pdf reports in the blink of an eye!',
+                value: {
+                    title: 'Ambiental',
+                    activeSlide: 1,
+                    slides: [
+                        { id: 1, image: '{{ $ambiental1.Permalink }}' },
+                        { id: 2, image: '{{ $ambiental2.Permalink }}' },
+                        { id: 3, image: '{{ $ambiental3.Permalink }}' },
+                    ]
+                },
+            },
+            {
+                logo: '{{ $ttLogo.Permalink }}' ,
+                description: 'This app makes possible to complete trail running events like Turul trail in Hungary Tatabánya.',
+                value: {
+                    title: 'Turul Trail',
+                    activeSlide: 1,
+                    slides: [
+                        { id: 1, image: '{{ $tt1.Permalink }}' },
+                        { id: 2, image: '{{ $tt2.Permalink }}' },
+                        { id: 3, image: '{{ $tt3.Permalink }}' },
+                        { id: 4, image: '{{ $tt4.Permalink }}' },
+                        { id: 5, image: '{{ $tt5.Permalink }}' },
+                    ]
+                },
+            }
+        ]
+    }" @keydown.escape="isDialogOpen = false" @keydown.left="activeSlide = activeSlide - 1">
     <!-- Nav -->
     <div class="container mx-auto">
         <div class="flex flex-wrap items-center mt-8 px-1 sm:px-8">
@@ -130,11 +172,11 @@
                         <!-- <p>You’re in control. Easily manage the content of your emails, including text and images, with
                             mailchimp integration.</p> -->
                     </article>
-                    <article class="flex flex-wrap w-full mb-8 lg:mb-10 md:px-4">
+                    <article class="flex flex-wrap w-full justify-center content-center">
 
-                        <img src="{{ $id1.Permalink }}" alt="" class="block mb-4" />
-                        <img src="{{ $lh.Permalink }}" alt="" class="block mb-4" />
-                        <img src="{{ $dfs.Permalink }}" alt="" class="block mb-4" />
+                        <img src="{{ $id1.Permalink }}" alt="" class="m-5 self-center block" />
+                        <img src="{{ $lh.Permalink }}" alt=""  class="m-5 self-center block" />
+                        <img src="{{ $dfs.Permalink }}" alt="" class="m-5 self-center block" />
 
                     </article>
                 </div>
@@ -143,60 +185,107 @@
     </section><!-- references -->
 
     <section class="container mx-auto mb-20 lg:mb-40" id="breferences" name="breferences">
-        <div class="flex mb-4 p-6">
-            <div class="w-1/3 border-r border-t border-b border-l lg:border-l lg:border-t rounded-t lg:rounded-t-none lg:rounded-l">
-                <div style="height: 50vh;" class="gallery flex-grow relative mx-auto " x-data="gallery()"
-                    x-init="init()">
-                    <div class="gallery__item sm:rounded-lg overflow-hidden">
-                        <img src="{{ $ambiental1.Permalink }}" alt="Image"
-                            class="gallery__image object-contain object-center" title="Lorem ipsum">
-                    </div>
-                    <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
-                        <img src="{{ $ambiental2.Permalink }}" alt="Image"
-                            class="gallery__image object-contain object-center" title="Lorem ipsum">
-                    </div>
-                    <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
-                        <img src="{{ $ambiental3.Permalink }}" alt="Image"
-                            class="gallery__image object-contain object-center" title="Lorem ipsum">
-                    </div>
+        <div class="w-full px-8 md:px-12">
+            <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-12 leading-tight">We are proud of</h2>
+            <!-- overlay -->
+            <template
+                x-on:modalshow.window="title = $event.detail.title; activeSlide = $event.detail.activeSlide; slides = $event.detail.slides;"></template>
+            <template x-if="title && activeSlide && slides">
+                <div class="fixed box-border inset-0 w-full h-full z-10" style="background-color: rgba(0,0,0,0.5)"
+                    x-show="isDialogOpen">
+                    <!-- dialog -->
+                    <div class="flex flex-col bg-white z-10 overflow-hidden rounded shadow-2xl box-border w-screen h-screen"
+                        x-show="isDialogOpen" @click.away="isDialogOpen = false">
+                        <!-- <div class="flex justify-between items-center p-2 text-xl">
+                            <h3 class="text-3xl font-black pl-4" x-text="title"></h3>
+                            <button type="button" class="text-3xl pr-2"
+                                @click="isDialogOpen = false; $dispatch('flash', { title: '', activeSlide: 1, slides: [] })">✖</button>
+                        </div> -->
+                        <!-- content -->
+                        <!-- Slides -->
+                        <template x-for="slide in slides" :key="slide.id">
+                            <div class="h-screen w-screen absolute flex justify-center"
+                                x-show="activeSlide === slide.id" x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0 transform scale-90"
+                                x-transition:enter-end="opacity-100 transform scale-100"
+                                x-transition:leave="transition ease-in duration-300"
+                                x-transition:leave-start="opacity-100 transform scale-100"
+                                x-transition:leave-end="opacity-0 transform scale-90">
+                                <img class="h-screen relative self-stretch object-cover object-top" :src="slide.image"
+                                    :class="{ 
+                                            'display': activeSlide === slide.id,
+                                            'display-none': activeSlide !== slide.id 
+                                    }" />
+                            </div>
+                        </template>
 
-                    <a class="gallery__nav gallery__nav--right text-white bg-blue-900 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"
-                        x-on:click="next()">
-                        <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                            <path
-                                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a class="gallery__nav gallery__nav--left text-white bg-blue-900 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"
-                        x-on:click="previous()">
-                        <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                            <path
-                                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="w-2/3 border-r border-b border-l lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r">
-                <div
-                    class="p-6 flex flex-col justify-between leading-normal max-w-sm w-full lg:max-w-full">
-                    <div class="mb-8">
-                        <p class="text-sm text-gray-600 flex items-center">
-                        </p>
-                        <h3 class="text-3xl mb-4">Ambiental</h3>
 
-                        <p class="text-xl mb-4">Create beautiful pdf reports in the blink of an eye!</p>
-
-                    </div>
-                    <!-- <div class="w-full text-right">
-                        <div class="text-sm">
-                            <p class="text-gray-900 leading-none">asdasd</p>
-                            <p class="text-gray-600 mt-2">2006 Jan 2</p>
+                        <!-- Prev/Next Arrows -->
+                        <div class="absolute" style="top: 50%; left: 2rem;">
+                            <button
+                                class="bg-blue-800 text-white hover:text-gray-400 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
+                                x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">
+                                &#8592;
+                            </button>
                         </div>
-                    </div> -->
+                        <div class="absolute" style="top: 50%; right: 2rem;">
+                            <button
+                                class="bg-blue-800 text-white hover:text-gray-400 font-bold hover:shadow rounded-full w-12 h-12 -mr-6"
+                                x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">
+                                &#8594;
+                            </button>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="absolute" style="top: 1rem; right: 2rem;">
+                            <button type="button"
+                                class="bg-blue-800 text-white hover:text-gray-400 font-bold hover:shadow rounded-full w-12 h-12 text-xl -mr-6"
+                                @click="isDialogOpen = false; $dispatch('flash', { title: '', activeSlide: 1, slides: [] })">
+                                ✕</button>
+                        </div>
+
+                        <div class="fixed bottom-0 pb-2 w-full flex items-center justify-center px-4">
+                            <div class="">
+                                <template x-for="slide in slides" :key="slide.id">
+                                    <button
+                                        class="flex-1 w-8 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-blue-600 hover:shadow-lg"
+                                        :class="{ 
+                                                'bg-orange-600': activeSlide === slide.id,
+                                                'bg-blue-300': activeSlide !== slide.id 
+                                            }" x-on:click="activeSlide = slide.id">
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+                    </div><!-- /dialog -->
+                </div><!-- /overlay -->
+            </template>
+
+            <template x-for="reference in references" :key="reference.logo">
+                <!-- a reference -->
+                <div class="mx-auto my-8 w-full justify-center lg:flex cursor-pointer"
+                    @click="isDialogOpen = true; $dispatch('modalshow', reference.value)">
+                    <div class="flex hover:shadow-xl w-full border rounded lg:border-none">
+                        <div
+                            class="flex justify-center items-center w-1/4 pl-4 lg:border rounded-t rounded-b-none lg:rounded-t-none lg:rounded-l overflow-hidden">
+                            <img class="m-8 h-20" :src="reference.logo" alt="Ambiental logo" title="Ambiental logo" />
+                        </div>
+                        <div
+                            class="w-full lg:border-t lg:border-b lg:border-r bg-white rounded-b lg:rounded-b-none lg:rounded-r">
+                            <div class="p-6 flex flex-col justify-between leading-normal w-full">
+                                <div class="mb-4">
+                                    <p class="text-sm text-gray-600 flex items-center">
+                                    </p>
+                                    <h3 class="text-3xl mb-4" x-text="reference.value.title"></h3>
+                                    <p class="text-xl text-justify" x-text="reference.description"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </template>
+            <!-- end of a reference -->
+
         </div>
     </section><!-- what can we do for you? -->
 

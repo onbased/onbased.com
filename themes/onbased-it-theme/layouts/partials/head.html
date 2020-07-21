@@ -35,12 +35,6 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="article:author" content="{{ .Params.Author }}">
 
-{{ $gallery := resources.Get "css/gallery.css" | minify | fingerprint }}
-{{ $galleryanimation := resources.Get "css/gallery_animation.css" | minify | fingerprint }}
-
-<link rel="stylesheet" href="{{ $gallery.Permalink }}">
-<link rel="stylesheet" href="{{ $galleryanimation.Permalink }}">
-
 {{ if .Site.IsServer }}
 {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">

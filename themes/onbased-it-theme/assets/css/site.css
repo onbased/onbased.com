@@ -195,7 +195,7 @@ button::-moz-focus-inner {
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring,
 button:-moz-focusring {
-  outline: 1px dotted ButtonText
+  outline: none; /*1px dotted ButtonText*/
 }
 
 fieldset {
@@ -282,8 +282,9 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color
+  outline: none;
+  /* outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color */
 }
 
 fieldset,
