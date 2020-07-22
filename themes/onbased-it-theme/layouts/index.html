@@ -26,6 +26,12 @@
 {{ $tt4 := resources.Get "../assets/img/turultrail/mobile-4.jpg" | fingerprint }}
 {{ $tt5 := resources.Get "../assets/img/turultrail/mobile-5.jpg" | fingerprint }}
 {{ $ttLogo := resources.Get "../assets/img/turultrail/logo.png" | fingerprint }}
+{{ $eflyr1 := resources.Get "../assets/img/eFLYR/mobile-1.png" | fingerprint }}
+{{ $eflyr2 := resources.Get "../assets/img/eFLYR/mobile-2.png" | fingerprint }}
+{{ $eflyr3 := resources.Get "../assets/img/eFLYR/mobile-3.png" | fingerprint }}
+{{ $eflyr4 := resources.Get "../assets/img/eFLYR/mobile-4.png" | fingerprint }}
+{{ $eflyrVideo1 := resources.Get "../assets/img/eFLYR/mobile-video-1.mp4" | fingerprint }}
+{{ $eflyrLogo := resources.Get "../assets/img/eflyr/logo.svg" | minify | fingerprint }}
 
 {{ $lh := resources.Get "../assets/img/lhgroup.png" | fingerprint }}
 {{ $id1 := resources.Get "../assets/img/id1.png" | fingerprint }}
@@ -102,6 +108,21 @@
                         { id: 5, image: '{{ $tt5.Permalink }}' },
                     ]
                 },
+            },
+            {
+                logo: '{{ $eflyrLogo.Permalink }}' ,
+                description: 'Publishing advertisements has never been easier!\neFLYR will optimize your campaign for you, the only thing you need to care about is its content:',
+                value: {
+                    title: 'eFLYR',
+                    activeSlide: 1,
+                    slides: [
+                        { id: 1, image: '{{ $eflyr1.Permalink }}' },
+                        { id: 2, image: '{{ $eflyr2.Permalink }}' },
+                        { id: 3, image: '{{ $eflyr3.Permalink }}' },
+                        { id: 4, image: '{{ $eflyr4.Permalink }}' },
+                        { id: 5, video: '{{ $eflyrVideo1.Permalink }}' },
+                    ]
+                },
             }
         ]
     }" @keydown.escape="isDialogOpen = false" @keydown.left="activeSlide = activeSlide - 1">
@@ -175,7 +196,7 @@
                     <article class="flex flex-wrap w-full justify-center content-center">
 
                         <img src="{{ $id1.Permalink }}" alt="" class="m-5 self-center block" />
-                        <img src="{{ $lh.Permalink }}" alt=""  class="m-5 self-center block" />
+                        <img src="{{ $lh.Permalink }}" alt="" class="m-5 self-center block" />
                         <img src="{{ $dfs.Permalink }}" alt="" class="m-5 self-center block" />
 
                     </article>
@@ -211,11 +232,28 @@
                                 x-transition:leave="transition ease-in duration-300"
                                 x-transition:leave-start="opacity-100 transform scale-100"
                                 x-transition:leave-end="opacity-0 transform scale-90">
-                                <img class="h-screen relative self-stretch object-cover object-top" :src="slide.image"
-                                    :class="{ 
+                                <template x-if="slide.image">
+                                    <img class="h-screen relative self-stretch object-cover object-top"
+                                        :src="slide.image" :class="{ 
                                             'display': activeSlide === slide.id,
                                             'display-none': activeSlide !== slide.id 
                                     }" />
+                                </template>
+                                <template x-if="slide.video">
+                                    <video class="h-screen relative self-stretch object-cover object-top"
+                                        autoplay="autoplay" loop="loop" muted="" playsinline="playsinline" preload="none"    
+                                        :src="slide.video" :class="{ 
+                                            'display': activeSlide === slide.id,
+                                            'display-none': activeSlide !== slide.id 
+                                    }">
+                                    </video>
+
+                                    <!-- <video class="animated fadeIn delay-02s" autoplay="autoplay" loop="loop" muted="" playsinline="playsinline" poster="images/thumbnail.jpg" preload="none">
+                                        <source src="images/video.hevc.mp4" type="video/mp4; codecs=hevc">
+                                        <source src="images/video.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+                                        <source src="images/video.h264.mp4" type="video/mp4; codecs=avc1.4D401E">
+                                    </video> -->
+                                </template>
                             </div>
                         </template>
 
@@ -268,7 +306,7 @@
                     <div class="flex hover:shadow-xl w-full border rounded lg:border-none">
                         <div
                             class="flex justify-center items-center w-1/4 pl-4 lg:border rounded-t rounded-b-none lg:rounded-t-none lg:rounded-l overflow-hidden">
-                            <img class="m-8 h-20" :src="reference.logo" alt="Ambiental logo" title="Ambiental logo" />
+                            <img class="m-8 h-20 w-20" :src="reference.logo" alt="Ambiental logo" title="Ambiental logo" />
                         </div>
                         <div
                             class="w-full lg:border-t lg:border-b lg:border-r bg-white rounded-b lg:rounded-b-none lg:rounded-r">
