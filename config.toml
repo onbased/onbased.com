@@ -53,7 +53,7 @@ copyright = "Everything is mine"
 # Available icons: http://simplelineicons.com/
 [languages.en.intro]
   title = "Our company"
-  description = "Since 2008 we have been engaged in software design and development, and the experience gained from this has served as a successful basis for the development of a new service, mobile application development. We know that mobile devices are playing an increasingly important role, as well as application development for these devices."
+  description = "Since 2004 we have been engaged in software design and development, and the experience gained from this has served as a successful basis for the development of a new service, mobile application development. We know that mobile devices are playing an increasingly important role, as well as application development for these devices."
 
 [[languages.en.intro.item]]
   title = "Software Engineering"
@@ -319,7 +319,7 @@ copyright = "Everything is mine"
   description = "Get in touch"
   socialTitle = "Follow us"
   details = [
-    ["icon-home", "2800 Tatabanya Ibolya utca 12.</br>Hungary"],
+    ["icon-home", "1066 Budapest Dessewffy u. 18-20. </br>Hungary"],
     ["icon-phone", '<a href="tel: +36 30 559 1118" target="_blank">+36 30 559 1118</a>'],
     ["icon-envelope", '<span itemprop="telephone"><a href="mailto:info@onbased.com" target="_blank">info@onbased.com</a></span>'],
     ["icon-globe", '<a href="https://onbased.com" target="_blank">onbased.com</a>']
@@ -380,7 +380,7 @@ copyright = "Everything is mine"
 
 [languages.de.intro]
   title = "Unsere Firma"
-  description = "Seit 2008 beschäftigen wir uns mit Softwaredesign und -entwicklung und nutzen diese als erfolgreiche Basis für die Entwicklung eines neuen Dienstes, der Entwicklung mobiler Anwendungen. Wir wissen, dass mobile Geräte eine immer wichtigere Rolle spielen, ebenso wie die Anwendungsentwicklung für diese Geräte."
+  description = "Seit 2004 beschäftigen wir uns mit Softwaredesign und -entwicklung und nutzen diese als erfolgreiche Basis für die Entwicklung eines neuen Dienstes, der Entwicklung mobiler Anwendungen. Wir wissen, dass mobile Geräte eine immer wichtigere Rolle spielen, ebenso wie die Anwendungsentwicklung für diese Geräte."
 
 [[languages.de.intro.item]]
   title = "Web- und Mobile-Entwicklung"
@@ -645,7 +645,7 @@ copyright = "Everything is mine"
   title = "Kontakt"
   socialTitle = "Folge uns"
   details = [
-    ["icon-home", "2800 Tatabanya Ibolya utca 12.<br/>Ungarn"],
+    ["icon-home", "1066 Budapest Dessewffy u. 18-20. <br/>Ungarn"],
     ["icon-phone", '<a href="tel: +36 30 559 1118" target="_blank">+36 30 559 1118</a>'],
     ["icon-envelope", '<span itemprop="telephone"><a href="mailto:info@onbased.com" target="_blank">info@onbased.com</a></span>'],
     ["icon-globe", '<a href="https://onbased.com" target="_blank">onbased.com</a>']
@@ -707,7 +707,7 @@ copyright = "Everything is mine"
 
 [languages.hu.intro]
   title = "A mi cégünk"
-  description = "2008 óta foglalkozunk szoftverek tervezésével, valamint fejlesztéssel, az ebből szerzett tapasztalatok sikeres alapként szolgáltak egy új szolgáltatás, a mobil applikáció fejlesztés kiépítésében. Pontosan tudjuk, hogy egyre fontosabb szerepet töltenek be a mobil eszközök, és ezekre az eszközökre történő alkalmazásfejlesztés is."
+  description = "2004 óta foglalkozunk szoftverek tervezésével, valamint fejlesztéssel, az ebből szerzett tapasztalatok sikeres alapként szolgáltak egy új szolgáltatás, a mobil applikáció fejlesztés kiépítésében. Pontosan tudjuk, hogy egyre fontosabb szerepet töltenek be a mobil eszközök, és ezekre az eszközökre történő alkalmazásfejlesztés is."
   
 [[languages.hu.intro.item]]
   title = "Web & Mobil Fejlesztés"
@@ -972,7 +972,7 @@ copyright = "Everything is mine"
   title = "Kapcsolat"
   socialTitle = "Kövessen minket"
   details = [
-    ["icon-home", "2800 Tatabanya Ibolya utca 12.<br/>Magyarország"],
+    ["icon-home", "1066 Budapest Dessewffy u. 18-20. <br/>Magyarország"],
     ["icon-phone", '<a href="tel: +36 30 559 1118" target="_blank">+36 30 559 1118</a>'],
     ["icon-envelope", '<span itemprop="telephone"><a href="mailto:info@onbased.com" target="_blank">info@onbased.com</a></span>'],
     ["icon-globe", '<a href="https://onbased.com" target="_blank">onbased.com</a>']
