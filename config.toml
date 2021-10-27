@@ -45,7 +45,7 @@ copyright = "Everything is mine"
   subtitle = "We are ready for our next journey"
   keyword = [ "Write.", "Less.", "Code." ]
   callforactionTitle = "Achieving Balance and Stability"
-  callforactionLink = "mailto:customerservice@onbased.com"
+  callforactionLink = "mailto:info@onbased.com"
   callforactionCaption = "Let's talk about your Project"
   background = "backgrounds/header.png"
 
@@ -178,13 +178,13 @@ copyright = "Everything is mine"
   title = "Web &amp; Mobile development"
   name = "Service_Web"
   description = "There are 7.4 billion people on the planet, 5.7 billion of whom own a cell phone. And today, an ever-growing percentage of these devices are smartphones. According to a recent Pew Research Center Study, the number of users accessing the Internet on their smartphones has more than doubled in the past 5 years, as has the number of users downloading and using mobile apps. We want to conquer this world as well."
-  image = [ "/images/badges/web_development.png" ]
+  image = [ "/images/badges/development.png" ]
 
 [[languages.en.services.item]]
   title = "Consulting"
   name = "Service_Consulting"
   description = "We are ready to become your technological partner, develop software which exactly meets the requirements of your specific project."
-  image = [ "/images/badges/consulting.png" ]
+  image = [ "/images/badges/execution.png" ]
 [[languages.en.services.item]]
   title = "Backend"
   name = "Service_Backend"
@@ -374,7 +374,7 @@ copyright = "Everything is mine"
   subtitle = "Wir sind bereit für das nächste Abendteuer"
   keyword = [ "Schreib.", "Weniger.", "Code." ]
   callforactionTitle = "Balance und Stabilität erreichen"
-  callforactionLink = "mailto:customerservice@onbased.com"
+  callforactionLink = "mailto:info@onbased.com"
   callforactionCaption = "Stell uns<br/>ein!"
   background = "backgrounds/header.png"
 
@@ -701,7 +701,7 @@ copyright = "Everything is mine"
   subtitle = "Készen állunk a következő kihívásra"
   keyword = [ "Írj.", "Kevesebb.", "Kódot." ]
   callforactionTitle = "Egyensúly és stabilitás elérése"
-  callforactionLink = "mailto:customerservice@onbased.com"
+  callforactionLink = "mailto:info@onbased.com"
   callforactionCaption = "Fogad&shy;jon<br/>fel minket!"
   background = "backgrounds/header.png"
 
@@ -803,17 +803,19 @@ copyright = "Everything is mine"
   title = "Web &amp; Mobil Fejlesztés"
   name = "Service_Web"
   description = "7.4 milliárd ember él a Földön, 5.7 milliárd rendelkezik közülük mobiltelefonnal, amelyek egyre nagyobb része okostelefon. Egy, a közelmúltban megjelent Pew Research Center tanulmány szerint, a telefonjaikon internetet használó felhasználók száma több mint megduplázódott az elmúlt 5 évben, ahogy a mobilalkalmazásokat használók száma is. Hisszük, hogy a jövőben ezek a számok még tovább fognak növekedni és megoldásainkkal szeretnénk kényelmesebbé, jobbá tenni ezen eszközök használatát."
-  icons = [ "icon-screen-desktop", "icon-screen-smartphone" ]
+  image = [ "/images/badges/development.png" ]
+
 [[languages.hu.services.item]]
   title = "Tanácsadás"
   name = "Service_Consulting"
   description = "Készen állunk, hogy technológiai partnerévé váljunk és segítsünk megvalósítani a projektjét, az Ön igényei alapján."
-  icons = [ "icon-layers" ]
+  image = [ "/images/badges/execution.png" ]
+
 [[languages.hu.services.item]]
   title = "Backend"
   name = "Service_Backend"
   description = "Megoldásainkat légitársaságok, repterek és légiforgalom irányító társaságok döntő fontosságú környezetekben használják évek óta. Az elmúlt több mint 10 évben németországi partnerünkön keresztül Európa egyik legnagyobb légitársaságának fejlesztettünk elsősorban reporting és törzsadatkezelő (Master Data Management), valamint nagy rendelkezésre állású Data Hub rendszereket. Az általunk elkészített szoftverek a mai napig szerves részét képezik a légitársaság mindennapi működésének."
-  icons = [ "icon-wrench" ]
+  image = [ "/images/badges/backend.png" ]
 
 
 # Prices section
