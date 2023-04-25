@@ -66,7 +66,7 @@ copyright = "Everything is mine"
 #  image = [ "/images/badges/consulting.png" ]
 
 [[languages.en.intro.item]]
-  title = "Marketing"
+  title = "Data Engineering"
   url = "https://marketing.onbased.com"
   image = [ "/images/badges/marketing.png" ]
 
@@ -186,7 +186,7 @@ copyright = "Everything is mine"
   description = "We are ready to become your technological partner, develop software which exactly meets the requirements of your specific project."
   image = [ "/images/badges/execution.png" ]
 [[languages.en.services.item]]
-  title = "Backend"
+  title = "Data Driven Solutions"
   name = "Service_Backend"
   description = "Our solutions have been used for years in mission critical environments of airlines, airports and air traffic control companies. Optimized for quality and reliability. In the past more than 10 years we have been developing Reporting, Master Data Management and high-available Data Hub systems for one of the greatest airlines in Europe via our partner company in Germany. The softwares we've delivered are still in use in the everyday operation of the airline."
   image = [ "/images/badges/backend.png" ]
@@ -313,7 +313,7 @@ copyright = "Everything is mine"
 # Contact section
 [languages.en.contact]
   enable = true
-  map = true
+  map = false
   form = true
   title = "Let's work together"
   description = "Get in touch"
