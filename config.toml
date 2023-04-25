@@ -57,7 +57,7 @@ copyright = "Everything is mine"
 
 [[languages.en.intro.item]]
   title = "Software Engineering"
-  url = "https://it.onbased.com"
+  url = ""
   image = [ "/images/badges/development.png" ]
 
 #[[languages.en.intro.item]]
@@ -67,7 +67,7 @@ copyright = "Everything is mine"
 
 [[languages.en.intro.item]]
   title = "Data Engineering"
-  url = "https://marketing.onbased.com"
+  url = ""
   image = [ "/images/badges/marketing.png" ]
 
 [languages.en.mission]
@@ -175,6 +175,12 @@ copyright = "Everything is mine"
   background = "backgrounds/services.png"
 
 [[languages.en.services.item]]
+  title = "Data Driven Solutions"
+  name = "Service_Backend"
+  description = "With the exponential growth of data, it has become crucial for businesses to make data-driven decisions in order to stay competitive. Our consultancy specializes in creating the necessary infrastructure to support the entire data lifecycle, from data acquisition and storage to processing and analysis. We help businesses establish the tools and processes necessary to collect and analyze large volumes of data, enabling them to make informed decisions that drive growth and success. By partnering with us, businesses can be confident that they are building a solid foundation for their data-driven future. Our solutions have been used for years in mission critical environments of airlines, airports and air traffic control companies. Optimized for quality and reliability. In the past more than 10 years we have been developing Reporting, Master Data Management and high-available Data Hub systems for one of the greatest airlines in Europe via our partner company in Germany. The softwares we've delivered are still in use in the everyday operation of the airline."
+  image = [ "/images/badges/backend.png" ]
+
+[[languages.en.services.item]]
   title = "Web &amp; Mobile development"
   name = "Service_Web"
   description = "There are 7.4 billion people on the planet, 5.7 billion of whom own a cell phone. And today, an ever-growing percentage of these devices are smartphones. According to a recent Pew Research Center Study, the number of users accessing the Internet on their smartphones has more than doubled in the past 5 years, as has the number of users downloading and using mobile apps. We want to conquer this world as well."
@@ -185,11 +191,6 @@ copyright = "Everything is mine"
   name = "Service_Consulting"
   description = "We are ready to become your technological partner, develop software which exactly meets the requirements of your specific project."
   image = [ "/images/badges/execution.png" ]
-[[languages.en.services.item]]
-  title = "Data Driven Solutions"
-  name = "Service_Backend"
-  description = "Our solutions have been used for years in mission critical environments of airlines, airports and air traffic control companies. Optimized for quality and reliability. In the past more than 10 years we have been developing Reporting, Master Data Management and high-available Data Hub systems for one of the greatest airlines in Europe via our partner company in Germany. The softwares we've delivered are still in use in the everyday operation of the airline."
-  image = [ "/images/badges/backend.png" ]
 
 # Prices section
 [languages.en.prices]
