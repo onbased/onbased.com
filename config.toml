@@ -39,9 +39,9 @@ copyright = "Everything is mine"
   contact = "Contact"
 # Hero section
 [languages.en.hero]
-  title1 = "We see your vision."
-  title2 = "We are ready for our next journey."
-  title3 = "Are you?"
+  title1 = "OnBased Group"
+  title2 = "Your Partner in Aviation Data Mastery"
+  title3 = ""
   subtitle = "We are ready for our next journey"
   keyword = [ "Write.", "Less.", "Code." ]
   callforactionTitle = "Achieving Balance and Stability"
@@ -53,7 +53,7 @@ copyright = "Everything is mine"
 # Available icons: http://simplelineicons.com/
 [languages.en.intro]
   title = "Our company"
-  description = "Since 2004 we have been engaged in software design and development, and the experience gained from this has served as a successful basis for the development of a new service, mobile application development. We know that mobile devices are playing an increasingly important role, as well as application development for these devices."
+  description = "Since 2004, we have specialized in data integration and engineering, building a strong foundation in designing and managing complex data systems. Over the years, our expertise has evolved to meet the demands of modern industries, with a primary focus on leveraging cutting-edge cloud technologies. Today, we deliver tailored data solutions that empower businesses to streamline operations, harness real-time insights, and achieve scalable growth."
 
 [[languages.en.intro.item]]
   title = "Software Engineering"
@@ -72,11 +72,11 @@ copyright = "Everything is mine"
 
 [languages.en.mission]
   title = "Our Mission"
-  description = "Not just your regular consultancy we’ve made a long journey to make the difference..."
+  description = "At OnBased Group, we transform complex data into actionable insights. By leveraging innovation and cutting-edge technologies, we empower businesses to optimize operations, enhance decision-making, and unlock their full potential."
 
 [languages.en.values]
   title = "Our Special Sauce"
-  description = "With more than 10 years of experience we can deliver the best product."
+  description = "Our unique blend of industry expertise, cutting-edge technology, and process-driven insights enables us to deliver tailored, reliable, and impactful data solutions for aviation and beyond."
 
 [[languages.en.values.item]]
   title = "Innovation"
@@ -175,21 +175,27 @@ copyright = "Everything is mine"
   background = "backgrounds/services.png"
 
 [[languages.en.services.item]]
-  title = "Data Driven Solutions"
+  title = "Data Integration & Engineering:"
   name = "Service_Backend"
-  description = "With the exponential growth of data, it has become crucial for businesses to make data-driven decisions in order to stay competitive. Our consultancy specializes in creating the necessary infrastructure to support the entire data lifecycle, from data acquisition and storage to processing and analysis. We help businesses establish the tools and processes necessary to collect and analyze large volumes of data, enabling them to make informed decisions that drive growth and success. By partnering with us, businesses can be confident that they are building a solid foundation for their data-driven future. Our solutions have been used for years in mission critical environments of airlines, airports and air traffic control companies. Optimized for quality and reliability. In the past more than 10 years we have been developing Reporting, Master Data Management and high-available Data Hub systems for one of the greatest airlines in Europe via our partner company in Germany. The softwares we've delivered are still in use in the everyday operation of the airline."
+  description = "Centralize and harmonize data from diverse aviation systems with real-time streaming and batch processing capabilities."
   image = [ "/images/badges/backend.png" ]
 
 [[languages.en.services.item]]
-  title = "Web &amp; Mobile development"
+  title = "Cloud Solutions:"
   name = "Service_Web"
-  description = "There are 7.4 billion people on the planet, 5.7 billion of whom own a cell phone. And today, an ever-growing percentage of these devices are smartphones. According to a recent Pew Research Center Study, the number of users accessing the Internet on their smartphones has more than doubled in the past 5 years, as has the number of users downloading and using mobile apps. We want to conquer this world as well."
+  description = "Leverage Azure Cloud and Databricks for scalable and secure data solutions tailored to aviation needs."
   image = [ "/images/badges/development.png" ]
+
+[[languages.en.services.item]]
+  title = "API Development:"
+  name = "Service_Web"
+  description = "Enable seamless data access and integration through Kubernetes-based Flask APIs."
+  image = [ "/images/badges/honesty.png" ]
 
 [[languages.en.services.item]]
   title = "Consulting"
   name = "Service_Consulting"
-  description = "We are ready to become your technological partner, develop software which exactly meets the requirements of your specific project."
+  description = "Deliver tailored software solutions designed to meet the unique requirements of your project."
   image = [ "/images/badges/execution.png" ]
 
 # Prices section
