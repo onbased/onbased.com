@@ -2,7 +2,7 @@
     
     <div class="to-animate figure-5"></div>
     <div class="to-animate figure-6"></div>
-    <div class="to-animate figure-9"></div>
+    <!-- <div class="to-animate figure-9"></div> -->
     <div class="to-animate figure-10"></div>
 
     <div class="container">
@@ -18,13 +18,14 @@
         </div>
         <!-- <div class="container-fluid"> -->
             {{ range .Site.Params.services.item }}
-            <div class="row">
-                <div class="col-md-1">
+            <div class="row align-items-center">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 text-center">
                 {{ range .image }}
-                    <img src="{{ . }}" class="to-animate fh5co-services-icon"></img>
+                    <img src="{{ . }}" class="mx-auto to-animate fh5co-services-icon"></img>
                 {{ end }}
                 </div>
-                <div id="{{ .name }}" data-section="{{ .name }}" class="col-md-11 fh5co-service text-justify to-animate">
+                <div id="{{ .name }}" data-section="{{ .name }}" class="col-md-7 fh5co-service text-justify to-animate">
                     <h3>{{ .title | markdownify }}</h3>
                     <p>{{ .description | markdownify }}</p>
                 </div>

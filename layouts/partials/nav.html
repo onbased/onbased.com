@@ -3,16 +3,20 @@
         <!-- <div class="row"> -->
         <nav class="navbar navbar-expand-lg navbar-default">
             <div class="navbar-header">
+                {{ if .IsHome }}
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <i></i>
                 </a>
+                {{ end }}
                 <a class="navbar-brand" href="index.html">
                     <div class="logo"></div>{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+                {{ if not .IsHome }}
+                    <div style="height: 2.25em;"></div>
+                {{ else }}
                 <ul class="nav navbar-nav ml-auto">
-
                     {{ range .Site.Menus.prepend }}
                     <li class="nav-item">
                         <a class="nav-link external" href="{{ .URL }}">
@@ -34,13 +38,14 @@
                         </a>
                     </li>
                     {{ end }} -->
-                    {{ if .Site.Params.techs.enable }}
+                    <!-- {{ if .Site.Params.techs.enable }}
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-nav-section="techs">
                             <span class="green-menu">{{ with .Site.Params.navigation.techs }}{{ . | markdownify }}{{ end }}</span>
                         </a>
                     </li>
-                    {{ end }} {{ if .Site.Params.work.enable }}
+                    {{ end }} -->
+                    {{ if .Site.Params.work.enable }}
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-nav-section="work">
                             <span class="green-menu">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span>
@@ -56,6 +61,12 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-nav-section="services">
                             <span class="purple-menu">{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span>
+                        </a>
+                    </li>
+                    {{ end }} {{ if .Site.Params.showcases.enable }}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-nav-section="showcases">
+                            <span class="purple-menu">{{ with .Site.Params.navigation.showcases }}{{ . | markdownify }}{{ end }}</span>
                         </a>
                     </li>
                     {{ end }} {{ if .Site.Params.about.enable }}
@@ -99,6 +110,7 @@
                     </li> -->
 
                 </ul>
+                {{end}}
             </div>
         </nav>
         <!-- </div> -->

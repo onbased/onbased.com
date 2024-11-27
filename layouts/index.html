@@ -35,6 +35,10 @@
         	{{ partial "services.html" .}}
 		{{ end }}
 
+		{{ if .Site.Params.showcases.enable }}
+        	{{ partial "showcases.html" .}}
+		{{ end }}
+
 		{{ partial "values.html" .}}
 		
 		{{ if .Site.Params.about.enable }}

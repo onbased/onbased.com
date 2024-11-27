@@ -1,7 +1,10 @@
 {{ define "main" }}
 
-{{ .Params.title }}
-
-{{ .Content }}
+<!-- event -->
+{{ range .Data.Pages }}
+<div class="col-lg-4 col-sm-6 mb-5">
+  {{ .Render "event" }}
+</div>
+{{ end }}
  
 {{ end }}

@@ -1,4 +1,4 @@
-	<section id="fh5co-techs" data-section="techs">
+	<section id="fh5co-techs">
 		<div class="container pt-5">
 			
 			<div class="row equal mt-5">
@@ -8,7 +8,7 @@
 			</div>
 			<div class="row equal">
 				{{ range .Site.Params.techs.tech }}
-				<div class="col-md-2 col-sm-4 col-4 fh5co-tech text-center my-auto">
+				<div class="col-md-2 col-sm-4 col-4 fh5co-tech section-heading text-center my-auto">
 					<div class="zoom my-4">
 						<a href="{{ .link }}">
 							<img src="/images/{{ .img }}" data-toggle="tooltip" data-html="true" title="{{ .description }}" alt="{{ .alt }}" />

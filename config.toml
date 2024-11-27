@@ -1,7 +1,7 @@
 # English is the default language
 defaultContentLanguage = "en"
 # Force to have /en/my-page and /fr/my-page routes, even for default language.
-defaultContentLanguageInSubdir= true
+defaultContentLanguageInSubdir= false
 # Page settings
 baseURL = ""
 # languageCode = "en-us"
@@ -18,28 +18,32 @@ copyright = "Everything is mine"
 [languages]
 [languages.en]
   languageCode = "en"
-  welcome = "Welcome"
   title = "We see your vision"
   weight = 1
-  contentDir =  "content/en"
 
 # Cookie Consent
-[languages.en.cookieconsent]
+[languages.en.params]
+  welcome = "Welcome"
+  home = "Home"
+
+[languages.en.params.cookieconsent]
   text = "This website uses cookies to ensure you get the best experience on our website."
   link = "Learn more"
   dismiss = "Accept"
 
 # Navigation
-[languages.en.navigation]
+[languages.en.params.navigation]
   brand = ""
   home = "Home"
   techs = "Technologies"
   prices = "App prices"
   services = "Services"
+  showcases = "Showcases"
   about = "About"
   contact = "Contact"
+
 # Hero section
-[languages.en.hero]
+[languages.en.params.hero]
   title1 = "OnBased Group"
   title2 = "Your Partner in Aviation Data Mastery"
   title3 = ""
@@ -52,218 +56,109 @@ copyright = "Everything is mine"
 
 # Intro section
 # Available icons: http://simplelineicons.com/
-[languages.en.intro]
+[languages.en.params.intro]
   title = "Our company"
   description = "Since 2004, we have specialized in data integration and engineering, building a strong foundation in designing and managing complex data systems. Over the years, our expertise has evolved to meet the demands of modern industries, with a primary focus on leveraging cutting-edge cloud technologies. Today, we deliver tailored data solutions that empower businesses to streamline operations, harness real-time insights, and achieve scalable growth."
 
-[[languages.en.intro.item]]
+[[languages.en.params.intro.item]]
   title = "Software Engineering"
   url = ""
   image = [ "/images/badges/development.png" ]
 
-#[[languages.en.intro.item]]
+#[[languages.en.params.intro.item]]
 #  title = "Consulting"
 #  url = "Service_Consulting"
 #  image = [ "/images/badges/consulting.png" ]
 
-[[languages.en.intro.item]]
+[[languages.en.params.intro.item]]
   title = "Data Engineering"
   url = ""
   image = [ "/images/badges/marketing.png" ]
 
-[languages.en.mission]
+[languages.en.params.mission]
   title = "Our Mission"
   description = "At OnBased Group, we transform complex data into actionable insights. By leveraging innovation and cutting-edge technologies, we empower businesses to optimize operations, enhance decision-making, and unlock their full potential."
 
-[languages.en.values]
+[languages.en.params.values]
   title = "Our Special Sauce"
   description = "Our unique blend of industry expertise, cutting-edge technology, and process-driven insights enables us to deliver tailored, reliable, and impactful data solutions for aviation and beyond."
 
-[[languages.en.values.item]]
+[[languages.en.params.values.item]]
   title = "Innovation"
   image = [ "/images/badges/innovation.png" ]
 
-[[languages.en.values.item]]
+[[languages.en.params.values.item]]
   title = "Perfection"
   image = [ "/images/badges/perfection.png" ]
 
-[[languages.en.values.item]]
+[[languages.en.params.values.item]]
   title = "Execution"
   image = [ "/images/badges/execution.png" ]
 
-[[languages.en.values.item]]
+[[languages.en.params.values.item]]
   title = "Clarity"
   image = [ "/images/badges/clarity.png" ]
 
-[[languages.en.values.item]]
+[[languages.en.params.values.item]]
   title = "Honesty"
   image = [ "/images/badges/honesty.png" ]
 
-[[languages.en.values.item]]
+[[languages.en.params.values.item]]
   title = "Service"
   image = [ "/images/badges/service.png" ]
 
-[languages.en.techs]
+[languages.en.params.showcases]
+  title = "Showcases"
+  enable = true
+  description = "Description goes here"
+
+[[languages.en.params.showcases.item]]
+  title = "Medallion Architecture Data Pipeline"
+  url = "showcases/medallion_architecture_data_pipeline/"
+  image = "/images/badges/service.png"
+
+[languages.en.params.techs]
   enable = "True"
   title="Technologies we use"
-  
-[[languages.en.techs.tech]]
-  alt = "Flutter"
-  img = "techs/flutter.svg"
-  description = "<p><b>Flutter</b></p>Native Performance<br/>Fast Development<br/>Expressive & Flexible UI"
-  link="https://www.flutter.dev"
-[[languages.en.techs.tech]]
-  alt = "Apollo"
-  img = "techs/apollo.svg"
-  description = "<p><b>Apollo</b></p>Ultra-flexible, community driven GraphQL client for React, JavaScript, and native platforms"
-  link="https://www.apollographql.com"
-[[languages.en.techs.tech]]
-  alt = "Bootstrap"
-  img = "techs/bootstrap.svg"
-  description = "<p><b>Bootstrap</b></p>The world's most popular responsive and mobile-first front-end component library"
-  link="https://getbootstrap.com/"
-[[languages.en.techs.tech]]
-  alt = "Azure"
-  img = "techs/azure.svg"
-  description = "<p><b>Azure</b></p>Building, testing, deploying, and managing applications and services in the cloud"
-  link="https://azure.microsoft.com"
-[[languages.en.techs.tech]]
-  alt = "Django & Python"
-  img = "techs/django_python.svg"
-  description = "<p><b>Django + Python</b></p>High-level Python Web framework that encourages rapid development and clean, pragmatic design."
-  link="https://www.djangoproject.com"
-[[languages.en.techs.tech]]
-  alt = "Docker"
-  img = "techs/docker.svg"
-  description = "<p><b>Docker</b></p>Platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud"
-  link="https://www.docker.com"
-[[languages.en.techs.tech]]
-  alt = "Elasticsearch & Logstash & Kibana"
-  img = "techs/elastic_logstash_kibana.svg"
-  description = "<p><b>Elasticsearch + Logstash + Kibana</b></p>Effiective combination to store, find and display logs"
-  link="https://www.elastic.co"
-[[languages.en.techs.tech]]
-  alt = "Firebase"
-  img = "techs/firebase.svg"
-  description = "<p><b>Firebase</b></p>Google's mobile platform that helps you quickly develop high-quality apps and grow your business."
-  link="https://firebase.google.com"
-[[languages.en.techs.tech]]
-  alt = "GrapgQL"
-  img = "techs/graphql.svg"
-  description = "<p><b>GraphQL</b></p>New way to query your data. Write queries, not code"
-  link="http://graphql.org"
-[[languages.en.techs.tech]]
-  alt = "Kubernetes"
-  img = "techs/kubernetes.svg"
-  description = "<p><b>Kubernetes</b></p>Production-Grade Container Orchestration which builds upon 15 years of experience of running production workloads at Google"
-  link="https://kubernetes.io"
-[[languages.en.techs.tech]]
-  alt = "RabbitMQ"
-  img = "techs/rabbitmq.svg"
-  description = "<p><b>RabbitMQ</b></p>The most widely deployed open source message broker"
-  link="https://www.rabbitmq.com"
-[[languages.en.techs.tech]]
-  alt = "Spring"
-  img = "techs/spring.svg"
-  description = "<p><b>Spring</b></p>Provides a comprehensive programming and configuration model for modern Java-based enterprise applications"
-  link="https://spring.io"
 
 # Services section
-[languages.en.services]
+[languages.en.params.services]
   enable = true
   title = "Services"
   description = "We would like to share our experience with you"
   background = "backgrounds/services.png"
 
-[[languages.en.services.item]]
+[[languages.en.params.services.item]]
   title = "Data Integration & Engineering:"
   name = "Service_Backend"
   description = "Centralize and harmonize data from diverse aviation systems with real-time streaming and batch processing capabilities."
   image = [ "/images/badges/backend.png" ]
 
-[[languages.en.services.item]]
+[[languages.en.params.services.item]]
   title = "Cloud Solutions:"
   name = "Service_Web"
   description = "Leverage Azure Cloud and Databricks for scalable and secure data solutions tailored to aviation needs."
   image = [ "/images/badges/development.png" ]
 
-[[languages.en.services.item]]
+[[languages.en.params.services.item]]
   title = "API Development:"
   name = "Service_Web"
   description = "Enable seamless data access and integration through Kubernetes-based Flask APIs."
   image = [ "/images/badges/honesty.png" ]
 
-[[languages.en.services.item]]
+[[languages.en.params.services.item]]
   title = "Consulting"
   name = "Service_Consulting"
   description = "Deliver tailored software solutions designed to meet the unique requirements of your project."
   image = [ "/images/badges/execution.png" ]
 
-# Prices section
-[languages.en.prices]
-  enable = true
-  title = "Application package prices"
-  # description = "Do you need mobile application for your business or even for yourself?"
-  background = "backgrounds/prices.png"
-  cta = '<a href="tel: +36 30 559 1118" target="_blank">Call us</a>'
-
-[[languages.en.prices.package]]
-  name = "basic"
-  title = "Basic"
-  price = "1.690"
-  currency = "$"
-  features = [
-    "Application development for Android and iOS",
-    "Native functions",
-    "Max. 5 functions or pages",
-    "Deploy application to Google Play and iTunes Connect stores",
-  ]
-
-[[languages.en.prices.package]]
-  highlighted = true
-  name = "standard"
-  title = "Standard"
-  price = "2.690"
-  currency = "FROM $"
-  features = [
-    "Application development for Android and iOS",
-    "Native functions",
-    "Max. 10 functions or pages",
-    "Deploy application to Google Play and iTunes Connect stores",
-    "1 hour consultancy"
-  ]
-
-[[languages.en.prices.package]]
-  name = "premium"
-  title = "Premium"
-  price = "Custom Price"
-  currency = ""
-  features = [
-    "Application development for Android and iOS",
-    "Native functions",
-    "Max. 20 functions or pages",
-    "Deploy application to Google Play and iTunes Connect stores",
-    "2 hours consultancy",
-    "Simple admin interface",
-    "Unique UX/UI design",
-    "Unique App icons and splash screens"
-  ]
-
-# [[languages.en.prices.package]]
-#   name = "enterprise"
-#   title = "Enterprise"
-#   price = "Call us"
-#   cta = "Call"
-#   features = []
-
-
 # About section
-[languages.en.about]
+[languages.en.params.about]
   enable = true
   title = "About"
   description = "We bring ideas to life by combining years of experiences of our very creative team."
 
-[[languages.en.about.item1]]
+[[languages.en.params.about.item1]]
   name = "Albert Papp"
   position = "Founder"
   description = "Great things in business are never done by one person. They're done by a team of people."
@@ -276,7 +171,7 @@ copyright = "Everything is mine"
   #  ["icon-twitter",  "https://twitter.com/albert_m_papp"]
   ]
 
-[[languages.en.about.item1]]
+[[languages.en.params.about.item1]]
   name = "Ákos Belákovics"
   position = "Founder"
   description = "I am passionate about building integrated software systems which are fit to the industrial standards."
@@ -290,11 +185,11 @@ copyright = "Everything is mine"
   ]
 
 # Counters section
-[languages.en.counters]
+[languages.en.params.counters]
   enable = true
   title = "Stats"
 
-[[languages.en.counters.item]]
+[[languages.en.params.counters.item]]
   description = "Delivered projects"
   icon = "icon-briefcase"
   from = 0
@@ -302,7 +197,7 @@ copyright = "Everything is mine"
   interval = 50
   speed = 5000
 
-[[languages.en.counters.item]]
+[[languages.en.params.counters.item]]
   description = "Lines of code"
   icon = "icon-code"
   from = 0
@@ -310,7 +205,7 @@ copyright = "Everything is mine"
   interval = 50
   speed = 5000
 
-[[languages.en.counters.item]]
+[[languages.en.params.counters.item]]
   description = "Cups of coffee"
   icon = "icon-cup"
   from = 0
@@ -319,7 +214,7 @@ copyright = "Everything is mine"
   speed = 5000
 
 # Contact section
-[languages.en.contact]
+[languages.en.params.contact]
   enable = true
   map = false
   form = true
@@ -339,7 +234,7 @@ copyright = "Everything is mine"
   button = "Send message"
 
 # Footer section
-[languages.en.footer]
+[languages.en.params.footer]
   enable = true
   copyright = '&copy; OnBased Group Kft. All Rights Reserved. <br>Created by <a href="#">onbased.com</a>'
   links = [
@@ -348,658 +243,4 @@ copyright = "Everything is mine"
     #["icon-linkedin", "https://facebook.com/onbasedit"],
     ["icon-github", "https://github.com/onbased"],
     #["icon-instagram", "https://facebook.com/onbasedit"]
-  ]
-
-#######################################################################
-# NOTE: Not redy yet!!
-#######################################################################
-# Deutsch
-#######################################################################
-
-[languages.de]
-  languageCode = "de"
-  title = "Die fehlende Prise Software-Engineering"
-  weight = 2
-
-# Cookie Consent
-[languages.de.cookieconsent]
-  text = "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten."
-  link = "Mehr erfahren"
-  dismiss = "Verstanden"
-
-# skip params key for front matter
-[languages.de.navigation]
-  brand = "onbased"
-  home  = "Startseite"
-  techs = "Technologien"
-  prices = "App preise"
-  services = "Leistungen"
-  about = "Über Uns"
-  contact = "Kontakt"
-
-[languages.de.hero]
-  title = "Die fehlende Prise Software-Engineering"
-  subtitle = "Wir sind bereit für das nächste Abendteuer"
-  keyword = [ "Schreib.", "Weniger.", "Code." ]
-  callforactionTitle = "Balance und Stabilität erreichen"
-  callforactionLink = "mailto:info@onbased.com"
-  callforactionCaption = "Stell uns<br/>ein!"
-  background = "backgrounds/header.png"
-
-[languages.de.intro]
-  title = "Unsere Firma"
-  description = "Seit 2004 beschäftigen wir uns mit Softwaredesign und -entwicklung und nutzen diese als erfolgreiche Basis für die Entwicklung eines neuen Dienstes, der Entwicklung mobiler Anwendungen. Wir wissen, dass mobile Geräte eine immer wichtigere Rolle spielen, ebenso wie die Anwendungsentwicklung für diese Geräte."
-
-[[languages.de.intro.item]]
-  title = "Web- und Mobile-Entwicklung"
-  url = "Service_Web"
-  icons = [ "icon-screen-desktop", "icon-screen-smartphone" ]
-  color = "#30231d"
-
-[[languages.de.intro.item]]
-  title = "Beratung"
-  url = "Service_Consulting"
-  icons = [ "icon-layers" ]
-  color = "#30231d"
-
-[[languages.de.intro.item]]
-  title = "Backend"
-  url = "Service_Backend"
-  icons = [ "icon-wrench" ]
-  color = "#30231d"
-
-
-[languages.de.techs]
-  enable = "True"
-  title="Technologien, die wir verwenden"
-[[languages.de.techs.tech]]
-  alt = "Flutter"
-  img = "techs/flutter.svg"
-  description = "<p><b>Flutter</b></p>Native Performance<br/>Fast Development<br/>Expressive & Flexible UI"
-  link="https://www.flutter.dev"
-[[languages.de.techs.tech]]
-  alt = "Apollo"
-  img = "techs/apollo.svg"
-  description = "<p><b>Apollo</b></p>Ultra-flexible, community driven GraphQL client for React, JavaScript, and native platforms"
-  link="https://www.apollographql.com"
-[[languages.de.techs.tech]]
-  alt = "Bootstrap"
-  img = "techs/bootstrap.svg"
-  description = "<p><b>Bootstrap</b></p>The world's most popular responsive and mobile-first front-end component library"
-  link="https://getbootstrap.com/"
-[[languages.de.techs.tech]]
-  alt = "Azure"
-  img = "techs/azure.svg"
-  description = "<p><b>Azure</b></p>Building, testing, deploying, and managing applications and services in the cloud"
-  link="https://azure.microsoft.com"
-[[languages.de.techs.tech]]
-  alt = "Django & Python"
-  img = "techs/django_python.svg"
-  description = "<p><b>Django + Python</b></p>High-level Python Web framework that encourages rapid development and clean, pragmatic design."
-  link="https://www.djangoproject.com"
-[[languages.de.techs.tech]]
-  alt = "Docker"
-  img = "techs/docker.svg"
-  description = "<p><b>Docker</b></p>Platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud"
-  link="https://www.docker.com"
-[[languages.de.techs.tech]]
-  alt = "Elasticsearch & Logstash & Kibana"
-  img = "techs/elastic_logstash_kibana.svg"
-  description = "<p><b>Elasticsearch + Logstash + Kibana</b></p>Effiective combination to store, find and display logs"
-  link="https://www.elastic.co"
-[[languages.de.techs.tech]]
-  alt = "Firebase"
-  img = "techs/firebase.svg"
-  description = "<p><b>Firebase</b></p>Google's mobile platform that helps you quickly develop high-quality apps and grow your business."
-  link="https://firebase.google.com"
-[[languages.de.techs.tech]]
-  alt = "GrapgQL"
-  img = "techs/graphql.svg"
-  description = "<p><b>GraphQL</b></p>New way to query your data. Write queries, not code"
-  link="http://graphql.org"
-[[languages.de.techs.tech]]
-  alt = "Kubernetes"
-  img = "techs/kubernetes.svg"
-  description = "<p><b>Kubernetes</b></p>Production-Grade Container Orchestration which builds upon 15 years of experience of running production workloads at Google"
-  link="https://kubernetes.io"
-[[languages.de.techs.tech]]
-  alt = "RabbitMQ"
-  img = "techs/rabbitmq.svg"
-  description = "<p><b>RabbitMQ</b></p>The most widely deployed open source message broker"
-  link="https://www.rabbitmq.com"
-[[languages.de.techs.tech]]
-  alt = "Spring"
-  img = "techs/spring.svg"
-  description = "<p><b>Spring</b></p>Provides a comprehensive programming and configuration model for modern Java-based enterprise applications"
-  link="https://spring.io"
-  
-  # Services section
-  [languages.de.services]
-    enable = true
-    title = "Services"
-    description = "Unsere Leistungen..."
-    background = "backgrounds/services.png"
-
-  [[languages.de.services.item]]
-    title = "Web &amp; Mobile development"
-    name = "Service_Web"
-    description = "Es gibt mehr als 7.4 Milliarden Menschen auf diesem Planet, und 5.7 Miliarden davon verfügen über ein Handy. Eine Mehrzahl von diesen Geräten sind Smartphones. Laut einer aktuellen Studie der Pew Research Center hat sich die Anzahl der Nutzer, die mit einem Smartphone auf das Internet zugreifen, in den letzten fünf Jahren mehr als verdoppelt. Kein Wunder das wir auch ein Teil von dieser Welt haben möchten."
-    icons = [ "icon-screen-desktop", "icon-screen-smartphone" ]
-  [[languages.de.services.item]]
-    title = "Consulting"
-    name = "Service_Consulting"
-    description = "Wir sind bereit, Ihr Technologiepartner zu werden, und eine Software zu entwickeln, die genau den Anforderungen Ihres spezifischen Projekts entspricht."
-    icons = [ "icon-layers" ]
-  [[languages.de.services.item]]
-    title = "Backend"
-    name = "Service_Backend"
-    description = "Unsere Lösungen werden seit Jahren in unternehmenskritischen Umgebungen von Fluggesellschaften, Flughäfen und in der Flugsicherung eingesetzt. In den letzten 10 Jahren haben wir Reporting, Master Data Management und hochverfügbare Data Hub Systeme für eine der größten Fluggesellschaften in Europa über unseren deutschen Partner entwickelt. Die übergebenen Softwares sind immer noch im täglichen Betrieb der Airline im Einsatz."
-    icons = [ "icon-wrench" ]
-
-
-# Prices section
-[languages.de.prices]
-  enable = true
-  title = "Produktionspreise für mobile Apps"
-  # description = "Do you need mobile application for your business or even for yourself?"
-  background = "backgrounds/prices.png"
-  cta = '<a href="tel: +36 30 559 1118" target="_blank">Rufen Sie uns an</a>'
-
-[[languages.de.prices.package]]
-  title = "Basic"
-  price = "1.490"
-  currency = "€"
-  features = [
-    "Anwendungsentwicklung für Android und iOS",
-    "Native Funktionen",
-    "Max. 5 Funktionen oder Seiten",
-    "Stellen Sie die Anwendung in Google Play- und iTunes Connect-Stores bereit",
-  ]
-
-[[languages.de.prices.package]]
-  highlighted = true
-  title = "Standard"
-  price = "2.490"
-  currency = "FROM €"
-  features = [
-    "Anwendungsentwicklung für Android und iOS",
-    "Native Funktionen",
-    "Max. 10 Funktionen oder Seiten",
-    "Stellen Sie die Anwendung in Google Play- und iTunes Connect-Stores bereit",
-    "1 Stunden Beratung"
-  ]
-
-[[languages.de.prices.package]]
-  title = "Premium"
-  price = "Kundenspezifische Preis"
-  currency = ""
-  features = [
-    "Anwendungsentwicklung für Android und iOS",
-    "Native Funktionen",
-    "Max. 20 Funktionen oder Seiten",
-    "Stellen Sie die Anwendung in Google Play- und iTunes Connect-Stores bereit",
-    "2 Stunden Beratung",
-    "Einfaches Admin-Interface",
-    "Einzigartiges UX/UI Design",
-    "Einzigartige App-Symbole und Begrüßungsbildschirme"
-  ]
-
-# [[languages.de.prices.package]]
-#   name = "enterprise"
-#   title = "Enterprise"
-#   price = "Call us"
-#   cta = "Call"
-#   features = []
-
-# About section
-[languages.de.about]
-  enable = true
-  title = "Über uns"
-  description = "“Zusammenkommen ist ein Beginn, zusammenbleiben ist ein Fortschritt, zusammenarbeiten ist ein Erfolg.” -Henry Ford"
-
-[[languages.de.about.item1]]
-  name = "Albert Papp"
-  position = "Mitbegründer & CEO & Kundenbeziehung"
-  description = "Große Dinge in der Wirtschaft werden nie von einer Person alleine geleistet. Sie werden von einem Team geleistet."
-  img = "team/albert_papp.jpg"
-  alt = "Albert Papp"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/albert-papp"],
-    ["icon-facebook", "https://facebook.com/albert.papp.75"],
-    ["icon-github",   "https://github.com/palbert75"],
-   # ["icon-twitter",  "https://twitter.com/albert_m_papp"]
-  ]
-
-[[languages.de.about.item1]]
-  name = "Ákos Belákovics"
-  position = "Mitbegründer & Senior Full Stack Software Engineer"
-  description = "Ich bin begeistert vom Aufbau integrierter Softwaresysteme, die den Industriestandards entsprechen."
-  img = "team/akos_belakovics.jpg"
-  alt = "Ákos Belákovics"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/akos-belakovics"],
-    ["icon-facebook", "https://facebook.com/akos.belakovics"],
-    ["icon-github", "https://github.com/defned"]
-  # ["icon-twitter", "https://twitter.com/AkosBelakovics"]
-  ]
-
-[[languages.de.about.item1]]
-  name = "Gergely Jahn"
-  position = "Mitbegründer & Senior Full Stack Software Engineer"
-  description = "Ein erfahrener Senior Software Engineer, der in den letzten 10 Jahren an Reporting Systemen gearbeitet hat."
-  img = "team/gergely_jahn.jpg"
-  alt = "Gergely Jahn"
-  social = [
-    ["icon-facebook", "https://facebook.com/dark.knight.750"]
-  ]      
-
-[[languages.de.about.item]]
-  name = "Péter Jahn"
-  position = "Mitbegründer & Senior Full Stack Software Engineer"
-  description = "Über 10 Jahren Erfahrung in der Entwicklung und Unterstützung von J2EE Backends."
-  img = "team/peter_jahn.jpg"
-  alt = "Péter Jahn"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/jahn-peter-balazs"],
-    ["icon-facebook", "https://facebook.com/jahn.peter.balazs"]
-  ]
-
-
-[[languages.de.about.item]]
-  name = "János Roden"
-  position = "Senior Cloud Architect Berater"
-  description = "Mehr als 8 Jahre Erfahrung als Senior Software Engineer mit starken analytischen Fähigkeiten und einer breiten Palette von IT-Kenntnissen."
-  img = "team/janos_roden.jpg"
-  alt = "János Roden"
-  social = [
-    ["icon-facebook", "https://facebook.com/janos.roden"]
-  ]
-
-# Counters section
-[languages.de.counters]
-  enable = true
-  title = "Statistiken"
-  background = "backgrounds/counters.png"
-
-[[languages.de.counters.item]]
-  description = "Projektübergaben"
-  icon = "icon-briefcase"
-  from = 0
-  to = 43
-  interval = 50
-  speed = 5000
-
-[[languages.de.counters.item]]
-  description = "Kodzeilen"
-  icon = "icon-code"
-  from = 0
-  to = 1343409
-  interval = 50
-  speed = 5000
-
-[[languages.de.counters.item]]
-  description = "Kaffe"
-  icon = "icon-cup"
-  from = 0
-  to = 1302
-  interval = 50
-  speed = 5000
-
-# Contact section
-[languages.de.contact]
-  enable = true
-  map = true
-  form = true
-  title = "Kontakt"
-  socialTitle = "Folge uns"
-  details = [
-    ["icon-home", "1066 Budapest Dessewffy u. 18-20. <br/>Ungarn"],
-    ["icon-phone", '<a href="tel: +36 30 559 1118" target="_blank">+36 30 559 1118</a>'],
-    ["icon-envelope", '<span itemprop="telephone"><a href="mailto:info@onbased.com" target="_blank">info@onbased.com</a></span>'],
-    ["icon-globe", '<a href="https://onbased.com" target="_blank">onbased.com</a>']
-
- ]
-  name = "Name"
-  email = "Email"
-  phone = "Handy"
-  message = "Nachricht"
-  button = "Senden"
-
-# Footer section
-[languages.de.footer]
-  enable = true
-  copyright = '&copy; OnBased Group Kft. All Rights Reserved. <br>Created by <a href="#">onbased.com</a>'
-  links = [
-    ["icon-twitter", "https://twitter.com/onbasedIT"],
-    ["icon-facebook", "https://facebook.com/onbasedit"],
-    ["icon-linkedin", "https://facebook.com/onbasedit"],
-    ["icon-github", "https://facebook.com/onbasedit"],
-    ["icon-instagram", "https://facebook.com/onbasedit"],    
-  ]
-
-#######################################################################
-# Magyar
-#######################################################################
-
-[languages.hu]
-  languageCode = "hu"
-  title = "Egy csipetnyi hiányzó szoftver&shy;fejlesztés"
-  weight = 3
-
-# Cookie Consent
-[languages.hu.cookieconsent]
-  text = "Ez a weboldal cookie-kat (sütiket) használ azért, hogy weboldalunk használata során a lehető legjobb élményt tudjuk biztosítani."
-  link = "Részletek"
-  dismiss = "Elfogadom"
-
-# Navigation
-[languages.hu.navigation]
-  brand = "onbased"
-  home = "Kezdőlap"
-  techs = "Technológiák"
-  prices = "App árak"
-  services = "Szolgáltatások"
-  about = "Rólunk"
-  contact = "Kapcsolat"
-  
-# Hero section
-[languages.hu.hero]
-  cookie = "Ez a weboldal cookie-kat (sütiket) használ azért, hogy weboldalunk használata során a lehető legjobb élményt tudjuk biztosítani."
-  title = "Egy csipetnyi hiányzó szoftver&shy;fejlesztés"
-  subtitle = "Készen állunk a következő kihívásra"
-  keyword = [ "Írj.", "Kevesebb.", "Kódot." ]
-  callforactionTitle = "Egyensúly és stabilitás elérése"
-  callforactionLink = "mailto:info@onbased.com"
-  callforactionCaption = "Fogad&shy;jon<br/>fel minket!"
-  background = "backgrounds/header.png"
-
-[languages.hu.intro]
-  title = "A mi cégünk"
-  description = "2004 óta foglalkozunk szoftverek tervezésével, valamint fejlesztéssel, az ebből szerzett tapasztalatok sikeres alapként szolgáltak egy új szolgáltatás, a mobil applikáció fejlesztés kiépítésében. Pontosan tudjuk, hogy egyre fontosabb szerepet töltenek be a mobil eszközök, és ezekre az eszközökre történő alkalmazásfejlesztés is."
-  
-[[languages.hu.intro.item]]
-  title = "Web & Mobil Fejlesztés"
-  url = "Service_Web"
-  icons = [ "icon-screen-desktop", "icon-screen-smartphone" ]
-  color = "#30231d"
-
-[[languages.hu.intro.item]]
-  title = "Tanácsadás"
-  url = "Service_Consulting"
-  icons = [ "icon-layers" ]
-  color = "#30231d"
-
-[[languages.hu.intro.item]]
-  title = "Backend"
-  url = "Service_Backend"
-  icons = [ "icon-wrench" ]
-  color = "#30231d"
-
-
-[languages.hu.techs]
-  enable = "True"
-  title="Technológiák, amiket használunk"
-[[languages.hu.techs.tech]]
-  alt = "Flutter"
-  img = "techs/flutter.svg"
-  description = "<p><b>Flutter</b></p>Native Performance<br/>Fast Development<br/>Expressive & Flexible UI"
-  link="https://www.flutter.dev"
-[[languages.hu.techs.tech]]
-  alt = "Apollo"
-  img = "techs/apollo.svg"
-  description = "<p><b>Apollo</b></p>Ultra-flexible, community driven GraphQL client for React, JavaScript, and native platforms"
-  link="https://www.apollographql.com"
-[[languages.hu.techs.tech]]
-  alt = "Bootstrap"
-  img = "techs/bootstrap.svg"
-  description = "<p><b>Bootstrap</b></p>The world's most popular responsive and mobile-first front-end component library"
-  link="https://getbootstrap.com/"
-[[languages.hu.techs.tech]]
-  alt = "Azure"
-  img = "techs/azure.svg"
-  description = "<p><b>Azure</b></p>Building, testing, deploying, and managing applications and services in the cloud"
-  link="https://azure.microsoft.com"
-[[languages.hu.techs.tech]]
-  alt = "Django & Python"
-  img = "techs/django_python.svg"
-  description = "<p><b>Django + Python</b></p>High-level Python Web framework that encourages rapid development and clean, pragmatic design."
-  link="https://www.djangoproject.com"
-[[languages.hu.techs.tech]]
-  alt = "Docker"
-  img = "techs/docker.svg"
-  description = "<p><b>Docker</b></p>Platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud"
-  link="https://www.docker.com"
-[[languages.hu.techs.tech]]
-  alt = "Elasticsearch & Logstash & Kibana"
-  img = "techs/elastic_logstash_kibana.svg"
-  description = "<p><b>Elasticsearch + Logstash + Kibana</b></p>Effiective combination to store, find and display logs"
-  link="https://www.elastic.co"
-[[languages.hu.techs.tech]]
-  alt = "Firebase"
-  img = "techs/firebase.svg"
-  description = "<p><b>Firebase</b></p>Google's mobile platform that helps you quickly develop high-quality apps and grow your business."
-  link="https://firebase.google.com"
-[[languages.hu.techs.tech]]
-  alt = "GrapgQL"
-  img = "techs/graphql.svg"
-  description = "<p><b>GraphQL</b></p>New way to query your data. Write queries, not code"
-  link="http://graphql.org"
-[[languages.hu.techs.tech]]
-  alt = "Kubernetes"
-  img = "techs/kubernetes.svg"
-  description = "<p><b>Kubernetes</b></p>Production-Grade Container Orchestration which builds upon 15 years of experience of running production workloads at Google"
-  link="https://kubernetes.io"
-[[languages.hu.techs.tech]]
-  alt = "RabbitMQ"
-  img = "techs/rabbitmq.svg"
-  description = "<p><b>RabbitMQ</b></p>The most widely deployed open source message broker"
-  link="https://www.rabbitmq.com"
-[[languages.hu.techs.tech]]
-  alt = "Spring"
-  img = "techs/spring.svg"
-  description = "<p><b>Spring</b></p>Provides a comprehensive programming and configuration model for modern Java-based enterprise applications"
-  link="https://spring.io"
-
-# Services section
-[languages.hu.services]
-  enable = true
-  title = "Szolgáltatások"
-  description = "Szeretnénk tapasztalatainkat Önnel is megosztani"
-  background = "backgrounds/services.png"
-
-[[languages.hu.services.item]]
-  title = "Web &amp; Mobil Fejlesztés"
-  name = "Service_Web"
-  description = "7.4 milliárd ember él a Földön, 5.7 milliárd rendelkezik közülük mobiltelefonnal, amelyek egyre nagyobb része okostelefon. Egy, a közelmúltban megjelent Pew Research Center tanulmány szerint, a telefonjaikon internetet használó felhasználók száma több mint megduplázódott az elmúlt 5 évben, ahogy a mobilalkalmazásokat használók száma is. Hisszük, hogy a jövőben ezek a számok még tovább fognak növekedni és megoldásainkkal szeretnénk kényelmesebbé, jobbá tenni ezen eszközök használatát."
-  image = [ "/images/badges/development.png" ]
-
-[[languages.hu.services.item]]
-  title = "Tanácsadás"
-  name = "Service_Consulting"
-  description = "Készen állunk, hogy technológiai partnerévé váljunk és segítsünk megvalósítani a projektjét, az Ön igényei alapján."
-  image = [ "/images/badges/execution.png" ]
-
-[[languages.hu.services.item]]
-  title = "Backend"
-  name = "Service_Backend"
-  description = "Megoldásainkat légitársaságok, repterek és légiforgalom irányító társaságok döntő fontosságú környezetekben használják évek óta. Az elmúlt több mint 10 évben németországi partnerünkön keresztül Európa egyik legnagyobb légitársaságának fejlesztettünk elsősorban reporting és törzsadatkezelő (Master Data Management), valamint nagy rendelkezésre állású Data Hub rendszereket. Az általunk elkészített szoftverek a mai napig szerves részét képezik a légitársaság mindennapi működésének."
-  image = [ "/images/badges/backend.png" ]
-
-
-# Prices section
-[languages.hu.prices]
-  enable = true
-  title = "Applikáció készítési csomagajánlataink"
-  # description = "Do you need mobile application for your business or even for yourself?"
-  background = "backgrounds/prices.png"
-  cta = '<a href="tel: +36 30 559 1118" target="_blank">Hívjon</a>'
-
-[[languages.hu.prices.package]]
-  title = "Basic"
-  price = "490.000"
-  currency = "Ft"
-  features = [
-    "Applikáció fejlesztés Android és iOS rendszerekre",
-    "Natív funkciók",
-    "Maximum 10 funkció vagy oldal",
-    "Applikáció feltöltése a Google Play és iTunes Connect áruházakba",
-  ]
-
-[[languages.hu.prices.package]]
-  highlighted = true
-  title = "Standard"
-  price = "890.000"
-  currency = "Ft - TÓL"
-  features = [
-    "Applikáció fejlesztés Android és iOS rendszerekre",
-    "Natív funkciók",
-    "Maximum 10 funkció vagy oldal",
-    "Applikáció feltöltése a Google Play és iTunes Connect áruházakba",
-    "1 óra szakmai tanácsadás"
-  ]
-
-[[languages.hu.prices.package]]
-  title = "Prémium"
-  price = "Egyedi ár"
-  currency = ""
-  features = [
-    "Applikáció fejlesztés Android és iOS rendszerekre",
-    "Natív funkciók",
-    "Maximum 20 funkció vagy oldal",
-    "Applikáció feltöltése a Google Play és iTunes Connect áruházakba",
-    "2 óra szakmai tanácsadás",
-    "Egyszerű adminisztrációs felület",
-    "Egyedi UX/UI dizájn",
-    "Egyedi App ikonok és splash screen-ek"
-  ]
-
-# [[languages.hu.prices.package]]
-#   name = "enterprise"
-#   title = "Enterprise"
-#   price = "Call us"
-#   cta = "Call"
-#   features = []
-
-# About section
-[languages.hu.about]
-  enable = true
-  title = "Rólunk"
-  description = "Találkozni - jó kezdet. Nem elválni - haladás. Hosszútávon együtt dolgozni - siker.” - Henry Ford"
-
-[[languages.hu.about.item1]]
-  name = "Albert Papp"
-  position = "Társalapító & CEO & Ügyfél Kapcsolattartó"
-  description = "A gazdasági sikereket nem egy ember éri el, hanem a csapat."
-  img = "team/albert_papp.jpg"
-  alt = "Albert Papp"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/albert-papp"],
-    ["icon-facebook", "https://facebook.com/albert.papp.75"],
-    ["icon-github",   "https://github.com/palbert75"]
-   # ["icon-twitter",  "https://twitter.com/albert_m_papp"]
-  ]
-
-[[languages.hu.about.item1]]
-  name = "Ákos Belákovics"
-  position = "Társalapító & Senior Full Stack Szoftverfejlesztő"
-  description = "Elhivatottság és tapasztalat, amelyek segítenek az olyan integrált szoftverrendszerek fejlesztéseben, amelyek megfelelnek az ipari szabványoknak."
-  img = "team/akos_belakovics.jpg"
-  alt = "Ákos Belákovics"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/akos-belakovics"],
-    ["icon-facebook", "https://facebook.com/akos.belakovics"],
-    ["icon-github", "https://github.com/defned"]
-    #["icon-twitter", "https://twitter.com/AkosBelakovics"]
-  ]
-
-[[languages.hu.about.item1]]
-  name = "Gergely Jahn"
-  position = "Társalapító & Senior Full Stack Szoftverfejlesztő"
-  description = "Sok éves tapasztalattal rendelkező senior szoftvermérnök a mission critical alkamazások és reporting rendszerek területén."
-  img = "team/gergely_jahn.jpg"
-  alt = "Gergely Jahn"
-  social = [
-    ["icon-facebook", "https://facebook.com/dark.knight.750"]
-  ]      
-
-[[languages.hu.about.item]]
-  name = "Péter Jahn"
-  position = "Társalapító & Senior Full Stack Szoftverfejlesztő"
-  description = "Több mint 10 éve projektvezetéssel illetve adatkezelő rendszerek tervezésével, fejlesztésével foglalkozom."
-  img = "team/peter_jahn.jpg"
-  alt = "Péter Jahn"
-  social = [
-    ["icon-linkedin", "https://linkedin.com/in/jahn-peter-balazs"],
-    ["icon-facebook", "https://facebook.com/jahn.peter.balazs"]
-  ]
-
-
-[[languages.hu.about.item]]
-  name = "János Roden"
-  position = "Senior Cloud Architect Konzultáns"
-  description = "Több mint 8 éves senior szoftverfejlesztési tapasztalattal, erős elemző készségekkel és széles körű számítógépes szakértelemmel rendelkezem."
-  img = "team/janos_roden.jpg"
-  alt = "János Roden"
-  social = [
-    ["icon-facebook", "https://facebook.com/janos.roden"]
-  ]
-
-# Counters section
-[languages.hu.counters]
-  enable = true
-  title = "Statisztikák"
-  background = "backgrounds/counters.png"
-
-[[languages.hu.counters.item]]
-  description = "Átadott Projekt"
-  icon = "icon-briefcase"
-  from = 0
-  to = 43
-  interval = 50
-  speed = 5000
-
-[[languages.hu.counters.item]]
-  description = "Kódsor"
-  icon = "icon-code"
-  from = 0
-  to = 1343409
-  interval = 50
-  speed = 5000
-
-[[languages.hu.counters.item]]
-  description = "Csésze Kávé"
-  icon = "icon-cup"
-  from = 0
-  to = 1302
-  interval = 50
-  speed = 5000
-
-# Kapcsolat
-[languages.hu.contact]
-  enable = true
-  map = true
-  form = true
-  title = "Kapcsolat"
-  socialTitle = "Kövessen minket"
-  details = [
-    ["icon-home", "1066 Budapest Dessewffy u. 18-20. <br/>Magyarország"],
-    ["icon-phone", '<a href="tel: +36 30 559 1118" target="_blank">+36 30 559 1118</a>'],
-    ["icon-envelope", '<span itemprop="telephone"><a href="mailto:info@onbased.com" target="_blank">info@onbased.com</a></span>'],
-    ["icon-globe", '<a href="https://onbased.com" target="_blank">onbased.com</a>']
-  ]
-  name = "Név"
-  email = "Email"
-  phone = "Telefon"
-  message = "Üzenet"
-  button = "Küldés"
-
-[languages.hu.footer]
-  enable = true
-  copyright = '&copy; OnBased Group Kft. Minden jog fenntartva. <br>Készítette <a href="#">onbased.com</a>'
-  links = [
-    ["icon-twitter", "https://twitter.com/onbasedIT"],
-    ["icon-facebook", "https://facebook.com/onbasedit"],
-    ["icon-linkedin", "https://facebook.com/onbasedit"],
-    ["icon-github", "https://facebook.com/onbasedit"],
-    ["icon-instagram", "https://facebook.com/onbasedit"]
   ]

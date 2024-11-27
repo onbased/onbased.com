@@ -1,10 +1,11 @@
 ---
-title: "Project Showcase: Medallion Architecture Data Pipeline"
+title: "Medallion Architecture Data Pipeline"
 date: 2024-11-22
 draft: false
-layout: "showcase"
+image: "/showcases/delta_lake.jpeg"
 description: "A showcase of our Kafka-based medallion data pipeline with Delta Lake integration."
 ---
+
 Welcome to our project showcase! Here's a quick overview of how we use a medallion architecture for managing data streams.
 
 ## Pipeline Highlights
