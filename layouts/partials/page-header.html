@@ -3,7 +3,9 @@
   <div class="container" style="margin-top: 5rem;">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ site.BaseURL | absLangURL }}">{{ site.Params.home }}</a></li>
+        {{- range .Ancestors.Reverse }}
+        <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ if .IsHome }}{{ i18n "home" }}{{ else }}{{ .Title }}{{ end }}</a></li>
+        {{- end }}
         <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
       </ol>
     </nav>

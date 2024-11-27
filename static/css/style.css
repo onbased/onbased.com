@@ -949,14 +949,19 @@ section {
 #fh5co-showcases .fh5co-block .title {
   color: #000;
   /* font-weight: 400; */
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   text-transform: capitalize;
+  text-align: center;
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: 'Frank Ruhl Libre';
 }
-
-#fh5co-showcases .fh5co-block {
+#fh5co-showcases a {
+  color:rgb(73, 73, 73) !important;
+  font-size: 1.1rem;
+}
+#fh5co-showcasesXXX .fh5co-block {
   align-items: flex-end;
   /* cursor: default; */
   display: flex;
@@ -982,31 +987,58 @@ section {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-showcases .fh5co-block {
+  #fh5co-showcasesXXX .fh5co-block {
     width: 100%;
   }
 }
-#fh5co-showcases .description {
+#fh5co-showcasesXXX .description {
   /* color: #333; */
   font-weight: 300;
   line-height: 1.5;
 }
 
-#fh5co-showcases .item {
+#fh5co-showcasesXXX .item {
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
           /* transition: box-shadow 0.1s ease-in-out; */
 }
-#fh5co-showcases .item:hover {
+#fh5co-showcasesXXX .item:hover {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 
-#fh5co-showcases .fh5co-block:hover {
+#fh5co-showcasesXXX .fh5co-block:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
+.gradient-card-hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  /* transition: box-shadow 0.1s ease-in-out; */
+}
+.gradient-card-hover:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.gradient-card {
+  background-image: linear-gradient(180deg,  #cbcbcb, #fff);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cbcbcb), to(#fff));
+  /* min-height: 300px; */
+  border-radius: 5px !important;
+  vertical-align: middle;
+  /* padding-top: 5px; */
+  /* margin: 0.5rem; */
+  -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  -ms-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  -o-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  z-index: 7;
+  flex-grow: 1;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
 /* Values section */
 #fh5co-values .fh5co-block .title {
   color: #000;

@@ -1,10 +1,24 @@
 {{ define "main" }}
 
-<!-- event -->
-{{ range .Data.Pages }}
-<div class="col-lg-4 col-sm-6 mb-5">
-  {{ .Render "event" }}
+<!-- showcases -->
+<div class="container">
+  <div class="row">
+    <div class="mt-5 text-center col-md-12 section-heading">
+        <h2>{{ .Params.Title }}</h2>
+        <div class="row">
+            <div class="col-md-12 subtext ">
+                <h3 class="text-center">{{ .Params.Description }}</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="d-flex flex-wrap mb-5">
+  {{ range .Data.Pages }}
+    <div class="col-lg-4 col-sm-6 mb-5">
+      {{ .Render "showcase" }}
+    </div>
+  {{ end }}
+  </div>
 </div>
-{{ end }}
- 
+
 {{ end }}

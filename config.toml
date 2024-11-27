@@ -114,7 +114,12 @@ copyright = "Everything is mine"
 
 [[languages.en.params.showcases.item]]
   title = "Medallion Architecture Data Pipeline"
-  url = "showcases/medallion_architecture_data_pipeline/"
+  url = "showcases/medallion_architecture_data_pipeline"
+  image = "/images/badges/service.png"
+
+[[languages.en.params.showcases.item]]
+  title = "Flight Integration"
+  url = "showcases/flight_integration"
   image = "/images/badges/service.png"
 
 [languages.en.params.techs]
