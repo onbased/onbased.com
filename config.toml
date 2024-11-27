@@ -129,19 +129,19 @@ copyright = "Everything is mine"
   background = "backgrounds/services.png"
 
 [[languages.en.params.services.item]]
-  title = "Data Integration & Engineering:"
+  title = "Data Integration & Engineering"
   name = "Service_Backend"
   description = "Centralize and harmonize data from diverse aviation systems with real-time streaming and batch processing capabilities."
   image = [ "/images/badges/backend.png" ]
 
 [[languages.en.params.services.item]]
-  title = "Cloud Solutions:"
+  title = "Cloud Solutions"
   name = "Service_Web"
   description = "Leverage Azure Cloud and Databricks for scalable and secure data solutions tailored to aviation needs."
   image = [ "/images/badges/development.png" ]
 
 [[languages.en.params.services.item]]
-  title = "API Development:"
+  title = "API Development"
   name = "Service_Web"
   description = "Enable seamless data access and integration through Kubernetes-based Flask APIs."
   image = [ "/images/badges/honesty.png" ]
