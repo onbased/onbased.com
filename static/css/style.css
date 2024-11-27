@@ -379,7 +379,7 @@ h1, h2, h3 {
 
 #fh5co-mission .scale-bg.painting {
   height: 100%;
-  background-image: url("https://assets.website-files.com/5cd978cfcbc64f7e45ec763b/5cd9a717467826ebc0efbb7c_pawel-czerwinski-1538544-unsplash.jpg");
+  background-image: url("/images/backgrounds/background.jpg"); 
   background-size: cover;
 }
 
