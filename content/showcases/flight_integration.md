@@ -1,97 +1,64 @@
 ---
-title: "Flight Integration"
-date: 2024-11-22
-draft: false
-image: "/showcases/delta_lake.jpeg"
-description: "A showcase of our Kafka-based medallion data pipeline with Delta Lake integration."
+title: "Flight Integration Showcase"
+date: 2024-04-22
+tags: ["Flight Data Integration", "Data Engineering", "Master Matrix", "Data Quality"]
+categories: ["Showcase", "Data Engineering"]
+description: "A comprehensive approach to integrating multiple flight data streams into a consistent, high-quality flight entity using a Master Matrix."
+image: "/showcases/master_matrix.jpeg"
 ---
+In the aviation industry, integrating flight data from various sources is critical for ensuring operational efficiency and decision-making accuracy. This showcase highlights how we handle multiple update streams from diverse sources (A, B, C, D, E, F) to create a single, consistent, and curated flight view. Our approach ensures data quality improvement and prevents downgrades using a specialized mechanism called the **Master Matrix**.
 
-Welcome to our project showcase! Here's a quick overview of how we use a medallion architecture for managing data streams.
+## The Challenge: Multiple Data Streams, One Flight View
 
-## Pipeline Highlights
+Flight data arrives from several sources, each providing updates on flight attributes such as:
 
-- **Data Ingestion with Kafka**: Streaming data flows seamlessly from Kafka.
-- **Bronze Layer**: Stores raw data as-is for historical tracking.
-- **Silver Layer**: Data is cleansed and structured, ready for analytics.
-- **Gold Layer**: Optimized Delta tables and fact tables for reporting and insights.
+- Departure and arrival times
+- Aircraft type
+- Operational status
+- Gate and stand assignments
+- Passenger counts
 
----
+However, these sources often provide conflicting information. For example, source A might update the gate assignment, while source B reports a different value. Integrating these updates into a unified and accurate flight entity requires prioritization to ensure data consistency and quality.
 
-## Gold Layer: KPI Classification Approach
+## The Solution: The Master Matrix
 
-In the gold layer, we implement a **row-level KPI classification model**. Instead of calculating KPIs for predefined hyper cubes or aggregated views, we:
+To address this, we developed the **Master Matrix**, a centralized framework that defines **attribute-level priorities** for each source. The Master Matrix ensures that:
 
-1. **Classify Each Item**:
-   - Each row in the gold layer is checked against KPI definitions.
-   - A **boolean column** is added to indicate whether the item fulfills the KPI requirements (`true`/`false`).
+1. **Data Consistency**: Conflicting updates from sources are resolved based on predefined priorities for each attribute.
+2. **Data Quality Preservation**: Updates from lower-priority sources do not overwrite more valuable data already in the system.
+3. **Continuous Improvement**: Updates from higher-priority sources are allowed to replace lower-priority values, ensuring the data entity evolves and improves over time.
 
-2. **Dimension Filtering and Aggregation**:
-   - The BI reporting tool allows users to **select items** dynamically using different dimensions (e.g., time, geography, or product type).
-   - KPIs are calculated using **aggregation functions** like `AVG()` on the boolean values.
+### How It Works
 
-3. **Master Data Integration**:
-   - Dimensions for BI analysis, such as Product, Region, and Time, are sourced from the company's **master data system**.
-   - These dimensions are integrated into the pipeline via a **daily batch ETL process**, adhering to **SCD Type 2** for maintaining historical changes in dimension data.
+1. **Attribute Prioritization**:
+   - Each flight attribute is mapped to a prioritized list of sources (e.g., A > B > C > D > E > F).
+   - For example:
+     - Gate assignment: A > D > F > C > B > E
+     - Departure time: B > A > C > E > D > F
 
-4. **Star and Snowflake Schemas**:
-   - The overall structure of the data warehouse depends on the **hierarchical complexity of dimensions**:
-     - **Star Schema**: If dimensions have a flat hierarchy, they directly connect to the fact table, forming a star-like structure.
-     - **Snowflake Schema**: If dimensions contain multiple levels of hierarchy (e.g., Region → Country → City), they are further normalized into related dimension tables, forming a snowflake-like structure.
+2. **Conflict Resolution**:
+   - When an update for a specific attribute arrives, the system checks the source's priority against the current value's source in the Master Matrix.
+   - If the new source has a **higher priority**, the update is accepted.
+   - If the new source has a **lower or equal priority**, the current value is retained.
 
-5. **Benefits of This Approach**:
-   - Flexible and scalable: Users can slice and dice data dynamically without predefined hyper cubes.
-   - Simplified pipeline: KPI logic is encapsulated at the item level, reducing complexity in ETL processes.
-   - BI-driven insights: KPIs are dynamically derived based on user queries and needs.
+3. **Automation**:
+   - The entire process is automated, ensuring real-time updates while maintaining data integrity.
 
----
+### Key Benefits
 
-## Comparison: Hyper Cubes in Classical Data Warehouses
+- **Enhanced Data Quality**: Prevents downgrades caused by unreliable or lower-priority sources.
+- **Scalability**: Handles updates from multiple sources continuously.
+- **Transparency**: Clear and auditable prioritization logic for each attribute.
+- **Efficiency**: Reduces manual intervention in conflict resolution.
 
-### What Are Hyper Cubes?
+## Real-World Impact
 
-In classical data warehouses, **hyper cubes** are multidimensional structures used for organizing and analyzing data. They consist of:
+By integrating flight data through the Master Matrix, we create a unified flight entity that is both reliable and dynamically improving. This capability supports critical operations for airlines, airports, and partners by providing high-quality data for:
 
-- **Dimensions**: Perspectives for analysis, such as Time, Product, or Region.
-- **Measures**: Numeric data or facts like sales or profit.
-- **Cells**: Each cell contains a measure corresponding to a unique combination of dimensions.
+- Real-time decision-making
+- Process optimization
+- Enhanced passenger experience
 
-For example:
-| Product   | Region | Time  | Total Sales |
-|-----------|--------|-------|-------------|
-| Shoes     | Europe | 2023  | $100,000    |
-| Jackets   | Asia   | 2024  | $50,000     |
+## Conclusion
 
-Hyper cubes are optimized for **predefined aggregations** and enable operations such as slicing, dicing, and drilling down.
-
-### Challenges of Hyper Cubes
-
-1. **Predefined Structure**:
-   - Dimensions and hierarchies must be predefined, limiting flexibility.
-2. **Scalability Issues**:
-   - Adding new dimensions increases storage and computational requirements exponentially.
-3. **Static Aggregations**:
-   - Pre-aggregated data cannot accommodate ad-hoc queries easily.
-4. **ETL Complexity**:
-   - Preparing hyper cubes requires extensive ETL processes for every possible combination of dimensions.
-
----
-
-## Modern Approach: Medallion Architecture with Delta Lake
-
-In contrast to classical hyper cubes, our pipeline leverages a **medallion architecture** with **Delta Lake**. Key differences:
-
-- **Row-Level Processing**: KPIs are not pre-aggregated but classified at the row level.
-- **Dynamic KPI Computation**: Aggregations are deferred to the BI layer, enabling flexible queries.
-- **Scalable and Efficient**: Delta Lake's ACID compliance and scalability handle large volumes of data without the limitations of hyper cubes.
-- **Simplified ETL**: Focuses on cleaning and structuring data rather than extensive pre-aggregation.
-
----
-
-## Why This Approach?
-
-Our approach ensures:
-- Flexibility for diverse queries and user-defined KPIs.
-- Scalability to handle large-scale streaming data from Kafka.
-- Simplified ETL pipelines, reducing processing time and complexity.
-
-By integrating these advanced methods, we enable real-time insights, scalable analytics, and user-driven reporting capabilities.
+The Flight Integration Showcase demonstrates how innovative data engineering solutions can transform complex, multi-source data into actionable insights. With the Master Matrix, we ensure that each flight view remains consistent, curated, and continuously improving.
