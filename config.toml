@@ -110,7 +110,7 @@ copyright = "Everything is mine"
 [languages.en.params.showcases]
   title = "Showcases"
   enable = true
-  description = "Description goes here"
+  description = "Discover the future of innovation at our showcases - where cutting-edge technology meets real - world solutions!"
 
 [[languages.en.params.showcases.item]]
   title = "Medallion Architecture Data Pipeline"
