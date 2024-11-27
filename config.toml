@@ -21,6 +21,7 @@ copyright = "Everything is mine"
   welcome = "Welcome"
   title = "We see your vision"
   weight = 1
+  contentDir =  "content/en"
 
 # Cookie Consent
 [languages.en.cookieconsent]
