@@ -859,7 +859,7 @@ section {
   }
 }
 #fh5co-intro .description {
-  color: #444;
+  color: #1f1f1f;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -1009,7 +1009,7 @@ section {
 
 /* Values section */
 #fh5co-values .fh5co-block .title {
-  color: #fff;
+  color: #000;
   /* font-weight: 400; */
   margin: 0;
   text-transform: capitalize;
@@ -1022,8 +1022,8 @@ section {
   align-items: flex-end;
   cursor: default;
   display: flex;
-  background-image: linear-gradient(180deg, #2a2e31, #000);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a2e31), to(#000));
+  background-image: linear-gradient(180deg,  #cbcbcb, #fff);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cbcbcb), to(#fff));
   width: 33.33%;
   float: left;
   text-align: center;
