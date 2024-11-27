@@ -573,16 +573,16 @@ h1, h2, h3 {
   background-image: linear-gradient(90deg, #51249b, #e057f9);
 }
 .orange-menu:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#fc3832), to(#f2c314));
-  background-image: linear-gradient(90deg, #fc3832, #f2c314);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8747), to(#f2c314));
+  background-image: linear-gradient(90deg, #ff8747, #f2c314);
 }
 .red-menu:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#bd0701), to(#fe5a5a));
-  background-image: linear-gradient(90deg, #bd0701, #fe5a5a);
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd0701), to(#e8fe5a));
+  background-image: linear-gradient(90deg, #bd0701, #e8fe5a);
 }
 .magenta-menu:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#fe3392), to(#fd931f));
-    background-image: linear-gradient(90deg, #fe3392, #fd931f);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe3392), to(#9d5cff));
+    background-image: linear-gradient(90deg, #fe3392, #9d5cff);
 }
 
 #fh5co-header #navbar li a span:before {
